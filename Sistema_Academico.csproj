@@ -1,0 +1,397 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Entidades\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %282%29 - Copy %282%29 - Copy %282%29 - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy (2) - Copy (2) - Copy (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %282%29 - Copy %282%29 - Copy %282%29.resx">
+      <DependentUpon>cAsignaturas - Copy (2) - Copy (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %282%29 - Copy %282%29 - Copy %283%29.resx">
+      <DependentUpon>cAsignaturas - Copy (2) - Copy (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %282%29 - Copy %282%29 - Copy - Copy %282%29.resx">
+      <DependentUpon>cAsignaturas - Copy (2) - Copy (2) - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %282%29 - Copy %282%29 - Copy - Copy - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy (2) - Copy (2) - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %282%29 - Copy %282%29 - Copy - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy (2) - Copy (2) - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %282%29 - Copy %282%29 - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy (2) - Copy (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %282%29 - Copy %282%29.resx">
+      <DependentUpon>cAsignaturas - Copy (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %282%29 - Copy %283%29 - Copy %282%29.resx">
+      <DependentUpon>cAsignaturas - Copy (2) - Copy (3).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %282%29 - Copy %283%29 - Copy - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy (2) - Copy (3) - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %282%29 - Copy %283%29 - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy (2) - Copy (3).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %282%29 - Copy %283%29.resx">
+      <DependentUpon>cAsignaturas - Copy (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %282%29 - Copy %284%29 - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy (2) - Copy (4).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %282%29 - Copy %284%29.resx">
+      <DependentUpon>cAsignaturas - Copy (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %282%29 - Copy %285%29.resx">
+      <DependentUpon>cAsignaturas - Copy (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %282%29 - Copy - Copy %282%29 - Copy %282%29.resx">
+      <DependentUpon>cAsignaturas - Copy (2) - Copy - Copy (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %282%29 - Copy - Copy %282%29 - Copy - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy (2) - Copy - Copy (2) - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %282%29 - Copy - Copy %282%29 - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy (2) - Copy - Copy (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %282%29 - Copy - Copy %282%29.resx">
+      <DependentUpon>cAsignaturas - Copy (2) - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %282%29 - Copy - Copy %283%29 - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy (2) - Copy - Copy (3).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %282%29 - Copy - Copy %283%29.resx">
+      <DependentUpon>cAsignaturas - Copy (2) - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %282%29 - Copy - Copy %284%29.resx">
+      <DependentUpon>cAsignaturas - Copy (2) - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %282%29 - Copy - Copy - Copy %282%29 - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy (2) - Copy - Copy - Copy (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %282%29 - Copy - Copy - Copy %282%29.resx">
+      <DependentUpon>cAsignaturas - Copy (2) - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %282%29 - Copy - Copy - Copy %283%29.resx">
+      <DependentUpon>cAsignaturas - Copy (2) - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %282%29 - Copy - Copy - Copy - Copy %282%29.resx">
+      <DependentUpon>cAsignaturas - Copy (2) - Copy - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %282%29 - Copy - Copy - Copy - Copy - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy (2) - Copy - Copy - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %282%29 - Copy - Copy - Copy - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy (2) - Copy - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %282%29 - Copy - Copy - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy (2) - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %282%29 - Copy - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy (2) - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %282%29 - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %282%29.resx">
+      <DependentUpon>cAsignaturas.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %283%29 - Copy %282%29 - Copy %282%29.resx">
+      <DependentUpon>cAsignaturas - Copy (3) - Copy (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %283%29 - Copy %282%29 - Copy - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy (3) - Copy (2) - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %283%29 - Copy %282%29 - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy (3) - Copy (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %283%29 - Copy %282%29.resx">
+      <DependentUpon>cAsignaturas - Copy (3).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %283%29 - Copy %283%29 - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy (3) - Copy (3).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %283%29 - Copy %283%29.resx">
+      <DependentUpon>cAsignaturas - Copy (3).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %283%29 - Copy %284%29.resx">
+      <DependentUpon>cAsignaturas - Copy (3).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %283%29 - Copy - Copy %282%29 - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy (3) - Copy - Copy (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %283%29 - Copy - Copy %282%29.resx">
+      <DependentUpon>cAsignaturas - Copy (3) - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %283%29 - Copy - Copy %283%29.resx">
+      <DependentUpon>cAsignaturas - Copy (3) - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %283%29 - Copy - Copy - Copy %282%29.resx">
+      <DependentUpon>cAsignaturas - Copy (3) - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %283%29 - Copy - Copy - Copy - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy (3) - Copy - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %283%29 - Copy - Copy - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy (3) - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %283%29 - Copy - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy (3) - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %283%29 - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy (3).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %283%29.resx">
+      <DependentUpon>cAsignaturas.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %284%29 - Copy %282%29 - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy (4) - Copy (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %284%29 - Copy %282%29.resx">
+      <DependentUpon>cAsignaturas - Copy (4).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %284%29 - Copy %283%29.resx">
+      <DependentUpon>cAsignaturas - Copy (4).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %284%29 - Copy - Copy %282%29.resx">
+      <DependentUpon>cAsignaturas - Copy (4) - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %284%29 - Copy - Copy - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy (4) - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %284%29 - Copy - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy (4) - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %284%29 - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy (4).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %284%29.resx">
+      <DependentUpon>cAsignaturas.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %285%29 - Copy %282%29.resx">
+      <DependentUpon>cAsignaturas - Copy (5).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %285%29 - Copy - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy (5) - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %285%29 - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy (5).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %285%29.resx">
+      <DependentUpon>cAsignaturas.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %286%29 - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy (6).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %286%29.resx">
+      <DependentUpon>cAsignaturas.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy %287%29.resx">
+      <DependentUpon>cAsignaturas.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy %282%29 - Copy %282%29 - Copy %282%29.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy (2) - Copy (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy %282%29 - Copy %282%29 - Copy - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy (2) - Copy (2) - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy %282%29 - Copy %282%29 - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy (2) - Copy (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy %282%29 - Copy %282%29.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy %282%29 - Copy %283%29 - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy (2) - Copy (3).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy %282%29 - Copy %283%29.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy %282%29 - Copy %284%29.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy %282%29 - Copy - Copy %282%29 - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy (2) - Copy - Copy (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy %282%29 - Copy - Copy %282%29.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy (2) - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy %282%29 - Copy - Copy %283%29.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy (2) - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy %282%29 - Copy - Copy - Copy %282%29.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy (2) - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy %282%29 - Copy - Copy - Copy - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy (2) - Copy - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy %282%29 - Copy - Copy - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy (2) - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy %282%29 - Copy - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy (2) - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy %282%29 - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy %282%29.resx">
+      <DependentUpon>cAsignaturas - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy %283%29 - Copy %282%29 - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy (3) - Copy (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy %283%29 - Copy %282%29.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy (3).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy %283%29 - Copy %283%29.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy (3).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy %283%29 - Copy - Copy %282%29.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy (3) - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy %283%29 - Copy - Copy - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy (3) - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy %283%29 - Copy - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy (3) - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy %283%29 - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy (3).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy %283%29.resx">
+      <DependentUpon>cAsignaturas - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy %284%29 - Copy %282%29.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy (4).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy %284%29 - Copy - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy (4) - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy %284%29 - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy (4).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy %284%29.resx">
+      <DependentUpon>cAsignaturas - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy %285%29 - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy (5).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy %285%29.resx">
+      <DependentUpon>cAsignaturas - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy %286%29.resx">
+      <DependentUpon>cAsignaturas - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy - Copy %282%29 - Copy %282%29 - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy - Copy (2) - Copy (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy - Copy %282%29 - Copy %282%29.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy - Copy (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy - Copy %282%29 - Copy %283%29.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy - Copy (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy - Copy %282%29 - Copy - Copy %282%29.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy - Copy (2) - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy - Copy %282%29 - Copy - Copy - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy - Copy (2) - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy - Copy %282%29 - Copy - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy - Copy (2) - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy - Copy %282%29 - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy - Copy (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy - Copy %282%29.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy - Copy %283%29 - Copy %282%29.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy - Copy (3).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy - Copy %283%29 - Copy - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy - Copy (3) - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy - Copy %283%29 - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy - Copy (3).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy - Copy %283%29.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy - Copy %284%29 - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy - Copy (4).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy - Copy %284%29.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy - Copy %285%29.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy - Copy - Copy %282%29 - Copy %282%29.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy - Copy - Copy (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy - Copy - Copy %282%29 - Copy - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy - Copy - Copy (2) - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy - Copy - Copy %282%29 - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy - Copy - Copy (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy - Copy - Copy %282%29.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy - Copy - Copy %283%29 - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy - Copy - Copy (3).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy - Copy - Copy %283%29.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy - Copy - Copy %284%29.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy - Copy - Copy - Copy %282%29 - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy - Copy - Copy - Copy (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy - Copy - Copy - Copy %282%29.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy - Copy - Copy - Copy %283%29.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy - Copy - Copy - Copy - Copy %282%29.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy - Copy - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy - Copy - Copy - Copy - Copy - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy - Copy - Copy - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy - Copy - Copy - Copy - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy - Copy - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy - Copy - Copy - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy - Copy - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy - Copy.resx">
+      <DependentUpon>cAsignaturas - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\Consultas\cAsignaturas - Copy.resx">
+      <DependentUpon>cAsignaturas.resx</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
