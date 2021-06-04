@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Sistema_Academico.UI.Registros
 {
-    public partial class rPracticas : Form
+    public partial class rSeleccionAsignaturas : Form
     {
-        public rPracticas()
+        public rSeleccionAsignaturas()
         {
             InitializeComponent();
         }
