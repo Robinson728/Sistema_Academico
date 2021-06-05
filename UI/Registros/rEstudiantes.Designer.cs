@@ -29,6 +29,7 @@ namespace Sistema_Academico.UI.Registros
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.activocheckBox = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.carreracomboBox = new System.Windows.Forms.ComboBox();
@@ -70,8 +71,10 @@ namespace Sistema_Academico.UI.Registros
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.ErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // activocheckBox
@@ -516,6 +519,10 @@ namespace Sistema_Academico.UI.Registros
             this.numericUpDown1.Size = new System.Drawing.Size(72, 23);
             this.numericUpDown1.TabIndex = 48;
             // 
+            // ErrorProvider
+            // 
+            this.ErrorProvider.ContainerControl = this;
+            // 
             // rEstudiantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -546,6 +553,7 @@ namespace Sistema_Academico.UI.Registros
             this.Text = "Registro de Estudiantes";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -593,5 +601,6 @@ namespace Sistema_Academico.UI.Registros
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.ErrorProvider ErrorProvider;
     }
 }

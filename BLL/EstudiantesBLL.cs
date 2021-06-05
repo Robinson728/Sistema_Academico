@@ -90,10 +90,10 @@ namespace Sistema_Academico.BLL
             Contexto contexto = new Contexto();
             try
             {
-                var usuario = contexto.Estudiantes.Find(id);
-                if (usuario != null)
+                var estudiantes = contexto.Estudiantes.Find(id);
+                if (estudiantes != null)
                 {
-                    contexto.Estudiantes.Remove(usuario);
+                    contexto.Estudiantes.Remove(estudiantes);
                     paso = contexto.SaveChanges() > 0;
                 }
             }

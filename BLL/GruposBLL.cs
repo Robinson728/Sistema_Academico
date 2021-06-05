@@ -88,10 +88,10 @@ namespace Sistema_Academico.BLL
             Contexto contexto = new Contexto();
             try
             {
-                var usuario = contexto.Grupos.Find(id);
-                if (usuario != null)
+                var grupos = contexto.Grupos.Find(id);
+                if (grupos != null)
                 {
-                    contexto.Grupos.Remove(usuario);
+                    contexto.Grupos.Remove(grupos);
                     paso = contexto.SaveChanges() > 0;
                 }
             }

@@ -1,4 +1,5 @@
-﻿using Sistema_Academico.DAL;
+﻿using Microsoft.EntityFrameworkCore;
+using Sistema_Academico.DAL;
 using Sistema_Academico.Models;
 using System;
 using System.Collections.Generic;
@@ -15,9 +16,7 @@ namespace Sistema_Academico.BLL
         public static bool Guardar(Asignaturas asignatura)
         {
             if (!Existe(asignatura.AsignaturaId))
-                {
                 return Insertar(asignatura);
-            }
             else
                 return Modificar(asignatura);
         }
@@ -69,7 +68,7 @@ namespace Sistema_Academico.BLL
             Contexto contexto = new Contexto();
             try
             {
-                contexto.Entry(asignatura).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+                contexto.Entry(asignatura).State = EntityState.Modified;
                 paso = contexto.SaveChanges() > 0;
             }
             catch (Exception)
@@ -90,10 +89,10 @@ namespace Sistema_Academico.BLL
             Contexto contexto = new Contexto();
             try
             {
-                var usuario = contexto.Asignaturas.Find(id);
-                if (usuario != null)
+                var asignatura = contexto.Asignaturas.Find(id);
+                if (asignatura != null)
                 {
-                    contexto.Asignaturas.Remove(usuario);
+                    contexto.Asignaturas.Remove(asignatura);
                     paso = contexto.SaveChanges() > 0;
                 }
             }
@@ -149,5 +148,25 @@ namespace Sistema_Academico.BLL
             return lista;
         }
 
+        public static List<Asignaturas> GetAsignaturas()
+        {
+            Contexto contexto = new Contexto();
+            List<Asignaturas> lista = new List<Asignaturas>();
+
+            try
+            {
+                lista = contexto.Asignaturas.ToList();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                contexto.Dispose();
+            }
+
+            return lista;
+        }
     }
 }
