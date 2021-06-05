@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Sistema_Academico.BLL
 {
-    class ProfesoresBLL
+    public class ProfesoresBLL
     {
         public static bool Guardar(Profesores profesor)
         {
@@ -135,6 +135,26 @@ namespace Sistema_Academico.BLL
             try
             {
                 lista = contexto.Profesores.Where(criterio).ToList();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                contexto.Dispose();
+            }
+
+            return lista;
+        }
+
+        public static List<Asignaturas> GetList(Expression<Func<Asignaturas, bool>> criterio)
+        {
+            List<Asignaturas> lista = new List<Asignaturas>();
+            Contexto contexto = new Contexto();
+            try
+            {
+                lista = contexto.Asignaturas.Where(criterio).ToList();
             }
             catch (Exception)
             {

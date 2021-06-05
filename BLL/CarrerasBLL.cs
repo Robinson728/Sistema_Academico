@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Sistema_Academico.BLL
 {
-    class CarrerasBLL
+    public class CarrerasBLL
     {
         public static bool Guardar(Carreras carrera)
         {
@@ -147,5 +147,26 @@ namespace Sistema_Academico.BLL
 
             return lista;
         }
+
+        public static List<Asignaturas> GetList(Expression<Func<Asignaturas, bool>> criterio)
+        {
+            List<Asignaturas> lista = new List<Asignaturas>();
+            Contexto contexto = new Contexto();
+            try
+            {
+                lista = contexto.Asignaturas.Where(criterio).ToList();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                contexto.Dispose();
+            }
+
+            return lista;
+        }
+
     }
 }

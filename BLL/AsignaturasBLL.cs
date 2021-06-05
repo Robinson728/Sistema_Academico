@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Sistema_Academico.BLL
 {
-    class AsignaturasBLL
+    public class AsignaturasBLL
     {
 
         public static bool Guardar(Asignaturas asignatura)

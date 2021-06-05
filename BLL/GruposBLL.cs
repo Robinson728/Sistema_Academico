@@ -3,12 +3,13 @@ using Sistema_Academico.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Sistema_Academico.BLL
 {
-    class GruposBLL
+    public class GruposBLL
     {
         public static bool Guardar(Grupos grupo)
         {
@@ -134,6 +135,26 @@ namespace Sistema_Academico.BLL
             try
             {
                 lista = contexto.Grupos.Where(criterio).ToList();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                contexto.Dispose();
+            }
+
+            return lista;
+        }
+
+        public static List<Asignaturas> GetList(Expression<Func<Asignaturas, bool>> criterio)
+        {
+            List<Asignaturas> lista = new List<Asignaturas>();
+            Contexto contexto = new Contexto();
+            try
+            {
+                lista = contexto.Asignaturas.Where(criterio).ToList();
             }
             catch (Exception)
             {
