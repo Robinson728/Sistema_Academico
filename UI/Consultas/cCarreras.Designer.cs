@@ -1,7 +1,7 @@
 ﻿
 namespace Sistema_Academico.UI.Consultas
 {
-    partial class cAsignaturas
+    partial class cCarreras
     {
         /// <summary>
         /// Required designer variable.
@@ -30,6 +30,7 @@ namespace Sistema_Academico.UI.Consultas
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.HastaDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.HastaLabel = new System.Windows.Forms.Label();
             this.DesdeDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.DesdeLabel = new System.Windows.Forms.Label();
@@ -43,7 +44,6 @@ namespace Sistema_Academico.UI.Consultas
             this.FiltroComboBox = new System.Windows.Forms.ComboBox();
             this.FiltroLabel = new System.Windows.Forms.Label();
             this.UsarFiltroFechascheckBox = new System.Windows.Forms.CheckBox();
-            this.HastaDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.EsActivoGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConsultaAsignaturaDataGridView)).BeginInit();
@@ -56,10 +56,19 @@ namespace Sistema_Academico.UI.Consultas
             this.panel1.Controls.Add(this.HastaLabel);
             this.panel1.Controls.Add(this.DesdeDateTimePicker);
             this.panel1.Controls.Add(this.DesdeLabel);
-            this.panel1.Location = new System.Drawing.Point(152, 7);
+            this.panel1.Location = new System.Drawing.Point(153, 10);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(318, 43);
-            this.panel1.TabIndex = 20;
+            this.panel1.TabIndex = 28;
+            // 
+            // HastaDateTimePicker
+            // 
+            this.HastaDateTimePicker.Enabled = false;
+            this.HastaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.HastaDateTimePicker.Location = new System.Drawing.Point(202, 10);
+            this.HastaDateTimePicker.Name = "HastaDateTimePicker";
+            this.HastaDateTimePicker.Size = new System.Drawing.Size(97, 23);
+            this.HastaDateTimePicker.TabIndex = 11;
             // 
             // HastaLabel
             // 
@@ -90,23 +99,22 @@ namespace Sistema_Academico.UI.Consultas
             // 
             // BuscarButton
             // 
-            this.BuscarButton.Location = new System.Drawing.Point(580, 7);
+            this.BuscarButton.Location = new System.Drawing.Point(581, 10);
             this.BuscarButton.Name = "BuscarButton";
             this.BuscarButton.Size = new System.Drawing.Size(97, 84);
-            this.BuscarButton.TabIndex = 19;
+            this.BuscarButton.TabIndex = 27;
             this.BuscarButton.Text = "Buscar";
             this.BuscarButton.UseVisualStyleBackColor = true;
-            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
             // EsActivoGroupBox
             // 
             this.EsActivoGroupBox.Controls.Add(this.InactivosRadioButton);
             this.EsActivoGroupBox.Controls.Add(this.ActivosRadioButton);
             this.EsActivoGroupBox.Controls.Add(this.TodosRadioButton);
-            this.EsActivoGroupBox.Location = new System.Drawing.Point(476, -1);
+            this.EsActivoGroupBox.Location = new System.Drawing.Point(477, 2);
             this.EsActivoGroupBox.Name = "EsActivoGroupBox";
             this.EsActivoGroupBox.Size = new System.Drawing.Size(98, 92);
-            this.EsActivoGroupBox.TabIndex = 18;
+            this.EsActivoGroupBox.TabIndex = 26;
             this.EsActivoGroupBox.TabStop = false;
             this.EsActivoGroupBox.Text = "Es Activo?";
             // 
@@ -144,11 +152,11 @@ namespace Sistema_Academico.UI.Consultas
             // 
             // CriterioTextBox
             // 
-            this.CriterioTextBox.Location = new System.Drawing.Point(152, 59);
+            this.CriterioTextBox.Location = new System.Drawing.Point(153, 62);
             this.CriterioTextBox.Multiline = true;
             this.CriterioTextBox.Name = "CriterioTextBox";
             this.CriterioTextBox.Size = new System.Drawing.Size(318, 26);
-            this.CriterioTextBox.TabIndex = 17;
+            this.CriterioTextBox.TabIndex = 25;
             // 
             // ConsultaAsignaturaDataGridView
             // 
@@ -156,12 +164,12 @@ namespace Sistema_Academico.UI.Consultas
             this.ConsultaAsignaturaDataGridView.AllowUserToDeleteRows = false;
             this.ConsultaAsignaturaDataGridView.AllowUserToOrderColumns = true;
             this.ConsultaAsignaturaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ConsultaAsignaturaDataGridView.Location = new System.Drawing.Point(2, 97);
+            this.ConsultaAsignaturaDataGridView.Location = new System.Drawing.Point(3, 100);
             this.ConsultaAsignaturaDataGridView.Name = "ConsultaAsignaturaDataGridView";
             this.ConsultaAsignaturaDataGridView.ReadOnly = true;
             this.ConsultaAsignaturaDataGridView.RowTemplate.Height = 25;
             this.ConsultaAsignaturaDataGridView.Size = new System.Drawing.Size(675, 242);
-            this.ConsultaAsignaturaDataGridView.TabIndex = 16;
+            this.ConsultaAsignaturaDataGridView.TabIndex = 24;
             // 
             // FiltroComboBox
             // 
@@ -174,40 +182,31 @@ namespace Sistema_Academico.UI.Consultas
             "Descripción",
             "Credito",
             "Grupo"});
-            this.FiltroComboBox.Location = new System.Drawing.Point(42, 59);
+            this.FiltroComboBox.Location = new System.Drawing.Point(43, 62);
             this.FiltroComboBox.Name = "FiltroComboBox";
             this.FiltroComboBox.Size = new System.Drawing.Size(104, 23);
-            this.FiltroComboBox.TabIndex = 15;
+            this.FiltroComboBox.TabIndex = 23;
             // 
             // FiltroLabel
             // 
             this.FiltroLabel.AutoSize = true;
-            this.FiltroLabel.Location = new System.Drawing.Point(2, 62);
+            this.FiltroLabel.Location = new System.Drawing.Point(3, 65);
             this.FiltroLabel.Name = "FiltroLabel";
             this.FiltroLabel.Size = new System.Drawing.Size(34, 15);
-            this.FiltroLabel.TabIndex = 14;
+            this.FiltroLabel.TabIndex = 22;
             this.FiltroLabel.Text = "Filtro";
             // 
             // UsarFiltroFechascheckBox
             // 
             this.UsarFiltroFechascheckBox.AutoSize = true;
-            this.UsarFiltroFechascheckBox.Location = new System.Drawing.Point(2, 22);
+            this.UsarFiltroFechascheckBox.Location = new System.Drawing.Point(3, 25);
             this.UsarFiltroFechascheckBox.Name = "UsarFiltroFechascheckBox";
             this.UsarFiltroFechascheckBox.Size = new System.Drawing.Size(134, 19);
-            this.UsarFiltroFechascheckBox.TabIndex = 13;
+            this.UsarFiltroFechascheckBox.TabIndex = 21;
             this.UsarFiltroFechascheckBox.Text = "Usar Filtro de Fechas";
             this.UsarFiltroFechascheckBox.UseVisualStyleBackColor = true;
             // 
-            // HastaDateTimePicker
-            // 
-            this.HastaDateTimePicker.Enabled = false;
-            this.HastaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.HastaDateTimePicker.Location = new System.Drawing.Point(202, 10);
-            this.HastaDateTimePicker.Name = "HastaDateTimePicker";
-            this.HastaDateTimePicker.Size = new System.Drawing.Size(97, 23);
-            this.HastaDateTimePicker.TabIndex = 11;
-            // 
-            // cAsignaturas
+            // cCarreras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -220,8 +219,8 @@ namespace Sistema_Academico.UI.Consultas
             this.Controls.Add(this.FiltroComboBox);
             this.Controls.Add(this.FiltroLabel);
             this.Controls.Add(this.UsarFiltroFechascheckBox);
-            this.Name = "cAsignaturas";
-            this.Text = "cAsignaturas";
+            this.Name = "cCarreras";
+            this.Text = "cCarreras";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.EsActivoGroupBox.ResumeLayout(false);
@@ -235,6 +234,7 @@ namespace Sistema_Academico.UI.Consultas
         #endregion
 
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DateTimePicker HastaDateTimePicker;
         private System.Windows.Forms.Label HastaLabel;
         private System.Windows.Forms.DateTimePicker DesdeDateTimePicker;
         private System.Windows.Forms.Label DesdeLabel;
@@ -248,6 +248,5 @@ namespace Sistema_Academico.UI.Consultas
         private System.Windows.Forms.ComboBox FiltroComboBox;
         private System.Windows.Forms.Label FiltroLabel;
         private System.Windows.Forms.CheckBox UsarFiltroFechascheckBox;
-        private System.Windows.Forms.DateTimePicker HastaDateTimePicker;
     }
 }
