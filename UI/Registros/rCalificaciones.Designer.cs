@@ -29,6 +29,7 @@ namespace Sistema_Academico.UI.Registros
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.EstudianteTextBox = new System.Windows.Forms.TextBox();
             this.MatriculaTextBox = new System.Windows.Forms.TextBox();
@@ -37,9 +38,11 @@ namespace Sistema_Academico.UI.Registros
             this.IdEstudianteLabel = new System.Windows.Forms.Label();
             this.IdEstudianteTextBox = new System.Windows.Forms.TextBox();
             this.GuardarButton = new System.Windows.Forms.Button();
-            this.PrimerPacialTextBox = new System.Windows.Forms.TextBox();
+            this.CalificacionTextBox = new System.Windows.Forms.TextBox();
             this.PrimerPacialLabel = new System.Windows.Forms.Label();
+            this.ErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -116,12 +119,12 @@ namespace Sistema_Academico.UI.Registros
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.UseVisualStyleBackColor = true;
             // 
-            // PrimerPacialTextBox
+            // CalificacionTextBox
             // 
-            this.PrimerPacialTextBox.Location = new System.Drawing.Point(74, 104);
-            this.PrimerPacialTextBox.Name = "PrimerPacialTextBox";
-            this.PrimerPacialTextBox.Size = new System.Drawing.Size(411, 23);
-            this.PrimerPacialTextBox.TabIndex = 25;
+            this.CalificacionTextBox.Location = new System.Drawing.Point(74, 104);
+            this.CalificacionTextBox.Name = "CalificacionTextBox";
+            this.CalificacionTextBox.Size = new System.Drawing.Size(411, 23);
+            this.CalificacionTextBox.TabIndex = 25;
             // 
             // PrimerPacialLabel
             // 
@@ -132,19 +135,24 @@ namespace Sistema_Academico.UI.Registros
             this.PrimerPacialLabel.TabIndex = 24;
             this.PrimerPacialLabel.Text = "Nota Final";
             // 
+            // ErrorProvider
+            // 
+            this.ErrorProvider.ContainerControl = this;
+            // 
             // rCalificaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(490, 176);
             this.Controls.Add(this.GuardarButton);
-            this.Controls.Add(this.PrimerPacialTextBox);
+            this.Controls.Add(this.CalificacionTextBox);
             this.Controls.Add(this.PrimerPacialLabel);
             this.Controls.Add(this.groupBox1);
             this.Name = "rCalificaciones";
             this.Text = "Asignación de Calificaciones";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,7 +168,8 @@ namespace Sistema_Academico.UI.Registros
         private System.Windows.Forms.Label IdEstudianteLabel;
         private System.Windows.Forms.TextBox IdEstudianteTextBox;
         private System.Windows.Forms.Button GuardarButton;
-        private System.Windows.Forms.TextBox PrimerPacialTextBox;
+        private System.Windows.Forms.TextBox CalificacionTextBox;
         private System.Windows.Forms.Label PrimerPacialLabel;
+        private System.Windows.Forms.ErrorProvider ErrorProvider;
     }
 }

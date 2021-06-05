@@ -29,8 +29,12 @@ namespace Sistema_Academico.UI.Registros
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.AsignaturaDetalleGroupBox = new System.Windows.Forms.GroupBox();
             this.EstudiantesDataGridView = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SemestreLabel = new System.Windows.Forms.Label();
             this.SemestreComboBox = new System.Windows.Forms.ComboBox();
             this.GrupoTextBox = new System.Windows.Forms.TextBox();
@@ -54,13 +58,12 @@ namespace Sistema_Academico.UI.Registros
             this.EliminarButton = new System.Windows.Forms.Button();
             this.NuevoButton = new System.Windows.Forms.Button();
             this.GuardarButton = new System.Windows.Forms.Button();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.AsignaturaDetalleGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EstudiantesDataGridView)).BeginInit();
             this.HorarioGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AsignaturaIdNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // AsignaturaDetalleGroupBox
@@ -89,6 +92,26 @@ namespace Sistema_Academico.UI.Registros
             this.EstudiantesDataGridView.RowTemplate.Height = 25;
             this.EstudiantesDataGridView.Size = new System.Drawing.Size(564, 207);
             this.EstudiantesDataGridView.TabIndex = 0;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Matrícula";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Nombre";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 250;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Carrera";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 170;
             // 
             // SemestreLabel
             // 
@@ -298,25 +321,9 @@ namespace Sistema_Academico.UI.Registros
             this.GuardarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.GuardarButton.UseVisualStyleBackColor = true;
             // 
-            // Column1
+            // ErrorProvider
             // 
-            this.Column1.HeaderText = "Matrícula";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Nombre";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 250;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Carrera";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 170;
+            this.ErrorProvider.ContainerControl = this;
             // 
             // rAsignaturas
             // 
@@ -348,6 +355,7 @@ namespace Sistema_Academico.UI.Registros
             this.HorarioGroupBox.ResumeLayout(false);
             this.HorarioGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AsignaturaIdNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -383,5 +391,6 @@ namespace Sistema_Academico.UI.Registros
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.ErrorProvider ErrorProvider;
     }
 }

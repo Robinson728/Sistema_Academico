@@ -29,6 +29,7 @@ namespace Sistema_Academico.UI.Registros
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.esActivoCheckBox = new System.Windows.Forms.CheckBox();
             this.EliminarButton = new System.Windows.Forms.Button();
             this.GuardarButton = new System.Windows.Forms.Button();
@@ -43,8 +44,10 @@ namespace Sistema_Academico.UI.Registros
             this.IdNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.NombreTextBox = new System.Windows.Forms.TextBox();
             this.IdLabel = new System.Windows.Forms.Label();
+            this.ErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.PeriodoSemestreGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IdNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // esActivoCheckBox
@@ -178,6 +181,10 @@ namespace Sistema_Academico.UI.Registros
             this.IdLabel.TabIndex = 16;
             this.IdLabel.Text = "Semestre Id";
             // 
+            // ErrorProvider
+            // 
+            this.ErrorProvider.ContainerControl = this;
+            // 
             // rSemestres
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -198,6 +205,7 @@ namespace Sistema_Academico.UI.Registros
             this.PeriodoSemestreGroupBox.ResumeLayout(false);
             this.PeriodoSemestreGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IdNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -219,5 +227,6 @@ namespace Sistema_Academico.UI.Registros
         private System.Windows.Forms.NumericUpDown IdNumericUpDown;
         private System.Windows.Forms.TextBox NombreTextBox;
         private System.Windows.Forms.Label IdLabel;
+        private System.Windows.Forms.ErrorProvider ErrorProvider;
     }
 }
