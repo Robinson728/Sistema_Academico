@@ -148,13 +148,14 @@ namespace Sistema_Academico.BLL
             return lista;
         }
 
-        public static List<Asignaturas> GetList(Expression<Func<Asignaturas, bool>> criterio)
+        public static List<Semestres> GetAsignaturas()
         {
-            List<Asignaturas> lista = new List<Asignaturas>();
             Contexto contexto = new Contexto();
+            List<Semestres> lista = new List<Semestres>();
+
             try
             {
-                lista = contexto.Asignaturas.Where(criterio).ToList();
+                lista = contexto.Semestres.ToList();
             }
             catch (Exception)
             {
