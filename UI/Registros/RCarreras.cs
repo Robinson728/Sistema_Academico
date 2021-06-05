@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Sistema_Academico.Models;
+using Sistema_Academico.BLL;
 
 namespace Sistema_Academico.UI.Registros
 {
@@ -133,6 +134,58 @@ namespace Sistema_Academico.UI.Registros
             }
 
             return paso;
+        }
+
+        private void BuscarButton_Click(object sender, EventArgs e)
+        {
+            Carreras carreras = new Carreras();
+            int id;
+            int.TryParse(IdnumericUpDown.Text, out id);
+
+            carreras = CarrerasBLL.Buscar(id);
+
+            if (carreras != null)
+                LlenaCampo(carreras);
+            else
+                MessageBox.Show("Transacción Fallida!!", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void NuevoButton_Click(object sender, EventArgs e)
+        {
+            Limpiar();
+        }
+
+        private void GuardarButton_Click(object sender, EventArgs e)
+        {
+            Carreras carreras;
+
+            if (!Validar())
+                return;
+
+            carreras = LlenaClase();
+
+            var paso = CarrerasBLL.Guardar(carreras);
+
+            if (paso)
+            {
+                Limpiar();
+                MessageBox.Show("Transacción Exitosa!!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+                MessageBox.Show("Transacción Fallida!!", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void EliminarButton_Click(object sender, EventArgs e)
+        {
+            int id;
+            int.TryParse(IdnumericUpDown.Text, out id);
+
+            Limpiar();
+
+            if (CarrerasBLL.Eliminar(id))
+                MessageBox.Show("Transacción Exitosa!!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+                ErrorProvider.SetError(IdnumericUpDown, "Id no existente");
         }
     }
 }

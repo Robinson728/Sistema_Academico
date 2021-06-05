@@ -118,6 +118,7 @@ namespace Sistema_Academico.UI.Registros
             this.GuardarButton.TabIndex = 34;
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.UseVisualStyleBackColor = true;
+            this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click);
             // 
             // CalificacionTextBox
             // 

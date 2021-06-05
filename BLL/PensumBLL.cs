@@ -148,7 +148,7 @@ namespace Sistema_Academico.BLL
             return lista;
         }
 
-        public static List<Pensum> GetAsignaturas()
+        public static List<Pensum> GetPensum()
         {
             Contexto contexto = new Contexto();
             List<Pensum> lista = new List<Pensum>();

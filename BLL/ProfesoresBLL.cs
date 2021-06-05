@@ -148,7 +148,7 @@ namespace Sistema_Academico.BLL
             return lista;
         }
 
-        public static List<Profesores> GetAsignaturas()
+        public static List<Profesores> GetProfesores()
         {
             Contexto contexto = new Contexto();
             List<Profesores> lista = new List<Profesores>();

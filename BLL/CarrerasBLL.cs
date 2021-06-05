@@ -148,7 +148,7 @@ namespace Sistema_Academico.BLL
             return lista;
         }
 
-        public static List<Carreras> GetAsignaturas()
+        public static List<Carreras> GetCarreras()
         {
             Contexto contexto = new Contexto();
             List<Carreras> lista = new List<Carreras>();

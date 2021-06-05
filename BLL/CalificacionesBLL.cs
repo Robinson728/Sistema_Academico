@@ -148,7 +148,7 @@ namespace Sistema_Academico.BLL
             return lista;
         }
 
-        public static List<Calificaciones> GetAsignaturas()
+        public static List<Calificaciones> GetCalificaciones()
         {
             Contexto contexto = new Contexto();
             List<Calificaciones> lista = new List<Calificaciones>();

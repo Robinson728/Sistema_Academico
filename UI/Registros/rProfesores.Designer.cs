@@ -31,27 +31,27 @@ namespace Sistema_Academico.UI.Registros
         {
             this.components = new System.ComponentModel.Container();
             this.label7 = new System.Windows.Forms.Label();
-            this.Eliminarbutton = new System.Windows.Forms.Button();
-            this.Guardarbutton = new System.Windows.Forms.Button();
-            this.Nuevobutton = new System.Windows.Forms.Button();
-            this.Buscarbutton = new System.Windows.Forms.Button();
+            this.EliminarButton = new System.Windows.Forms.Button();
+            this.GuardarButton = new System.Windows.Forms.Button();
+            this.NuevoButton = new System.Windows.Forms.Button();
+            this.BuscarButton = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.FechadateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.NombreCompletotextBox = new System.Windows.Forms.TextBox();
+            this.FechaIngresoDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.NombreTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.EstudianteIdnumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.IdNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.TelefonoMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.CedulaMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.DireccionTextBox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.EmailTextBox = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.ClaveTextBox = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.ErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.EstudianteIdnumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IdNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,51 +65,55 @@ namespace Sistema_Academico.UI.Registros
             this.label7.TabIndex = 37;
             this.label7.Text = "Teléfono";
             // 
-            // Eliminarbutton
+            // EliminarButton
             // 
-            this.Eliminarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Eliminarbutton.Location = new System.Drawing.Point(241, 179);
-            this.Eliminarbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.Eliminarbutton.Name = "Eliminarbutton";
-            this.Eliminarbutton.Size = new System.Drawing.Size(93, 42);
-            this.Eliminarbutton.TabIndex = 35;
-            this.Eliminarbutton.Text = "Eliminar";
-            this.Eliminarbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Eliminarbutton.UseVisualStyleBackColor = true;
+            this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.EliminarButton.Location = new System.Drawing.Point(241, 179);
+            this.EliminarButton.Margin = new System.Windows.Forms.Padding(2);
+            this.EliminarButton.Name = "EliminarButton";
+            this.EliminarButton.Size = new System.Drawing.Size(93, 42);
+            this.EliminarButton.TabIndex = 35;
+            this.EliminarButton.Text = "Eliminar";
+            this.EliminarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.EliminarButton.UseVisualStyleBackColor = true;
+            this.EliminarButton.Click += new System.EventHandler(this.EliminarButton_Click);
             // 
-            // Guardarbutton
+            // GuardarButton
             // 
-            this.Guardarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Guardarbutton.Location = new System.Drawing.Point(144, 179);
-            this.Guardarbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.Guardarbutton.Name = "Guardarbutton";
-            this.Guardarbutton.Size = new System.Drawing.Size(93, 42);
-            this.Guardarbutton.TabIndex = 34;
-            this.Guardarbutton.Text = "Guardar";
-            this.Guardarbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Guardarbutton.UseVisualStyleBackColor = true;
+            this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.GuardarButton.Location = new System.Drawing.Point(144, 179);
+            this.GuardarButton.Margin = new System.Windows.Forms.Padding(2);
+            this.GuardarButton.Name = "GuardarButton";
+            this.GuardarButton.Size = new System.Drawing.Size(93, 42);
+            this.GuardarButton.TabIndex = 34;
+            this.GuardarButton.Text = "Guardar";
+            this.GuardarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.GuardarButton.UseVisualStyleBackColor = true;
+            this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click);
             // 
-            // Nuevobutton
+            // NuevoButton
             // 
-            this.Nuevobutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Nuevobutton.Location = new System.Drawing.Point(47, 179);
-            this.Nuevobutton.Margin = new System.Windows.Forms.Padding(2);
-            this.Nuevobutton.Name = "Nuevobutton";
-            this.Nuevobutton.Size = new System.Drawing.Size(93, 42);
-            this.Nuevobutton.TabIndex = 33;
-            this.Nuevobutton.Text = "Nuevo";
-            this.Nuevobutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Nuevobutton.UseVisualStyleBackColor = true;
+            this.NuevoButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.NuevoButton.Location = new System.Drawing.Point(47, 179);
+            this.NuevoButton.Margin = new System.Windows.Forms.Padding(2);
+            this.NuevoButton.Name = "NuevoButton";
+            this.NuevoButton.Size = new System.Drawing.Size(93, 42);
+            this.NuevoButton.TabIndex = 33;
+            this.NuevoButton.Text = "Nuevo";
+            this.NuevoButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.NuevoButton.UseVisualStyleBackColor = true;
+            this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
             // 
-            // Buscarbutton
+            // BuscarButton
             // 
-            this.Buscarbutton.Location = new System.Drawing.Point(150, 6);
-            this.Buscarbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.Buscarbutton.Name = "Buscarbutton";
-            this.Buscarbutton.Size = new System.Drawing.Size(44, 23);
-            this.Buscarbutton.TabIndex = 32;
-            this.Buscarbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Buscarbutton.UseVisualStyleBackColor = true;
+            this.BuscarButton.Location = new System.Drawing.Point(150, 6);
+            this.BuscarButton.Margin = new System.Windows.Forms.Padding(2);
+            this.BuscarButton.Name = "BuscarButton";
+            this.BuscarButton.Size = new System.Drawing.Size(44, 23);
+            this.BuscarButton.TabIndex = 32;
+            this.BuscarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BuscarButton.UseVisualStyleBackColor = true;
+            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
             // label6
             // 
@@ -121,28 +125,28 @@ namespace Sistema_Academico.UI.Registros
             this.label6.TabIndex = 31;
             this.label6.Text = "Cédula";
             // 
-            // FechadateTimePicker
+            // FechaIngresoDateTimePicker
             // 
-            this.FechadateTimePicker.CalendarTitleBackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.FechadateTimePicker.CustomFormat = "dd/MM/yyyy";
-            this.FechadateTimePicker.Enabled = false;
-            this.FechadateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.FechadateTimePicker.Location = new System.Drawing.Point(276, 151);
-            this.FechadateTimePicker.Margin = new System.Windows.Forms.Padding(2);
-            this.FechadateTimePicker.Name = "FechadateTimePicker";
-            this.FechadateTimePicker.Size = new System.Drawing.Size(99, 23);
-            this.FechadateTimePicker.TabIndex = 28;
-            this.FechadateTimePicker.Value = new System.DateTime(2021, 3, 22, 16, 32, 1, 0);
+            this.FechaIngresoDateTimePicker.CalendarTitleBackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.FechaIngresoDateTimePicker.CustomFormat = "dd/MM/yyyy";
+            this.FechaIngresoDateTimePicker.Enabled = false;
+            this.FechaIngresoDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.FechaIngresoDateTimePicker.Location = new System.Drawing.Point(276, 151);
+            this.FechaIngresoDateTimePicker.Margin = new System.Windows.Forms.Padding(2);
+            this.FechaIngresoDateTimePicker.Name = "FechaIngresoDateTimePicker";
+            this.FechaIngresoDateTimePicker.Size = new System.Drawing.Size(99, 23);
+            this.FechaIngresoDateTimePicker.TabIndex = 28;
+            this.FechaIngresoDateTimePicker.Value = new System.DateTime(2021, 3, 22, 16, 32, 1, 0);
             // 
-            // NombreCompletotextBox
+            // NombreTextBox
             // 
-            this.NombreCompletotextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.NombreCompletotextBox.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.NombreCompletotextBox.Location = new System.Drawing.Point(74, 35);
-            this.NombreCompletotextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.NombreCompletotextBox.Name = "NombreCompletotextBox";
-            this.NombreCompletotextBox.Size = new System.Drawing.Size(301, 23);
-            this.NombreCompletotextBox.TabIndex = 25;
+            this.NombreTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.NombreTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.NombreTextBox.Location = new System.Drawing.Point(74, 35);
+            this.NombreTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.NombreTextBox.Name = "NombreTextBox";
+            this.NombreTextBox.Size = new System.Drawing.Size(301, 23);
+            this.NombreTextBox.TabIndex = 25;
             // 
             // label3
             // 
@@ -164,44 +168,44 @@ namespace Sistema_Academico.UI.Registros
             this.label1.TabIndex = 21;
             this.label1.Text = "Profesor Id";
             // 
-            // EstudianteIdnumericUpDown
+            // IdNumericUpDown
             // 
-            this.EstudianteIdnumericUpDown.BackColor = System.Drawing.SystemColors.Window;
-            this.EstudianteIdnumericUpDown.Location = new System.Drawing.Point(74, 6);
-            this.EstudianteIdnumericUpDown.Margin = new System.Windows.Forms.Padding(2);
-            this.EstudianteIdnumericUpDown.Name = "EstudianteIdnumericUpDown";
-            this.EstudianteIdnumericUpDown.Size = new System.Drawing.Size(72, 23);
-            this.EstudianteIdnumericUpDown.TabIndex = 20;
+            this.IdNumericUpDown.BackColor = System.Drawing.SystemColors.Window;
+            this.IdNumericUpDown.Location = new System.Drawing.Point(74, 6);
+            this.IdNumericUpDown.Margin = new System.Windows.Forms.Padding(2);
+            this.IdNumericUpDown.Name = "IdNumericUpDown";
+            this.IdNumericUpDown.Size = new System.Drawing.Size(72, 23);
+            this.IdNumericUpDown.TabIndex = 20;
             // 
-            // maskedTextBox1
+            // TelefonoMaskedTextBox
             // 
-            this.maskedTextBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.maskedTextBox1.Location = new System.Drawing.Point(255, 64);
-            this.maskedTextBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.maskedTextBox1.Mask = "(999)000-0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(120, 23);
-            this.maskedTextBox1.TabIndex = 39;
+            this.TelefonoMaskedTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.TelefonoMaskedTextBox.Location = new System.Drawing.Point(255, 64);
+            this.TelefonoMaskedTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.TelefonoMaskedTextBox.Mask = "(999)000-0000";
+            this.TelefonoMaskedTextBox.Name = "TelefonoMaskedTextBox";
+            this.TelefonoMaskedTextBox.Size = new System.Drawing.Size(120, 23);
+            this.TelefonoMaskedTextBox.TabIndex = 39;
             // 
-            // maskedTextBox2
+            // CedulaMaskedTextBox
             // 
-            this.maskedTextBox2.BackColor = System.Drawing.SystemColors.Window;
-            this.maskedTextBox2.Location = new System.Drawing.Point(74, 64);
-            this.maskedTextBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.maskedTextBox2.Mask = "000-0000000-0";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(120, 23);
-            this.maskedTextBox2.TabIndex = 40;
+            this.CedulaMaskedTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.CedulaMaskedTextBox.Location = new System.Drawing.Point(74, 64);
+            this.CedulaMaskedTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.CedulaMaskedTextBox.Mask = "000-0000000-0";
+            this.CedulaMaskedTextBox.Name = "CedulaMaskedTextBox";
+            this.CedulaMaskedTextBox.Size = new System.Drawing.Size(120, 23);
+            this.CedulaMaskedTextBox.TabIndex = 40;
             // 
-            // textBox1
+            // DireccionTextBox
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textBox1.Location = new System.Drawing.Point(74, 93);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(301, 23);
-            this.textBox1.TabIndex = 42;
+            this.DireccionTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.DireccionTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.DireccionTextBox.Location = new System.Drawing.Point(74, 93);
+            this.DireccionTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.DireccionTextBox.Name = "DireccionTextBox";
+            this.DireccionTextBox.Size = new System.Drawing.Size(301, 23);
+            this.DireccionTextBox.TabIndex = 42;
             // 
             // label8
             // 
@@ -213,15 +217,15 @@ namespace Sistema_Academico.UI.Registros
             this.label8.TabIndex = 41;
             this.label8.Text = "Dirección";
             // 
-            // textBox2
+            // EmailTextBox
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textBox2.Location = new System.Drawing.Point(74, 122);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(301, 23);
-            this.textBox2.TabIndex = 44;
+            this.EmailTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.EmailTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.EmailTextBox.Location = new System.Drawing.Point(74, 122);
+            this.EmailTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.EmailTextBox.Name = "EmailTextBox";
+            this.EmailTextBox.Size = new System.Drawing.Size(301, 23);
+            this.EmailTextBox.TabIndex = 44;
             // 
             // label9
             // 
@@ -233,15 +237,15 @@ namespace Sistema_Academico.UI.Registros
             this.label9.TabIndex = 43;
             this.label9.Text = "Email";
             // 
-            // textBox3
+            // ClaveTextBox
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textBox3.Location = new System.Drawing.Point(74, 151);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(120, 23);
-            this.textBox3.TabIndex = 46;
+            this.ClaveTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.ClaveTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.ClaveTextBox.Location = new System.Drawing.Point(74, 151);
+            this.ClaveTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.ClaveTextBox.Name = "ClaveTextBox";
+            this.ClaveTextBox.Size = new System.Drawing.Size(120, 23);
+            this.ClaveTextBox.TabIndex = 46;
             // 
             // label10
             // 
@@ -273,28 +277,28 @@ namespace Sistema_Academico.UI.Registros
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(381, 226);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.ClaveTextBox);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.EmailTextBox);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.DireccionTextBox);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.CedulaMaskedTextBox);
+            this.Controls.Add(this.TelefonoMaskedTextBox);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.Eliminarbutton);
-            this.Controls.Add(this.Guardarbutton);
-            this.Controls.Add(this.Nuevobutton);
-            this.Controls.Add(this.Buscarbutton);
+            this.Controls.Add(this.EliminarButton);
+            this.Controls.Add(this.GuardarButton);
+            this.Controls.Add(this.NuevoButton);
+            this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.FechadateTimePicker);
-            this.Controls.Add(this.NombreCompletotextBox);
+            this.Controls.Add(this.FechaIngresoDateTimePicker);
+            this.Controls.Add(this.NombreTextBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.EstudianteIdnumericUpDown);
+            this.Controls.Add(this.IdNumericUpDown);
             this.Name = "rProfesores";
             this.Text = "Registro de Profesores";
-            ((System.ComponentModel.ISupportInitialize)(this.EstudianteIdnumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IdNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -303,23 +307,23 @@ namespace Sistema_Academico.UI.Registros
 
         #endregion
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button Eliminarbutton;
-        private System.Windows.Forms.Button Guardarbutton;
-        private System.Windows.Forms.Button Nuevobutton;
-        private System.Windows.Forms.Button Buscarbutton;
+        private System.Windows.Forms.Button EliminarButton;
+        private System.Windows.Forms.Button GuardarButton;
+        private System.Windows.Forms.Button NuevoButton;
+        private System.Windows.Forms.Button BuscarButton;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker FechadateTimePicker;
-        private System.Windows.Forms.TextBox NombreCompletotextBox;
+        private System.Windows.Forms.DateTimePicker FechaIngresoDateTimePicker;
+        private System.Windows.Forms.TextBox NombreTextBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.NumericUpDown EstudianteIdnumericUpDown;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.NumericUpDown IdNumericUpDown;
+        private System.Windows.Forms.MaskedTextBox TelefonoMaskedTextBox;
+        private System.Windows.Forms.MaskedTextBox CedulaMaskedTextBox;
+        private System.Windows.Forms.TextBox DireccionTextBox;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox EmailTextBox;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox ClaveTextBox;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ErrorProvider ErrorProvider;

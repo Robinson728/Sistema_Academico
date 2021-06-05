@@ -148,7 +148,7 @@ namespace Sistema_Academico.BLL
             return lista;
         }
 
-        public static List<Semestres> GetAsignaturas()
+        public static List<Semestres> GetSemestres()
         {
             Contexto contexto = new Contexto();
             List<Semestres> lista = new List<Semestres>();

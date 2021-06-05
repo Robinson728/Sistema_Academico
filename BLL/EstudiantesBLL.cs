@@ -149,7 +149,7 @@ namespace Sistema_Academico.BLL
             return lista;
         }
 
-        public static List<Estudiantes> GetAsignaturas()
+        public static List<Estudiantes> GetEstudiantes()
         {
             Contexto contexto = new Contexto();
             List<Estudiantes> lista = new List<Estudiantes>();

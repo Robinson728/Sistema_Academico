@@ -30,36 +30,37 @@ namespace Sistema_Academico.UI.Registros
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.button4 = new System.Windows.Forms.Button();
+            this.BuscarButton = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.IdNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.CantidadEstudiantesTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.AulaTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.NumeroGrupoTextBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.Eliminarbutton = new System.Windows.Forms.Button();
-            this.Guardarbutton = new System.Windows.Forms.Button();
-            this.Nuevobutton = new System.Windows.Forms.Button();
+            this.AsignaturaComboBox = new System.Windows.Forms.ComboBox();
+            this.ProfesorComboBox = new System.Windows.Forms.ComboBox();
+            this.EliminarButton = new System.Windows.Forms.Button();
+            this.GuardarButton = new System.Windows.Forms.Button();
+            this.NuevoButton = new System.Windows.Forms.Button();
             this.ErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IdNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
-            // button4
+            // BuscarButton
             // 
-            this.button4.Location = new System.Drawing.Point(149, 7);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(55, 23);
-            this.button4.TabIndex = 57;
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.UseVisualStyleBackColor = true;
+            this.BuscarButton.Location = new System.Drawing.Point(149, 7);
+            this.BuscarButton.Margin = new System.Windows.Forms.Padding(2);
+            this.BuscarButton.Name = "BuscarButton";
+            this.BuscarButton.Size = new System.Drawing.Size(55, 23);
+            this.BuscarButton.TabIndex = 57;
+            this.BuscarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BuscarButton.UseVisualStyleBackColor = true;
+            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
             // label15
             // 
@@ -71,14 +72,14 @@ namespace Sistema_Academico.UI.Registros
             this.label15.TabIndex = 56;
             this.label15.Text = "Grupo Id";
             // 
-            // numericUpDown1
+            // IdNumericUpDown
             // 
-            this.numericUpDown1.BackColor = System.Drawing.SystemColors.Window;
-            this.numericUpDown1.Location = new System.Drawing.Point(73, 7);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(2);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(72, 23);
-            this.numericUpDown1.TabIndex = 55;
+            this.IdNumericUpDown.BackColor = System.Drawing.SystemColors.Window;
+            this.IdNumericUpDown.Location = new System.Drawing.Point(73, 7);
+            this.IdNumericUpDown.Margin = new System.Windows.Forms.Padding(2);
+            this.IdNumericUpDown.Name = "IdNumericUpDown";
+            this.IdNumericUpDown.Size = new System.Drawing.Size(72, 23);
+            this.IdNumericUpDown.TabIndex = 55;
             // 
             // label3
             // 
@@ -100,15 +101,15 @@ namespace Sistema_Academico.UI.Registros
             this.label1.TabIndex = 60;
             this.label1.Text = "Profesor";
             // 
-            // textBox2
+            // CantidadEstudiantesTextBox
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textBox2.Location = new System.Drawing.Point(126, 94);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(188, 23);
-            this.textBox2.TabIndex = 63;
+            this.CantidadEstudiantesTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.CantidadEstudiantesTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.CantidadEstudiantesTextBox.Location = new System.Drawing.Point(126, 94);
+            this.CantidadEstudiantesTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.CantidadEstudiantesTextBox.Name = "CantidadEstudiantesTextBox";
+            this.CantidadEstudiantesTextBox.Size = new System.Drawing.Size(188, 23);
+            this.CantidadEstudiantesTextBox.TabIndex = 63;
             // 
             // label2
             // 
@@ -120,15 +121,15 @@ namespace Sistema_Academico.UI.Registros
             this.label2.TabIndex = 62;
             this.label2.Text = "Cantidad Estudiantes";
             // 
-            // textBox3
+            // AulaTextBox
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textBox3.Location = new System.Drawing.Point(73, 123);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(241, 23);
-            this.textBox3.TabIndex = 65;
+            this.AulaTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.AulaTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.AulaTextBox.Location = new System.Drawing.Point(73, 123);
+            this.AulaTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.AulaTextBox.Name = "AulaTextBox";
+            this.AulaTextBox.Size = new System.Drawing.Size(241, 23);
+            this.AulaTextBox.TabIndex = 65;
             // 
             // label4
             // 
@@ -140,15 +141,15 @@ namespace Sistema_Academico.UI.Registros
             this.label4.TabIndex = 64;
             this.label4.Text = "Aula";
             // 
-            // textBox4
+            // NumeroGrupoTextBox
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textBox4.Location = new System.Drawing.Point(112, 152);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(202, 23);
-            this.textBox4.TabIndex = 67;
+            this.NumeroGrupoTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.NumeroGrupoTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.NumeroGrupoTextBox.Location = new System.Drawing.Point(112, 152);
+            this.NumeroGrupoTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.NumeroGrupoTextBox.Name = "NumeroGrupoTextBox";
+            this.NumeroGrupoTextBox.Size = new System.Drawing.Size(202, 23);
+            this.NumeroGrupoTextBox.TabIndex = 67;
             // 
             // label5
             // 
@@ -160,59 +161,62 @@ namespace Sistema_Academico.UI.Registros
             this.label5.TabIndex = 66;
             this.label5.Text = "Número de grupo";
             // 
-            // comboBox1
+            // AsignaturaComboBox
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(73, 36);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(241, 23);
-            this.comboBox1.TabIndex = 68;
+            this.AsignaturaComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AsignaturaComboBox.FormattingEnabled = true;
+            this.AsignaturaComboBox.Location = new System.Drawing.Point(73, 36);
+            this.AsignaturaComboBox.Name = "AsignaturaComboBox";
+            this.AsignaturaComboBox.Size = new System.Drawing.Size(241, 23);
+            this.AsignaturaComboBox.TabIndex = 68;
             // 
-            // comboBox2
+            // ProfesorComboBox
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(73, 65);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(241, 23);
-            this.comboBox2.TabIndex = 69;
+            this.ProfesorComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ProfesorComboBox.FormattingEnabled = true;
+            this.ProfesorComboBox.Location = new System.Drawing.Point(73, 65);
+            this.ProfesorComboBox.Name = "ProfesorComboBox";
+            this.ProfesorComboBox.Size = new System.Drawing.Size(241, 23);
+            this.ProfesorComboBox.TabIndex = 69;
             // 
-            // Eliminarbutton
+            // EliminarButton
             // 
-            this.Eliminarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Eliminarbutton.Location = new System.Drawing.Point(210, 181);
-            this.Eliminarbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.Eliminarbutton.Name = "Eliminarbutton";
-            this.Eliminarbutton.Size = new System.Drawing.Size(93, 42);
-            this.Eliminarbutton.TabIndex = 72;
-            this.Eliminarbutton.Text = "Eliminar";
-            this.Eliminarbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Eliminarbutton.UseVisualStyleBackColor = true;
+            this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.EliminarButton.Location = new System.Drawing.Point(210, 181);
+            this.EliminarButton.Margin = new System.Windows.Forms.Padding(2);
+            this.EliminarButton.Name = "EliminarButton";
+            this.EliminarButton.Size = new System.Drawing.Size(93, 42);
+            this.EliminarButton.TabIndex = 72;
+            this.EliminarButton.Text = "Eliminar";
+            this.EliminarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.EliminarButton.UseVisualStyleBackColor = true;
+            this.EliminarButton.Click += new System.EventHandler(this.EliminarButton_Click);
             // 
-            // Guardarbutton
+            // GuardarButton
             // 
-            this.Guardarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Guardarbutton.Location = new System.Drawing.Point(113, 181);
-            this.Guardarbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.Guardarbutton.Name = "Guardarbutton";
-            this.Guardarbutton.Size = new System.Drawing.Size(93, 42);
-            this.Guardarbutton.TabIndex = 71;
-            this.Guardarbutton.Text = "Guardar";
-            this.Guardarbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Guardarbutton.UseVisualStyleBackColor = true;
+            this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.GuardarButton.Location = new System.Drawing.Point(113, 181);
+            this.GuardarButton.Margin = new System.Windows.Forms.Padding(2);
+            this.GuardarButton.Name = "GuardarButton";
+            this.GuardarButton.Size = new System.Drawing.Size(93, 42);
+            this.GuardarButton.TabIndex = 71;
+            this.GuardarButton.Text = "Guardar";
+            this.GuardarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.GuardarButton.UseVisualStyleBackColor = true;
+            this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click);
             // 
-            // Nuevobutton
+            // NuevoButton
             // 
-            this.Nuevobutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Nuevobutton.Location = new System.Drawing.Point(16, 181);
-            this.Nuevobutton.Margin = new System.Windows.Forms.Padding(2);
-            this.Nuevobutton.Name = "Nuevobutton";
-            this.Nuevobutton.Size = new System.Drawing.Size(93, 42);
-            this.Nuevobutton.TabIndex = 70;
-            this.Nuevobutton.Text = "Nuevo";
-            this.Nuevobutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Nuevobutton.UseVisualStyleBackColor = true;
+            this.NuevoButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.NuevoButton.Location = new System.Drawing.Point(16, 181);
+            this.NuevoButton.Margin = new System.Windows.Forms.Padding(2);
+            this.NuevoButton.Name = "NuevoButton";
+            this.NuevoButton.Size = new System.Drawing.Size(93, 42);
+            this.NuevoButton.TabIndex = 70;
+            this.NuevoButton.Text = "Nuevo";
+            this.NuevoButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.NuevoButton.UseVisualStyleBackColor = true;
+            this.NuevoButton.Click += new System.EventHandler(this.Nuevobutton_Click);
             // 
             // ErrorProvider
             // 
@@ -223,25 +227,25 @@ namespace Sistema_Academico.UI.Registros
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(318, 229);
-            this.Controls.Add(this.Eliminarbutton);
-            this.Controls.Add(this.Guardarbutton);
-            this.Controls.Add(this.Nuevobutton);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.EliminarButton);
+            this.Controls.Add(this.GuardarButton);
+            this.Controls.Add(this.NuevoButton);
+            this.Controls.Add(this.ProfesorComboBox);
+            this.Controls.Add(this.AsignaturaComboBox);
+            this.Controls.Add(this.NumeroGrupoTextBox);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.AulaTextBox);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.CantidadEstudiantesTextBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.IdNumericUpDown);
             this.Name = "rGrupos";
             this.Text = "Registro de Grupos";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IdNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -250,22 +254,22 @@ namespace Sistema_Academico.UI.Registros
 
         #endregion
 
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button BuscarButton;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown IdNumericUpDown;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox CantidadEstudiantesTextBox;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox AulaTextBox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox NumeroGrupoTextBox;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Button Eliminarbutton;
-        private System.Windows.Forms.Button Guardarbutton;
-        private System.Windows.Forms.Button Nuevobutton;
+        private System.Windows.Forms.ComboBox AsignaturaComboBox;
+        private System.Windows.Forms.ComboBox ProfesorComboBox;
+        private System.Windows.Forms.Button EliminarButton;
+        private System.Windows.Forms.Button GuardarButton;
+        private System.Windows.Forms.Button NuevoButton;
         private System.Windows.Forms.ErrorProvider ErrorProvider;
     }
 }

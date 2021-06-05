@@ -148,7 +148,7 @@ namespace Sistema_Academico.BLL
             return lista;
         }
 
-        public static List<Grupos> GetAsignaturas()
+        public static List<Grupos> GetGrupos()
         {
             Contexto contexto = new Contexto();
             List<Grupos> lista = new List<Grupos>();

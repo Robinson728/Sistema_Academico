@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Sistema_Academico.Models;
+using Sistema_Academico.BLL;
 
 namespace Sistema_Academico.UI.Registros
 {
@@ -76,6 +77,26 @@ namespace Sistema_Academico.UI.Registros
             }
 
             return paso;
+        }
+
+        private void GuardarButton_Click(object sender, EventArgs e)
+        {
+            Calificaciones calificaciones;
+
+            if (!Validar())
+                return;
+
+            calificaciones = LlenaClase();
+
+            var paso = CalificacionesBLL.Guardar(calificaciones);
+
+            if (paso)
+            {
+                Limpiar();
+                MessageBox.Show("Transacción Exitosa!!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+                MessageBox.Show("Transacción Fallida!!", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 }

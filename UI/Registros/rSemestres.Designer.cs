@@ -30,7 +30,6 @@ namespace Sistema_Academico.UI.Registros
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.esActivoCheckBox = new System.Windows.Forms.CheckBox();
             this.EliminarButton = new System.Windows.Forms.Button();
             this.GuardarButton = new System.Windows.Forms.Button();
             this.NuevoButton = new System.Windows.Forms.Button();
@@ -50,18 +49,6 @@ namespace Sistema_Academico.UI.Registros
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
-            // esActivoCheckBox
-            // 
-            this.esActivoCheckBox.AutoSize = true;
-            this.esActivoCheckBox.Checked = true;
-            this.esActivoCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.esActivoCheckBox.Location = new System.Drawing.Point(326, 6);
-            this.esActivoCheckBox.Name = "esActivoCheckBox";
-            this.esActivoCheckBox.Size = new System.Drawing.Size(60, 19);
-            this.esActivoCheckBox.TabIndex = 25;
-            this.esActivoCheckBox.Text = "Activo";
-            this.esActivoCheckBox.UseVisualStyleBackColor = true;
-            // 
             // EliminarButton
             // 
             this.EliminarButton.Location = new System.Drawing.Point(248, 130);
@@ -71,6 +58,7 @@ namespace Sistema_Academico.UI.Registros
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.EliminarButton.UseVisualStyleBackColor = true;
+            this.EliminarButton.Click += new System.EventHandler(this.EliminarButton_Click);
             // 
             // GuardarButton
             // 
@@ -81,6 +69,7 @@ namespace Sistema_Academico.UI.Registros
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.GuardarButton.UseVisualStyleBackColor = true;
+            this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click);
             // 
             // NuevoButton
             // 
@@ -91,6 +80,7 @@ namespace Sistema_Academico.UI.Registros
             this.NuevoButton.Text = "Nuevo";
             this.NuevoButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.NuevoButton.UseVisualStyleBackColor = true;
+            this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
             // 
             // PeriodoSemestreGroupBox
             // 
@@ -148,6 +138,7 @@ namespace Sistema_Academico.UI.Registros
             this.BuscarButton.Size = new System.Drawing.Size(61, 23);
             this.BuscarButton.TabIndex = 20;
             this.BuscarButton.UseVisualStyleBackColor = true;
+            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
             // NombreLabel
             // 
@@ -190,7 +181,6 @@ namespace Sistema_Academico.UI.Registros
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(392, 177);
-            this.Controls.Add(this.esActivoCheckBox);
             this.Controls.Add(this.EliminarButton);
             this.Controls.Add(this.GuardarButton);
             this.Controls.Add(this.NuevoButton);
@@ -212,8 +202,6 @@ namespace Sistema_Academico.UI.Registros
         }
 
         #endregion
-
-        private System.Windows.Forms.CheckBox esActivoCheckBox;
         private System.Windows.Forms.Button EliminarButton;
         private System.Windows.Forms.Button GuardarButton;
         private System.Windows.Forms.Button NuevoButton;
