@@ -36,17 +36,7 @@ namespace Sistema_Academico.UI.Registros
             this.MatriculaLabel = new System.Windows.Forms.Label();
             this.IdEstudianteLabel = new System.Windows.Forms.Label();
             this.IdEstudianteTextBox = new System.Windows.Forms.TextBox();
-            this.AcumuladoLabel = new System.Windows.Forms.Label();
-            this.AcumuladoTextBox = new System.Windows.Forms.TextBox();
             this.GuardarButton = new System.Windows.Forms.Button();
-            this.ProyectoFinalTextBox = new System.Windows.Forms.TextBox();
-            this.ProyectoFinalLabel = new System.Windows.Forms.Label();
-            this.AsistenciaTextBox = new System.Windows.Forms.TextBox();
-            this.AsistenciaLabel = new System.Windows.Forms.Label();
-            this.PracticaTextBox = new System.Windows.Forms.TextBox();
-            this.PracticaLabel = new System.Windows.Forms.Label();
-            this.SegundoParcialTextBox = new System.Windows.Forms.TextBox();
-            this.SegundoParcialLabel = new System.Windows.Forms.Label();
             this.PrimerPacialTextBox = new System.Windows.Forms.TextBox();
             this.PrimerPacialLabel = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
@@ -117,101 +107,20 @@ namespace Sistema_Academico.UI.Registros
             this.IdEstudianteTextBox.Size = new System.Drawing.Size(100, 23);
             this.IdEstudianteTextBox.TabIndex = 3;
             // 
-            // AcumuladoLabel
-            // 
-            this.AcumuladoLabel.AutoSize = true;
-            this.AcumuladoLabel.Location = new System.Drawing.Point(260, 175);
-            this.AcumuladoLabel.Name = "AcumuladoLabel";
-            this.AcumuladoLabel.Size = new System.Drawing.Size(69, 15);
-            this.AcumuladoLabel.TabIndex = 36;
-            this.AcumuladoLabel.Text = "Acumulado";
-            // 
-            // AcumuladoTextBox
-            // 
-            this.AcumuladoTextBox.Location = new System.Drawing.Point(335, 172);
-            this.AcumuladoTextBox.Name = "AcumuladoTextBox";
-            this.AcumuladoTextBox.ReadOnly = true;
-            this.AcumuladoTextBox.Size = new System.Drawing.Size(151, 23);
-            this.AcumuladoTextBox.TabIndex = 35;
-            // 
             // GuardarButton
             // 
-            this.GuardarButton.Location = new System.Drawing.Point(5, 206);
+            this.GuardarButton.Location = new System.Drawing.Point(5, 133);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(480, 39);
             this.GuardarButton.TabIndex = 34;
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.UseVisualStyleBackColor = true;
             // 
-            // ProyectoFinalTextBox
-            // 
-            this.ProyectoFinalTextBox.Location = new System.Drawing.Point(101, 172);
-            this.ProyectoFinalTextBox.Name = "ProyectoFinalTextBox";
-            this.ProyectoFinalTextBox.Size = new System.Drawing.Size(151, 23);
-            this.ProyectoFinalTextBox.TabIndex = 33;
-            // 
-            // ProyectoFinalLabel
-            // 
-            this.ProyectoFinalLabel.AutoSize = true;
-            this.ProyectoFinalLabel.Location = new System.Drawing.Point(5, 175);
-            this.ProyectoFinalLabel.Name = "ProyectoFinalLabel";
-            this.ProyectoFinalLabel.Size = new System.Drawing.Size(82, 15);
-            this.ProyectoFinalLabel.TabIndex = 32;
-            this.ProyectoFinalLabel.Text = "Proyecto Final";
-            // 
-            // AsistenciaTextBox
-            // 
-            this.AsistenciaTextBox.Location = new System.Drawing.Point(334, 138);
-            this.AsistenciaTextBox.Name = "AsistenciaTextBox";
-            this.AsistenciaTextBox.Size = new System.Drawing.Size(151, 23);
-            this.AsistenciaTextBox.TabIndex = 31;
-            // 
-            // AsistenciaLabel
-            // 
-            this.AsistenciaLabel.AutoSize = true;
-            this.AsistenciaLabel.Location = new System.Drawing.Point(260, 141);
-            this.AsistenciaLabel.Name = "AsistenciaLabel";
-            this.AsistenciaLabel.Size = new System.Drawing.Size(60, 15);
-            this.AsistenciaLabel.TabIndex = 30;
-            this.AsistenciaLabel.Text = "Asistencia";
-            // 
-            // PracticaTextBox
-            // 
-            this.PracticaTextBox.Location = new System.Drawing.Point(334, 104);
-            this.PracticaTextBox.Name = "PracticaTextBox";
-            this.PracticaTextBox.Size = new System.Drawing.Size(151, 23);
-            this.PracticaTextBox.TabIndex = 29;
-            // 
-            // PracticaLabel
-            // 
-            this.PracticaLabel.AutoSize = true;
-            this.PracticaLabel.Location = new System.Drawing.Point(260, 107);
-            this.PracticaLabel.Name = "PracticaLabel";
-            this.PracticaLabel.Size = new System.Drawing.Size(54, 15);
-            this.PracticaLabel.TabIndex = 28;
-            this.PracticaLabel.Text = "Prácticas";
-            // 
-            // SegundoParcialTextBox
-            // 
-            this.SegundoParcialTextBox.Location = new System.Drawing.Point(101, 138);
-            this.SegundoParcialTextBox.Name = "SegundoParcialTextBox";
-            this.SegundoParcialTextBox.Size = new System.Drawing.Size(151, 23);
-            this.SegundoParcialTextBox.TabIndex = 27;
-            // 
-            // SegundoParcialLabel
-            // 
-            this.SegundoParcialLabel.AutoSize = true;
-            this.SegundoParcialLabel.Location = new System.Drawing.Point(5, 141);
-            this.SegundoParcialLabel.Name = "SegundoParcialLabel";
-            this.SegundoParcialLabel.Size = new System.Drawing.Size(92, 15);
-            this.SegundoParcialLabel.TabIndex = 26;
-            this.SegundoParcialLabel.Text = "Segundo Parcial";
-            // 
             // PrimerPacialTextBox
             // 
-            this.PrimerPacialTextBox.Location = new System.Drawing.Point(101, 104);
+            this.PrimerPacialTextBox.Location = new System.Drawing.Point(74, 104);
             this.PrimerPacialTextBox.Name = "PrimerPacialTextBox";
-            this.PrimerPacialTextBox.Size = new System.Drawing.Size(151, 23);
+            this.PrimerPacialTextBox.Size = new System.Drawing.Size(411, 23);
             this.PrimerPacialTextBox.TabIndex = 25;
             // 
             // PrimerPacialLabel
@@ -219,26 +128,16 @@ namespace Sistema_Academico.UI.Registros
             this.PrimerPacialLabel.AutoSize = true;
             this.PrimerPacialLabel.Location = new System.Drawing.Point(5, 107);
             this.PrimerPacialLabel.Name = "PrimerPacialLabel";
-            this.PrimerPacialLabel.Size = new System.Drawing.Size(80, 15);
+            this.PrimerPacialLabel.Size = new System.Drawing.Size(61, 15);
             this.PrimerPacialLabel.TabIndex = 24;
-            this.PrimerPacialLabel.Text = "Primer Parcial";
+            this.PrimerPacialLabel.Text = "Nota Final";
             // 
             // rCalificaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(490, 250);
-            this.Controls.Add(this.AcumuladoLabel);
-            this.Controls.Add(this.AcumuladoTextBox);
+            this.ClientSize = new System.Drawing.Size(490, 176);
             this.Controls.Add(this.GuardarButton);
-            this.Controls.Add(this.ProyectoFinalTextBox);
-            this.Controls.Add(this.ProyectoFinalLabel);
-            this.Controls.Add(this.AsistenciaTextBox);
-            this.Controls.Add(this.AsistenciaLabel);
-            this.Controls.Add(this.PracticaTextBox);
-            this.Controls.Add(this.PracticaLabel);
-            this.Controls.Add(this.SegundoParcialTextBox);
-            this.Controls.Add(this.SegundoParcialLabel);
             this.Controls.Add(this.PrimerPacialTextBox);
             this.Controls.Add(this.PrimerPacialLabel);
             this.Controls.Add(this.groupBox1);
@@ -260,17 +159,7 @@ namespace Sistema_Academico.UI.Registros
         private System.Windows.Forms.Label MatriculaLabel;
         private System.Windows.Forms.Label IdEstudianteLabel;
         private System.Windows.Forms.TextBox IdEstudianteTextBox;
-        private System.Windows.Forms.Label AcumuladoLabel;
-        private System.Windows.Forms.TextBox AcumuladoTextBox;
         private System.Windows.Forms.Button GuardarButton;
-        private System.Windows.Forms.TextBox ProyectoFinalTextBox;
-        private System.Windows.Forms.Label ProyectoFinalLabel;
-        private System.Windows.Forms.TextBox AsistenciaTextBox;
-        private System.Windows.Forms.Label AsistenciaLabel;
-        private System.Windows.Forms.TextBox PracticaTextBox;
-        private System.Windows.Forms.Label PracticaLabel;
-        private System.Windows.Forms.TextBox SegundoParcialTextBox;
-        private System.Windows.Forms.Label SegundoParcialLabel;
         private System.Windows.Forms.TextBox PrimerPacialTextBox;
         private System.Windows.Forms.Label PrimerPacialLabel;
     }

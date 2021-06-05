@@ -189,7 +189,7 @@ namespace Sistema_Academico.UI.Registros
             // 
             // HorasPracticastextBox
             // 
-            this.HorasPracticastextBox.Location = new System.Drawing.Point(123, 63);
+            this.HorasPracticastextBox.Location = new System.Drawing.Point(122, 60);
             this.HorasPracticastextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.HorasPracticastextBox.Name = "HorasPracticastextBox";
             this.HorasPracticastextBox.Size = new System.Drawing.Size(136, 23);

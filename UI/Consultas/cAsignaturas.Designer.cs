@@ -170,7 +170,7 @@ namespace Sistema_Academico.UI.Consultas
             this.Controls.Add(this.FiltroLabel);
             this.Controls.Add(this.UsarFiltroFechascheckBox);
             this.Name = "cAsignaturas";
-            this.Text = "Consulta de Calificaciones";
+            this.Text = "Consulta de Carreras";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConsultaAsignaturaDataGridView)).EndInit();
