@@ -1,7 +1,7 @@
 ﻿
 namespace Sistema_Academico.UI.Consultas
 {
-    partial class cCarreras
+    partial class cGrupos
     {
         /// <summary>
         /// Required designer variable.
@@ -56,10 +56,10 @@ namespace Sistema_Academico.UI.Consultas
             this.panel1.Controls.Add(this.HastaLabel);
             this.panel1.Controls.Add(this.DesdeDateTimePicker);
             this.panel1.Controls.Add(this.DesdeLabel);
-            this.panel1.Location = new System.Drawing.Point(154, 12);
+            this.panel1.Location = new System.Drawing.Point(152, 11);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(318, 43);
-            this.panel1.TabIndex = 44;
+            this.panel1.TabIndex = 28;
             // 
             // HastaDateTimePicker
             // 
@@ -99,10 +99,10 @@ namespace Sistema_Academico.UI.Consultas
             // 
             // BuscarButton
             // 
-            this.BuscarButton.Location = new System.Drawing.Point(581, 11);
+            this.BuscarButton.Location = new System.Drawing.Point(579, 10);
             this.BuscarButton.Name = "BuscarButton";
             this.BuscarButton.Size = new System.Drawing.Size(88, 75);
-            this.BuscarButton.TabIndex = 43;
+            this.BuscarButton.TabIndex = 27;
             this.BuscarButton.Text = "Buscar";
             this.BuscarButton.UseVisualStyleBackColor = true;
             this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
@@ -112,10 +112,10 @@ namespace Sistema_Academico.UI.Consultas
             this.EsActivoGroupBox.Controls.Add(this.InactivosRadioButton);
             this.EsActivoGroupBox.Controls.Add(this.ActivosRadioButton);
             this.EsActivoGroupBox.Controls.Add(this.TodosRadioButton);
-            this.EsActivoGroupBox.Location = new System.Drawing.Point(477, 3);
+            this.EsActivoGroupBox.Location = new System.Drawing.Point(475, 2);
             this.EsActivoGroupBox.Name = "EsActivoGroupBox";
             this.EsActivoGroupBox.Size = new System.Drawing.Size(98, 83);
-            this.EsActivoGroupBox.TabIndex = 42;
+            this.EsActivoGroupBox.TabIndex = 26;
             this.EsActivoGroupBox.TabStop = false;
             this.EsActivoGroupBox.Text = "Es Activo?";
             // 
@@ -153,11 +153,11 @@ namespace Sistema_Academico.UI.Consultas
             // 
             // CriterioTextBox
             // 
-            this.CriterioTextBox.Location = new System.Drawing.Point(154, 59);
+            this.CriterioTextBox.Location = new System.Drawing.Point(152, 58);
             this.CriterioTextBox.Multiline = true;
             this.CriterioTextBox.Name = "CriterioTextBox";
             this.CriterioTextBox.Size = new System.Drawing.Size(318, 26);
-            this.CriterioTextBox.TabIndex = 41;
+            this.CriterioTextBox.TabIndex = 25;
             // 
             // ConsultaAsignaturaDataGridView
             // 
@@ -165,12 +165,12 @@ namespace Sistema_Academico.UI.Consultas
             this.ConsultaAsignaturaDataGridView.AllowUserToDeleteRows = false;
             this.ConsultaAsignaturaDataGridView.AllowUserToOrderColumns = true;
             this.ConsultaAsignaturaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ConsultaAsignaturaDataGridView.Location = new System.Drawing.Point(4, 93);
+            this.ConsultaAsignaturaDataGridView.Location = new System.Drawing.Point(2, 92);
             this.ConsultaAsignaturaDataGridView.Name = "ConsultaAsignaturaDataGridView";
             this.ConsultaAsignaturaDataGridView.ReadOnly = true;
             this.ConsultaAsignaturaDataGridView.RowTemplate.Height = 25;
             this.ConsultaAsignaturaDataGridView.Size = new System.Drawing.Size(665, 251);
-            this.ConsultaAsignaturaDataGridView.TabIndex = 40;
+            this.ConsultaAsignaturaDataGridView.TabIndex = 24;
             // 
             // FiltroComboBox
             // 
@@ -178,46 +178,40 @@ namespace Sistema_Academico.UI.Consultas
             this.FiltroComboBox.FormattingEnabled = true;
             this.FiltroComboBox.Items.AddRange(new object[] {
             "Todo",
-            "Carrera ID",
+            "AsignaturaId",
             "Nombre",
+            "Descripción",
             "Credito",
-            "Total Asignado",
-            "Horas Pensum",
-            "Horas Practicas",
-            "Horas teoricas",
-            "Duracion",
-            "Semestre Academico",
-            "Total Asignaturas Electivas",
-            "Titulo Otorgado"});
-            this.FiltroComboBox.Location = new System.Drawing.Point(44, 63);
+            "Grupo"});
+            this.FiltroComboBox.Location = new System.Drawing.Point(42, 62);
             this.FiltroComboBox.Name = "FiltroComboBox";
             this.FiltroComboBox.Size = new System.Drawing.Size(104, 23);
-            this.FiltroComboBox.TabIndex = 39;
+            this.FiltroComboBox.TabIndex = 23;
             // 
             // FiltroLabel
             // 
             this.FiltroLabel.AutoSize = true;
-            this.FiltroLabel.Location = new System.Drawing.Point(4, 66);
+            this.FiltroLabel.Location = new System.Drawing.Point(2, 65);
             this.FiltroLabel.Name = "FiltroLabel";
             this.FiltroLabel.Size = new System.Drawing.Size(34, 15);
-            this.FiltroLabel.TabIndex = 38;
+            this.FiltroLabel.TabIndex = 22;
             this.FiltroLabel.Text = "Filtro";
             // 
             // UsarFiltroFechascheckBox
             // 
             this.UsarFiltroFechascheckBox.AutoSize = true;
-            this.UsarFiltroFechascheckBox.Location = new System.Drawing.Point(4, 27);
+            this.UsarFiltroFechascheckBox.Location = new System.Drawing.Point(2, 26);
             this.UsarFiltroFechascheckBox.Name = "UsarFiltroFechascheckBox";
             this.UsarFiltroFechascheckBox.Size = new System.Drawing.Size(134, 19);
-            this.UsarFiltroFechascheckBox.TabIndex = 37;
+            this.UsarFiltroFechascheckBox.TabIndex = 21;
             this.UsarFiltroFechascheckBox.Text = "Usar Filtro de Fechas";
             this.UsarFiltroFechascheckBox.UseVisualStyleBackColor = true;
             // 
-            // cCarreras
+            // cGrupos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(671, 346);
+            this.ClientSize = new System.Drawing.Size(672, 346);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.EsActivoGroupBox);
@@ -226,8 +220,8 @@ namespace Sistema_Academico.UI.Consultas
             this.Controls.Add(this.FiltroComboBox);
             this.Controls.Add(this.FiltroLabel);
             this.Controls.Add(this.UsarFiltroFechascheckBox);
-            this.Name = "cCarreras";
-            this.Text = "cCarreras";
+            this.Name = "cGrupos";
+            this.Text = "cGrupos";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.EsActivoGroupBox.ResumeLayout(false);

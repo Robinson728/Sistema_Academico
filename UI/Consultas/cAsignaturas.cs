@@ -18,8 +18,7 @@ namespace Sistema_Academico.UI.Consultas
         {
             InitializeComponent();
         }
-
-        private void BuscarButton_Click(object sender, EventArgs e)
+        private void BuscarButton_Click_1(object sender, EventArgs e)
         {
             var lista = new List<Asignaturas>();
 

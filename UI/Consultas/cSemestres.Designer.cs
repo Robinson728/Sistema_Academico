@@ -1,7 +1,7 @@
 ﻿
 namespace Sistema_Academico.UI.Consultas
 {
-    partial class cCarreras
+    partial class cSemestres
     {
         /// <summary>
         /// Required designer variable.
@@ -177,18 +177,8 @@ namespace Sistema_Academico.UI.Consultas
             this.FiltroComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.FiltroComboBox.FormattingEnabled = true;
             this.FiltroComboBox.Items.AddRange(new object[] {
-            "Todo",
-            "Carrera ID",
-            "Nombre",
-            "Credito",
-            "Total Asignado",
-            "Horas Pensum",
-            "Horas Practicas",
-            "Horas teoricas",
-            "Duracion",
-            "Semestre Academico",
-            "Total Asignaturas Electivas",
-            "Titulo Otorgado"});
+            "Semestres ID",
+            "Nombre "});
             this.FiltroComboBox.Location = new System.Drawing.Point(44, 63);
             this.FiltroComboBox.Name = "FiltroComboBox";
             this.FiltroComboBox.Size = new System.Drawing.Size(104, 23);
@@ -213,11 +203,11 @@ namespace Sistema_Academico.UI.Consultas
             this.UsarFiltroFechascheckBox.Text = "Usar Filtro de Fechas";
             this.UsarFiltroFechascheckBox.UseVisualStyleBackColor = true;
             // 
-            // cCarreras
+            // cSemestres
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(671, 346);
+            this.ClientSize = new System.Drawing.Size(673, 346);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.EsActivoGroupBox);
@@ -226,8 +216,8 @@ namespace Sistema_Academico.UI.Consultas
             this.Controls.Add(this.FiltroComboBox);
             this.Controls.Add(this.FiltroLabel);
             this.Controls.Add(this.UsarFiltroFechascheckBox);
-            this.Name = "cCarreras";
-            this.Text = "cCarreras";
+            this.Name = "cSemestres";
+            this.Text = "Semestres";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.EsActivoGroupBox.ResumeLayout(false);
