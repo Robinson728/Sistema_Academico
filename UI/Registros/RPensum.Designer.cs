@@ -62,9 +62,9 @@ namespace Sistema_Academico.UI.Registros
             this.EliminarButton = new System.Windows.Forms.Button();
             this.GuardarButton = new System.Windows.Forms.Button();
             this.NuevoButton = new System.Windows.Forms.Button();
-            this.BuscarButton = new System.Windows.Forms.Button();
             this.SemestreTextBox = new System.Windows.Forms.TextBox();
             this.ClaveTextBox = new System.Windows.Forms.TextBox();
+            this.BuscarButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PensumDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IdNumericUpDown)).BeginInit();
@@ -336,7 +336,7 @@ namespace Sistema_Academico.UI.Registros
             // EliminarButton
             // 
             this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.EliminarButton.Location = new System.Drawing.Point(374, 354);
+            this.EliminarButton.Location = new System.Drawing.Point(338, 354);
             this.EliminarButton.Margin = new System.Windows.Forms.Padding(2);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(93, 42);
@@ -349,7 +349,7 @@ namespace Sistema_Academico.UI.Registros
             // GuardarButton
             // 
             this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.GuardarButton.Location = new System.Drawing.Point(277, 354);
+            this.GuardarButton.Location = new System.Drawing.Point(241, 354);
             this.GuardarButton.Margin = new System.Windows.Forms.Padding(2);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(93, 42);
@@ -362,7 +362,7 @@ namespace Sistema_Academico.UI.Registros
             // NuevoButton
             // 
             this.NuevoButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.NuevoButton.Location = new System.Drawing.Point(180, 354);
+            this.NuevoButton.Location = new System.Drawing.Point(144, 354);
             this.NuevoButton.Margin = new System.Windows.Forms.Padding(2);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(93, 42);
@@ -371,17 +371,6 @@ namespace Sistema_Academico.UI.Registros
             this.NuevoButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.NuevoButton.UseVisualStyleBackColor = true;
             this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
-            // 
-            // BuscarButton
-            // 
-            this.BuscarButton.Location = new System.Drawing.Point(172, 5);
-            this.BuscarButton.Margin = new System.Windows.Forms.Padding(2);
-            this.BuscarButton.Name = "BuscarButton";
-            this.BuscarButton.Size = new System.Drawing.Size(55, 23);
-            this.BuscarButton.TabIndex = 76;
-            this.BuscarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BuscarButton.UseVisualStyleBackColor = true;
-            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
             // SemestreTextBox
             // 
@@ -399,14 +388,25 @@ namespace Sistema_Academico.UI.Registros
             this.ClaveTextBox.Size = new System.Drawing.Size(242, 23);
             this.ClaveTextBox.TabIndex = 78;
             // 
+            // BuscarButton
+            // 
+            this.BuscarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BuscarButton.Location = new System.Drawing.Point(435, 354);
+            this.BuscarButton.Name = "BuscarButton";
+            this.BuscarButton.Size = new System.Drawing.Size(93, 42);
+            this.BuscarButton.TabIndex = 79;
+            this.BuscarButton.Text = "Buscar";
+            this.BuscarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BuscarButton.UseVisualStyleBackColor = true;
+            // 
             // RPensum
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(672, 400);
+            this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.ClaveTextBox);
             this.Controls.Add(this.SemestreTextBox);
-            this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.EliminarButton);
             this.Controls.Add(this.GuardarButton);
             this.Controls.Add(this.NuevoButton);
@@ -475,7 +475,7 @@ namespace Sistema_Academico.UI.Registros
         private System.Windows.Forms.DataGridViewTextBoxColumn CR;
         private System.Windows.Forms.DataGridViewTextBoxColumn PREREQUISITOS;
         private System.Windows.Forms.TextBox SemestreTextBox;
-        private System.Windows.Forms.Button BuscarButton;
         private System.Windows.Forms.TextBox ClaveTextBox;
+        private System.Windows.Forms.Button BuscarButton;
     }
 }

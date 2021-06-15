@@ -12,8 +12,8 @@ namespace Sistema_Academico.Models
         [Key]
         public int ProfesorId { get; set; }
         public string Nombre { get; set; }
-        public int Cedula { get; set; }
-        public int Telefono { get; set; }
+        public string Cedula { get; set; }
+        public string Telefono { get; set; }
         public string Direccion { get; set; }
         public string Email { get; set; }
         public string Clave { get; set; }

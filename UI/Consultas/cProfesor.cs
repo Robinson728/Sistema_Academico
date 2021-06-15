@@ -21,7 +21,7 @@ namespace Sistema_Academico.UI.Consultas
 
         private void BuscarButton_Click(object sender, EventArgs e)
         {
-            var lista = new List<Profesores>();
+          /*  var lista = new List<Profesores>();
 
             if (!string.IsNullOrWhiteSpace(FiltroComboBox.Text))
             {
@@ -53,7 +53,7 @@ namespace Sistema_Academico.UI.Consultas
                 }
             }
             else
-                lista = ProfesoresBLL.GetList(r => true);
+                lista = ProfesoresBLL.GetList(r => true);*/
         }
     }
 }

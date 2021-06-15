@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Sistema_Academico.Models;
 using Sistema_Academico.BLL;
+using Sistema_Academico.UI.Consultas;
 
 namespace Sistema_Academico.UI.Registros
 {
@@ -35,9 +36,8 @@ namespace Sistema_Academico.UI.Registros
             AsignaturaIdNumericUpDown.Value = asignaturas.AsignaturaId;
             NombreTextBox.Text = asignaturas.Nombre;
             DescripcionTextBox.Text = asignaturas.Descripcion;
-            SemestreComboBox.Text = asignaturas.Semestre;
-            asignaturas.Creditos = Convert.ToInt32(CreditosTextBox.Text);
-            asignaturas.Grupo = Convert.ToInt32(GrupoTextBox.Text);
+            /*asignaturas.Creditos = Convert.ToInt32(CreditosTextBox.Text);
+            asignaturas.Grupo = Convert.ToInt32(GrupoTextBox.Text);*/
             HoraEntradaDateTimePicker.Value = asignaturas.HoraInicio;
             HoraSalidaDateTimePicker.Value = asignaturas.HoraFinal;
         }
@@ -49,7 +49,6 @@ namespace Sistema_Academico.UI.Registros
             asignaturas.AsignaturaId = (int)AsignaturaIdNumericUpDown.Value;
             asignaturas.Nombre = NombreTextBox.Text;
             asignaturas.Descripcion = DescripcionTextBox.Text;
-            asignaturas.Semestre = SemestreComboBox.Text;
             asignaturas.Creditos = Convert.ToInt32(CreditosTextBox.Text);
             asignaturas.Grupo = Convert.ToInt32(GrupoTextBox.Text);
             asignaturas.HoraInicio = HoraEntradaDateTimePicker.Value;
@@ -74,12 +73,6 @@ namespace Sistema_Academico.UI.Registros
                 DescripcionTextBox.Focus();
                 paso = false;
             }
-            if (string.IsNullOrWhiteSpace(SemestreComboBox.Text))
-            {
-                ErrorProvider.SetError(SemestreComboBox, "Este campo no puede estar vacío");
-                SemestreComboBox.Focus();
-                paso = false;
-            }
             if (string.IsNullOrWhiteSpace(CreditosTextBox.Text))
             {
                 ErrorProvider.SetError(CreditosTextBox, "Este campo no puede estar vacío");
@@ -96,18 +89,11 @@ namespace Sistema_Academico.UI.Registros
             return paso;
         }
 
-        private void BuscarButton_Click(object sender, EventArgs e)
+        public void RecibirAsignatura(int id)
         {
-            Asignaturas asignatura = new Asignaturas();
-            int id;
-            int.TryParse(AsignaturaIdNumericUpDown.Text, out id);
+            Asignaturas asignaturas = AsignaturasBLL.Buscar(id);
 
-            asignatura = AsignaturasBLL.Buscar(id);
-
-            if (asignatura != null)
-                LlenaCampo(asignatura);
-            else
-                MessageBox.Show("Transacción Fallida!!", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            LlenaCampo(asignaturas);
         }
 
         private void NuevoButton_Click(object sender, EventArgs e)
@@ -146,6 +132,14 @@ namespace Sistema_Academico.UI.Registros
                 MessageBox.Show("Transacción Exitosa!!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else
                 ErrorProvider.SetError(AsignaturaIdNumericUpDown, "Id no existente");
+        }
+
+        private void BuscarButton_Click_1(object sender, EventArgs e)
+        {
+            ErrorProvider.Clear();
+            cAsignaturas asignaturas = new cAsignaturas();
+            asignaturas.Show();
+            Close();
         }
     }
 }

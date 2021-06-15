@@ -35,8 +35,6 @@ namespace Sistema_Academico.UI.Registros
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SemestreLabel = new System.Windows.Forms.Label();
-            this.SemestreComboBox = new System.Windows.Forms.ComboBox();
             this.GrupoTextBox = new System.Windows.Forms.TextBox();
             this.CreditosTextBox = new System.Windows.Forms.TextBox();
             this.GrupoLabel = new System.Windows.Forms.Label();
@@ -48,7 +46,6 @@ namespace Sistema_Academico.UI.Registros
             this.HoraSalidaLabel = new System.Windows.Forms.Label();
             this.HoraSLabel = new System.Windows.Forms.Label();
             this.HoraELabel = new System.Windows.Forms.Label();
-            this.BuscarButton = new System.Windows.Forms.Button();
             this.DescripcionTextBox = new System.Windows.Forms.TextBox();
             this.NombreTextBox = new System.Windows.Forms.TextBox();
             this.AsignaturaIdNumericUpDown = new System.Windows.Forms.NumericUpDown();
@@ -59,6 +56,7 @@ namespace Sistema_Academico.UI.Registros
             this.NuevoButton = new System.Windows.Forms.Button();
             this.GuardarButton = new System.Windows.Forms.Button();
             this.ErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.BuscarButton = new System.Windows.Forms.Button();
             this.AsignaturaDetalleGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EstudiantesDataGridView)).BeginInit();
             this.HorarioGroupBox.SuspendLayout();
@@ -112,24 +110,6 @@ namespace Sistema_Academico.UI.Registros
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
             this.Column3.Width = 170;
-            // 
-            // SemestreLabel
-            // 
-            this.SemestreLabel.AutoSize = true;
-            this.SemestreLabel.Location = new System.Drawing.Point(405, 38);
-            this.SemestreLabel.Name = "SemestreLabel";
-            this.SemestreLabel.Size = new System.Drawing.Size(55, 15);
-            this.SemestreLabel.TabIndex = 47;
-            this.SemestreLabel.Text = "Semestre";
-            // 
-            // SemestreComboBox
-            // 
-            this.SemestreComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.SemestreComboBox.FormattingEnabled = true;
-            this.SemestreComboBox.Location = new System.Drawing.Point(466, 35);
-            this.SemestreComboBox.Name = "SemestreComboBox";
-            this.SemestreComboBox.Size = new System.Drawing.Size(113, 23);
-            this.SemestreComboBox.TabIndex = 46;
             // 
             // GrupoTextBox
             // 
@@ -231,15 +211,6 @@ namespace Sistema_Academico.UI.Registros
             this.HoraELabel.TabIndex = 11;
             this.HoraELabel.Text = "Hora";
             // 
-            // BuscarButton
-            // 
-            this.BuscarButton.Location = new System.Drawing.Point(154, 6);
-            this.BuscarButton.Name = "BuscarButton";
-            this.BuscarButton.Size = new System.Drawing.Size(61, 23);
-            this.BuscarButton.TabIndex = 40;
-            this.BuscarButton.UseVisualStyleBackColor = true;
-            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
-            // 
             // DescripcionTextBox
             // 
             this.DescripcionTextBox.Location = new System.Drawing.Point(86, 64);
@@ -252,7 +223,7 @@ namespace Sistema_Academico.UI.Registros
             // 
             this.NombreTextBox.Location = new System.Drawing.Point(86, 35);
             this.NombreTextBox.Name = "NombreTextBox";
-            this.NombreTextBox.Size = new System.Drawing.Size(317, 23);
+            this.NombreTextBox.Size = new System.Drawing.Size(493, 23);
             this.NombreTextBox.TabIndex = 38;
             // 
             // AsignaturaIdNumericUpDown
@@ -292,7 +263,7 @@ namespace Sistema_Academico.UI.Registros
             // EliminarButton
             // 
             this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.EliminarButton.Location = new System.Drawing.Point(345, 442);
+            this.EliminarButton.Location = new System.Drawing.Point(295, 442);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(93, 42);
             this.EliminarButton.TabIndex = 51;
@@ -304,7 +275,7 @@ namespace Sistema_Academico.UI.Registros
             // NuevoButton
             // 
             this.NuevoButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.NuevoButton.Location = new System.Drawing.Point(147, 442);
+            this.NuevoButton.Location = new System.Drawing.Point(97, 442);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(93, 42);
             this.NuevoButton.TabIndex = 50;
@@ -316,7 +287,7 @@ namespace Sistema_Academico.UI.Registros
             // GuardarButton
             // 
             this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.GuardarButton.Location = new System.Drawing.Point(246, 442);
+            this.GuardarButton.Location = new System.Drawing.Point(196, 442);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(93, 42);
             this.GuardarButton.TabIndex = 49;
@@ -329,23 +300,33 @@ namespace Sistema_Academico.UI.Registros
             // 
             this.ErrorProvider.ContainerControl = this;
             // 
+            // BuscarButton
+            // 
+            this.BuscarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BuscarButton.Location = new System.Drawing.Point(394, 442);
+            this.BuscarButton.Name = "BuscarButton";
+            this.BuscarButton.Size = new System.Drawing.Size(93, 42);
+            this.BuscarButton.TabIndex = 52;
+            this.BuscarButton.Text = "Buscar";
+            this.BuscarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BuscarButton.UseVisualStyleBackColor = true;
+            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click_1);
+            // 
             // rAsignaturas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 489);
+            this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.EliminarButton);
             this.Controls.Add(this.NuevoButton);
             this.Controls.Add(this.GuardarButton);
             this.Controls.Add(this.AsignaturaDetalleGroupBox);
-            this.Controls.Add(this.SemestreLabel);
-            this.Controls.Add(this.SemestreComboBox);
             this.Controls.Add(this.GrupoTextBox);
             this.Controls.Add(this.CreditosTextBox);
             this.Controls.Add(this.GrupoLabel);
             this.Controls.Add(this.CreditosLabel);
             this.Controls.Add(this.HorarioGroupBox);
-            this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.DescripcionTextBox);
             this.Controls.Add(this.NombreTextBox);
             this.Controls.Add(this.AsignaturaIdNumericUpDown);
@@ -369,8 +350,6 @@ namespace Sistema_Academico.UI.Registros
 
         private System.Windows.Forms.GroupBox AsignaturaDetalleGroupBox;
         private System.Windows.Forms.DataGridView EstudiantesDataGridView;
-        private System.Windows.Forms.Label SemestreLabel;
-        private System.Windows.Forms.ComboBox SemestreComboBox;
         private System.Windows.Forms.TextBox GrupoTextBox;
         private System.Windows.Forms.TextBox CreditosTextBox;
         private System.Windows.Forms.Label GrupoLabel;
@@ -382,7 +361,6 @@ namespace Sistema_Academico.UI.Registros
         private System.Windows.Forms.Label HoraSalidaLabel;
         private System.Windows.Forms.Label HoraSLabel;
         private System.Windows.Forms.Label HoraELabel;
-        private System.Windows.Forms.Button BuscarButton;
         private System.Windows.Forms.TextBox DescripcionTextBox;
         private System.Windows.Forms.TextBox NombreTextBox;
         private System.Windows.Forms.NumericUpDown AsignaturaIdNumericUpDown;
@@ -396,5 +374,6 @@ namespace Sistema_Academico.UI.Registros
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.ErrorProvider ErrorProvider;
+        private System.Windows.Forms.Button BuscarButton;
     }
 }

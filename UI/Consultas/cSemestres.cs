@@ -21,7 +21,7 @@ namespace Sistema_Academico.UI.Consultas
 
         private void BuscarButton_Click(object sender, EventArgs e)
         {
-            var lista = new List<Semestres>();
+            /*var lista = new List<Semestres>();
 
             if (!string.IsNullOrWhiteSpace(FiltroComboBox.Text))
             {
@@ -38,7 +38,7 @@ namespace Sistema_Academico.UI.Consultas
                 }
             }
             else
-                lista = SemestresBLL.GetList(r => true);
+                lista = SemestresBLL.GetList(r => true);*/
         }
     }
 }

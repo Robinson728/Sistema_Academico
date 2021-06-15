@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Sistema_Academico.BLL;
 using Sistema_Academico.Models;
+using Sistema_Academico.UI.Registros;
 
 namespace Sistema_Academico.UI.Consultas
 {
@@ -18,38 +19,68 @@ namespace Sistema_Academico.UI.Consultas
         {
             InitializeComponent();
         }
-        private void BuscarButton_Click_1(object sender, EventArgs e)
+
+        private void Limpiar()
+        {
+            IdTextBox.Clear();
+            NombreTextBox.Clear();
+            DescripcionTextBox.Clear();
+            CreditosTextBox.Clear();
+            GrupoTextBox.Clear();
+            HorasInicioTextBox.Clear();
+            HorasFinTextBox.Clear();
+        }
+
+        private void BuscarButton_Click(object sender, EventArgs e)
         {
             var lista = new List<Asignaturas>();
 
-            if (!string.IsNullOrWhiteSpace(FiltroComboBox.Text))
+            if((IdTextBox.Text == string.Empty) && (NombreTextBox.Text==string.Empty) && (DescripcionTextBox.Text==string.Empty)
+                    && (SemestreTextBox.Text==string.Empty) && (CreditosTextBox.Text==string.Empty) && (GrupoTextBox.Text==string.Empty)
+                        && (HorasInicioTextBox.Text==string.Empty) && (HorasFinTextBox.Text==string.Empty))
             {
-                switch (FiltroComboBox.SelectedIndex)
-                {
-                    case 0: //AsignaturaId
-                        lista = AsignaturasBLL.GetList(r => r.AsignaturaId == Conversiones.ToInt(CriterioTextBox.Text));
-                        break;
-                    case 1: //Nombre
-                        lista = AsignaturasBLL.GetList(r => r.Nombre.Contains(CriterioTextBox.Text));
-                        break;
-                    case 2: //Descripcion
-                        lista = AsignaturasBLL.GetList(r => r.Descripcion.Contains(CriterioTextBox.Text));
-                        break;
-                    case 3: //Semestre
-                        lista = AsignaturasBLL.GetList(r => r.Semestre.Contains(CriterioTextBox.Text));
-                        break;
-                    case 4: //Creditos
-                        lista = AsignaturasBLL.GetList(r => r.Creditos == Conversiones.ToInt(CriterioTextBox.Text));
-                        break;
-                    case 5: //Grupo
-                        lista = AsignaturasBLL.GetList(r => r.Grupo == Conversiones.ToInt(CriterioTextBox.Text));
-                        break;
-                    default:
-                        break;
-                }
-            }
-            else
                 lista = AsignaturasBLL.GetList(r => true);
+            }
+
+            if (IdTextBox.Text != string.Empty)
+                lista = AsignaturasBLL.GetList(r => r.AsignaturaId == Conversiones.ToInt(IdTextBox.Text));
+
+            if (NombreTextBox.Text != string.Empty)
+                lista = AsignaturasBLL.GetList(r => r.Nombre.Contains(NombreTextBox.Text));
+
+            if (DescripcionTextBox.Text != string.Empty)
+                lista = AsignaturasBLL.GetList(r => r.Descripcion.Contains(DescripcionTextBox.Text));
+
+            if (CreditosTextBox.Text != string.Empty)
+                lista = AsignaturasBLL.GetList(r => r.Creditos == Conversiones.ToInt(CreditosTextBox.Text));
+
+            if (GrupoTextBox.Text != string.Empty)
+                lista = AsignaturasBLL.GetList(r => r.Grupo == Conversiones.ToInt(GrupoTextBox.Text));
+
+            ConsultaAsignaturaDataGridView.DataSource = null;
+            ConsultaAsignaturaDataGridView.DataSource = lista;
+        }
+
+        private void NuevoButton_Click(object sender, EventArgs e)
+        {
+            Limpiar();
+        }
+
+        private void SeleccionarButton_Click(object sender, EventArgs e)
+        {
+            string id;
+
+            if(ConsultaAsignaturaDataGridView.CurrentRow == null)
+            {
+                MessageBox.Show("Seleccionar una Fila", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            id = ConsultaAsignaturaDataGridView.CurrentRow.Cells[0].Value.ToString();
+            rAsignaturas asignaturas = new rAsignaturas();
+            asignaturas.RecibirAsignatura(Conversiones.ToInt(id));
+            asignaturas.Show();
+            Close();
         }
     }
 }

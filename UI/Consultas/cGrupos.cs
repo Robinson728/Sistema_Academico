@@ -1,5 +1,6 @@
 ﻿using Sistema_Academico.BLL;
 using Sistema_Academico.Models;
+using Sistema_Academico.UI.Registros;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,38 +20,68 @@ namespace Sistema_Academico.UI.Consultas
             InitializeComponent();
         }
 
-        private void BuscarButton_Click(object sender, EventArgs e)
+        private void Limpiar()
+        {
+            IdTextBox.Clear();
+            AsignaturaTextBox.Clear();
+            ProfesorTextBox.Clear();
+            AulaTextBox.Clear();
+            NumeroGrupoTextBox.Clear();
+            CantidadEstudiantesTextBox.Clear();
+        }
+
+        private void BuscarButton_Click_1(object sender, EventArgs e)
         {
             var lista = new List<Grupos>();
 
-            if (!string.IsNullOrWhiteSpace(FiltroComboBox.Text))
+            if ((IdTextBox.Text == string.Empty) && (AsignaturaTextBox.Text == string.Empty) && (ProfesorTextBox.Text == string.Empty)
+                    && (AulaTextBox.Text == string.Empty) && (CantidadEstudiantesTextBox.Text == string.Empty) && (NumeroGrupoTextBox.Text == string.Empty))
             {
-                switch (FiltroComboBox.SelectedIndex)
-                {
-                    case 0: //GripoID
-                        lista = GruposBLL.GetList(r => r.GrupoId == Conversiones.ToInt(CriterioTextBox.Text));
-                        break;
-                    case 1: //Nombre asignatura
-                        lista = GruposBLL.GetList(r => r.Asignatura.Contains(CriterioTextBox.Text));
-                        break;
-                    case 2: //Nombre Porfesor
-                        lista = GruposBLL.GetList(r => r.Profesor.Contains(CriterioTextBox.Text));
-                        break;
-                    case 3: //Cantidad de estudiantes
-                        lista = GruposBLL.GetList(r => r.CantidadEstudiantes == Conversiones.ToInt(CriterioTextBox.Text));
-                        break;
-                    case 4: //Aula
-                        lista = GruposBLL.GetList(r => r.Aula.Contains(CriterioTextBox.Text));
-                        break;
-                    case 5: //Numero de Grupo
-                        lista = GruposBLL.GetList(r => r.NumeroGrupo == Conversiones.ToInt(CriterioTextBox.Text));
-                        break;
-                    default:
-                        break;
-                }
-            }
-            else
                 lista = GruposBLL.GetList(r => true);
+            }
+
+            if (IdTextBox.Text != string.Empty)
+                lista = GruposBLL.GetList(r => r.GrupoId == Conversiones.ToInt(IdTextBox.Text));
+
+            if (AsignaturaTextBox.Text != string.Empty)
+                lista = GruposBLL.GetList(r => r.Asignatura.Contains(AsignaturaTextBox.Text));
+
+            if (ProfesorTextBox.Text != string.Empty)
+                lista = GruposBLL.GetList(r => r.Profesor.Contains(ProfesorTextBox.Text));
+
+            if (AulaTextBox.Text != string.Empty)
+                lista = GruposBLL.GetList(r => r.Aula.Contains(AulaTextBox.Text));
+
+            if (NumeroGrupoTextBox.Text != string.Empty)
+                lista = GruposBLL.GetList(r => r.NumeroGrupo == Conversiones.ToInt(NumeroGrupoTextBox.Text));
+
+            if (CantidadEstudiantesTextBox.Text != string.Empty)
+                lista = GruposBLL.GetList(r => r.CantidadEstudiantes == Conversiones.ToInt(CantidadEstudiantesTextBox.Text));
+
+            ConsultaAsignaturaDataGridView.DataSource = null;
+            ConsultaAsignaturaDataGridView.DataSource = lista;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Limpiar();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string id;
+
+            if (ConsultaAsignaturaDataGridView.CurrentRow == null)
+            {
+                MessageBox.Show("Seleccionar una Fila", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            id = ConsultaAsignaturaDataGridView.CurrentRow.Cells[0].Value.ToString();
+            rGrupos grupos = new rGrupos();
+            grupos.RecibirGrupo(Conversiones.ToInt(id));
+            grupos.Show();
+            Close();
         }
     }
 }

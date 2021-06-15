@@ -38,12 +38,12 @@ namespace Sistema_Academico.UI.Registros
             this.FinalLabel = new System.Windows.Forms.Label();
             this.FinalDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.InicioLabel = new System.Windows.Forms.Label();
-            this.BuscarButton = new System.Windows.Forms.Button();
             this.NombreLabel = new System.Windows.Forms.Label();
             this.IdNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.NombreTextBox = new System.Windows.Forms.TextBox();
             this.IdLabel = new System.Windows.Forms.Label();
             this.ErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.PeriodoSemestreGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IdNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).BeginInit();
@@ -51,7 +51,7 @@ namespace Sistema_Academico.UI.Registros
             // 
             // EliminarButton
             // 
-            this.EliminarButton.Location = new System.Drawing.Point(248, 130);
+            this.EliminarButton.Location = new System.Drawing.Point(198, 130);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(93, 42);
             this.EliminarButton.TabIndex = 24;
@@ -62,7 +62,7 @@ namespace Sistema_Academico.UI.Registros
             // 
             // GuardarButton
             // 
-            this.GuardarButton.Location = new System.Drawing.Point(149, 130);
+            this.GuardarButton.Location = new System.Drawing.Point(101, 130);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(93, 42);
             this.GuardarButton.TabIndex = 23;
@@ -73,7 +73,7 @@ namespace Sistema_Academico.UI.Registros
             // 
             // NuevoButton
             // 
-            this.NuevoButton.Location = new System.Drawing.Point(50, 130);
+            this.NuevoButton.Location = new System.Drawing.Point(4, 130);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(93, 42);
             this.NuevoButton.TabIndex = 22;
@@ -131,15 +131,6 @@ namespace Sistema_Academico.UI.Registros
             this.InicioLabel.TabIndex = 9;
             this.InicioLabel.Text = "Inicio";
             // 
-            // BuscarButton
-            // 
-            this.BuscarButton.Location = new System.Drawing.Point(150, 5);
-            this.BuscarButton.Name = "BuscarButton";
-            this.BuscarButton.Size = new System.Drawing.Size(61, 23);
-            this.BuscarButton.TabIndex = 20;
-            this.BuscarButton.UseVisualStyleBackColor = true;
-            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
-            // 
             // NombreLabel
             // 
             this.NombreLabel.AutoSize = true;
@@ -176,16 +167,27 @@ namespace Sistema_Academico.UI.Registros
             // 
             this.ErrorProvider.ContainerControl = this;
             // 
+            // button1
+            // 
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.Location = new System.Drawing.Point(295, 130);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(93, 42);
+            this.button1.TabIndex = 53;
+            this.button1.Text = "Buscar";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // rSemestres
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(392, 177);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.EliminarButton);
             this.Controls.Add(this.GuardarButton);
             this.Controls.Add(this.NuevoButton);
             this.Controls.Add(this.PeriodoSemestreGroupBox);
-            this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.NombreLabel);
             this.Controls.Add(this.IdNumericUpDown);
             this.Controls.Add(this.NombreTextBox);
@@ -210,11 +212,11 @@ namespace Sistema_Academico.UI.Registros
         private System.Windows.Forms.Label FinalLabel;
         private System.Windows.Forms.DateTimePicker FinalDateTimePicker;
         private System.Windows.Forms.Label InicioLabel;
-        private System.Windows.Forms.Button BuscarButton;
         private System.Windows.Forms.Label NombreLabel;
         private System.Windows.Forms.NumericUpDown IdNumericUpDown;
         private System.Windows.Forms.TextBox NombreTextBox;
         private System.Windows.Forms.Label IdLabel;
         private System.Windows.Forms.ErrorProvider ErrorProvider;
+        private System.Windows.Forms.Button button1;
     }
 }

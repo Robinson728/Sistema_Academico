@@ -34,7 +34,6 @@ namespace Sistema_Academico.UI.Registros
             this.EliminarButton = new System.Windows.Forms.Button();
             this.GuardarButton = new System.Windows.Forms.Button();
             this.NuevoButton = new System.Windows.Forms.Button();
-            this.BuscarButton = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.FechaIngresoDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.NombreTextBox = new System.Windows.Forms.TextBox();
@@ -103,17 +102,6 @@ namespace Sistema_Academico.UI.Registros
             this.NuevoButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.NuevoButton.UseVisualStyleBackColor = true;
             this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
-            // 
-            // BuscarButton
-            // 
-            this.BuscarButton.Location = new System.Drawing.Point(150, 6);
-            this.BuscarButton.Margin = new System.Windows.Forms.Padding(2);
-            this.BuscarButton.Name = "BuscarButton";
-            this.BuscarButton.Size = new System.Drawing.Size(44, 23);
-            this.BuscarButton.TabIndex = 32;
-            this.BuscarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BuscarButton.UseVisualStyleBackColor = true;
-            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
             // label6
             // 
@@ -289,7 +277,6 @@ namespace Sistema_Academico.UI.Registros
             this.Controls.Add(this.EliminarButton);
             this.Controls.Add(this.GuardarButton);
             this.Controls.Add(this.NuevoButton);
-            this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.FechaIngresoDateTimePicker);
             this.Controls.Add(this.NombreTextBox);
@@ -310,7 +297,6 @@ namespace Sistema_Academico.UI.Registros
         private System.Windows.Forms.Button EliminarButton;
         private System.Windows.Forms.Button GuardarButton;
         private System.Windows.Forms.Button NuevoButton;
-        private System.Windows.Forms.Button BuscarButton;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker FechaIngresoDateTimePicker;
         private System.Windows.Forms.TextBox NombreTextBox;

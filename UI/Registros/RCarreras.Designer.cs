@@ -55,8 +55,8 @@ namespace Sistema_Academico.UI.Registros
             this.EliminarButton = new System.Windows.Forms.Button();
             this.GuardarButton = new System.Windows.Forms.Button();
             this.NuevoButton = new System.Windows.Forms.Button();
-            this.BuscarButton = new System.Windows.Forms.Button();
             this.ErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.BuscarButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.IdnumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).BeginInit();
             this.SuspendLayout();
@@ -251,7 +251,7 @@ namespace Sistema_Academico.UI.Registros
             // EliminarButton
             // 
             this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.EliminarButton.Location = new System.Drawing.Point(473, 254);
+            this.EliminarButton.Location = new System.Drawing.Point(464, 254);
             this.EliminarButton.Margin = new System.Windows.Forms.Padding(2);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(88, 42);
@@ -264,7 +264,7 @@ namespace Sistema_Academico.UI.Registros
             // GuardarButton
             // 
             this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.GuardarButton.Location = new System.Drawing.Point(376, 254);
+            this.GuardarButton.Location = new System.Drawing.Point(372, 254);
             this.GuardarButton.Margin = new System.Windows.Forms.Padding(2);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(88, 42);
@@ -287,20 +287,20 @@ namespace Sistema_Academico.UI.Registros
             this.NuevoButton.UseVisualStyleBackColor = true;
             this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
             // 
-            // BuscarButton
-            // 
-            this.BuscarButton.Location = new System.Drawing.Point(245, 22);
-            this.BuscarButton.Margin = new System.Windows.Forms.Padding(2);
-            this.BuscarButton.Name = "BuscarButton";
-            this.BuscarButton.Size = new System.Drawing.Size(55, 23);
-            this.BuscarButton.TabIndex = 61;
-            this.BuscarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BuscarButton.UseVisualStyleBackColor = true;
-            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
-            // 
             // ErrorProvider
             // 
             this.ErrorProvider.ContainerControl = this;
+            // 
+            // BuscarButton
+            // 
+            this.BuscarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BuscarButton.Location = new System.Drawing.Point(556, 254);
+            this.BuscarButton.Name = "BuscarButton";
+            this.BuscarButton.Size = new System.Drawing.Size(93, 42);
+            this.BuscarButton.TabIndex = 61;
+            this.BuscarButton.Text = "Buscar";
+            this.BuscarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BuscarButton.UseVisualStyleBackColor = true;
             // 
             // RCarreras
             // 
@@ -372,7 +372,7 @@ namespace Sistema_Academico.UI.Registros
         private System.Windows.Forms.Button EliminarButton;
         private System.Windows.Forms.Button GuardarButton;
         private System.Windows.Forms.Button NuevoButton;
-        private System.Windows.Forms.Button BuscarButton;
         private System.Windows.Forms.ErrorProvider ErrorProvider;
+        private System.Windows.Forms.Button BuscarButton;
     }
 }

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Sistema_Academico.Models;
 using Sistema_Academico.BLL;
+using Sistema_Academico.UI.Consultas;
 
 namespace Sistema_Academico.UI.Registros
 {
@@ -17,6 +18,14 @@ namespace Sistema_Academico.UI.Registros
         public rGrupos()
         {
             InitializeComponent();
+
+            AsignaturaComboBox.DataSource = AsignaturasBLL.GetAsignaturas();
+            AsignaturaComboBox.DisplayMember = "Nombre";
+            AsignaturaComboBox.ValueMember = "AsignaturaId";
+
+            ProfesorComboBox.DataSource = ProfesoresBLL.GetProfesores();
+            ProfesorComboBox.DisplayMember = "Nombre";
+            ProfesorComboBox.ValueMember = "ProfesorId";
         }
 
         private void Limpiar()
@@ -33,9 +42,9 @@ namespace Sistema_Academico.UI.Registros
             IdNumericUpDown.Value = grupos.GrupoId;
             AsignaturaComboBox.Text = grupos.Asignatura;
             ProfesorComboBox.Text = grupos.Profesor;
-            grupos.CantidadEstudiantes = Convert.ToInt32(CantidadEstudiantesTextBox.Text);
+            //grupos.CantidadEstudiantes = Convert.ToInt32(CantidadEstudiantesTextBox.Text);
             AulaTextBox.Text = grupos.Aula;
-            grupos.NumeroGrupo = Convert.ToInt32(NumeroGrupoTextBox.Text);
+            //grupos.NumeroGrupo = Convert.ToInt32(NumeroGrupoTextBox.Text);
         }
 
         private Grupos LlenaClase()
@@ -90,24 +99,18 @@ namespace Sistema_Academico.UI.Registros
             return paso;
         }
 
+        public void RecibirGrupo(int id)
+        {
+            Grupos grupos = GruposBLL.Buscar(id);
+
+            LlenaCampo(grupos);
+        }
+
         private void Nuevobutton_Click(object sender, EventArgs e)
         {
             Limpiar();
         }
 
-        private void BuscarButton_Click(object sender, EventArgs e)
-        {
-            Grupos grupos = new Grupos();
-            int id;
-            int.TryParse(IdNumericUpDown.Text, out id);
-
-            grupos = GruposBLL.Buscar(id);
-
-            if (grupos != null)
-                LlenaCampo(grupos);
-            else
-                MessageBox.Show("Transacción Fallida!!", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
 
         private void GuardarButton_Click(object sender, EventArgs e)
         {
@@ -140,6 +143,14 @@ namespace Sistema_Academico.UI.Registros
                 MessageBox.Show("Transacción Exitosa!!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else
                 ErrorProvider.SetError(IdNumericUpDown, "Id no existente");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ErrorProvider.Clear();
+            cGrupos grupos = new cGrupos();
+            grupos.Show();
+            Close();
         }
     }
 }

@@ -30,7 +30,6 @@ namespace Sistema_Academico.UI.Registros
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.BuscarButton = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.IdNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,20 +46,10 @@ namespace Sistema_Academico.UI.Registros
             this.GuardarButton = new System.Windows.Forms.Button();
             this.NuevoButton = new System.Windows.Forms.Button();
             this.ErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.IdNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).BeginInit();
             this.SuspendLayout();
-            // 
-            // BuscarButton
-            // 
-            this.BuscarButton.Location = new System.Drawing.Point(149, 7);
-            this.BuscarButton.Margin = new System.Windows.Forms.Padding(2);
-            this.BuscarButton.Name = "BuscarButton";
-            this.BuscarButton.Size = new System.Drawing.Size(55, 23);
-            this.BuscarButton.TabIndex = 57;
-            this.BuscarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BuscarButton.UseVisualStyleBackColor = true;
-            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
             // label15
             // 
@@ -105,16 +94,16 @@ namespace Sistema_Academico.UI.Registros
             // 
             this.CantidadEstudiantesTextBox.BackColor = System.Drawing.SystemColors.Window;
             this.CantidadEstudiantesTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.CantidadEstudiantesTextBox.Location = new System.Drawing.Point(126, 94);
+            this.CantidadEstudiantesTextBox.Location = new System.Drawing.Point(126, 123);
             this.CantidadEstudiantesTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.CantidadEstudiantesTextBox.Name = "CantidadEstudiantesTextBox";
-            this.CantidadEstudiantesTextBox.Size = new System.Drawing.Size(188, 23);
+            this.CantidadEstudiantesTextBox.Size = new System.Drawing.Size(280, 23);
             this.CantidadEstudiantesTextBox.TabIndex = 63;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(4, 97);
+            this.label2.Location = new System.Drawing.Point(4, 128);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(118, 15);
@@ -125,16 +114,16 @@ namespace Sistema_Academico.UI.Registros
             // 
             this.AulaTextBox.BackColor = System.Drawing.SystemColors.Window;
             this.AulaTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.AulaTextBox.Location = new System.Drawing.Point(73, 123);
+            this.AulaTextBox.Location = new System.Drawing.Point(73, 94);
             this.AulaTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.AulaTextBox.Name = "AulaTextBox";
-            this.AulaTextBox.Size = new System.Drawing.Size(241, 23);
+            this.AulaTextBox.Size = new System.Drawing.Size(333, 23);
             this.AulaTextBox.TabIndex = 65;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 126);
+            this.label4.Location = new System.Drawing.Point(4, 97);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(31, 15);
@@ -145,10 +134,10 @@ namespace Sistema_Academico.UI.Registros
             // 
             this.NumeroGrupoTextBox.BackColor = System.Drawing.SystemColors.Window;
             this.NumeroGrupoTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.NumeroGrupoTextBox.Location = new System.Drawing.Point(112, 152);
+            this.NumeroGrupoTextBox.Location = new System.Drawing.Point(126, 152);
             this.NumeroGrupoTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.NumeroGrupoTextBox.Name = "NumeroGrupoTextBox";
-            this.NumeroGrupoTextBox.Size = new System.Drawing.Size(202, 23);
+            this.NumeroGrupoTextBox.Size = new System.Drawing.Size(280, 23);
             this.NumeroGrupoTextBox.TabIndex = 67;
             // 
             // label5
@@ -167,7 +156,7 @@ namespace Sistema_Academico.UI.Registros
             this.AsignaturaComboBox.FormattingEnabled = true;
             this.AsignaturaComboBox.Location = new System.Drawing.Point(73, 36);
             this.AsignaturaComboBox.Name = "AsignaturaComboBox";
-            this.AsignaturaComboBox.Size = new System.Drawing.Size(241, 23);
+            this.AsignaturaComboBox.Size = new System.Drawing.Size(333, 23);
             this.AsignaturaComboBox.TabIndex = 68;
             // 
             // ProfesorComboBox
@@ -176,13 +165,13 @@ namespace Sistema_Academico.UI.Registros
             this.ProfesorComboBox.FormattingEnabled = true;
             this.ProfesorComboBox.Location = new System.Drawing.Point(73, 65);
             this.ProfesorComboBox.Name = "ProfesorComboBox";
-            this.ProfesorComboBox.Size = new System.Drawing.Size(241, 23);
+            this.ProfesorComboBox.Size = new System.Drawing.Size(333, 23);
             this.ProfesorComboBox.TabIndex = 69;
             // 
             // EliminarButton
             // 
             this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.EliminarButton.Location = new System.Drawing.Point(210, 181);
+            this.EliminarButton.Location = new System.Drawing.Point(207, 181);
             this.EliminarButton.Margin = new System.Windows.Forms.Padding(2);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(93, 42);
@@ -195,7 +184,7 @@ namespace Sistema_Academico.UI.Registros
             // GuardarButton
             // 
             this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.GuardarButton.Location = new System.Drawing.Point(113, 181);
+            this.GuardarButton.Location = new System.Drawing.Point(110, 181);
             this.GuardarButton.Margin = new System.Windows.Forms.Padding(2);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(93, 42);
@@ -208,7 +197,7 @@ namespace Sistema_Academico.UI.Registros
             // NuevoButton
             // 
             this.NuevoButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.NuevoButton.Location = new System.Drawing.Point(16, 181);
+            this.NuevoButton.Location = new System.Drawing.Point(13, 181);
             this.NuevoButton.Margin = new System.Windows.Forms.Padding(2);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(93, 42);
@@ -222,11 +211,24 @@ namespace Sistema_Academico.UI.Registros
             // 
             this.ErrorProvider.ContainerControl = this;
             // 
+            // button1
+            // 
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.Location = new System.Drawing.Point(304, 181);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(93, 42);
+            this.button1.TabIndex = 73;
+            this.button1.Text = "Buscar";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // rGrupos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(318, 229);
+            this.ClientSize = new System.Drawing.Size(411, 227);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.EliminarButton);
             this.Controls.Add(this.GuardarButton);
             this.Controls.Add(this.NuevoButton);
@@ -240,7 +242,6 @@ namespace Sistema_Academico.UI.Registros
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.IdNumericUpDown);
             this.Name = "rGrupos";
@@ -253,8 +254,6 @@ namespace Sistema_Academico.UI.Registros
         }
 
         #endregion
-
-        private System.Windows.Forms.Button BuscarButton;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.NumericUpDown IdNumericUpDown;
         private System.Windows.Forms.Label label3;
@@ -271,5 +270,6 @@ namespace Sistema_Academico.UI.Registros
         private System.Windows.Forms.Button GuardarButton;
         private System.Windows.Forms.Button NuevoButton;
         private System.Windows.Forms.ErrorProvider ErrorProvider;
+        private System.Windows.Forms.Button button1;
     }
 }

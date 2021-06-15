@@ -13,7 +13,6 @@ namespace Sistema_Academico.Models
         public int AsignaturaId { get; set; }
         public string Nombre { get; set; }
         public string Descripcion { get; set; }
-        public string Semestre { get; set; }
         public int Creditos { get; set; }
         public int Grupo { get; set; }
         public DateTime HoraInicio { get; set; }

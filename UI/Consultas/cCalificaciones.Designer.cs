@@ -29,25 +29,128 @@ namespace Sistema_Academico.UI.Consultas
         /// </summary>
         private void InitializeComponent()
         {
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.ClaveTextBox = new System.Windows.Forms.TextBox();
+            this.IdNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.label10 = new System.Windows.Forms.Label();
+            this.AsignaturaComboBox = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.CreditosTextBox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.HastaDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.HastaLabel = new System.Windows.Forms.Label();
             this.DesdeDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.DesdeLabel = new System.Windows.Forms.Label();
             this.BuscarButton = new System.Windows.Forms.Button();
-            this.EsActivoGroupBox = new System.Windows.Forms.GroupBox();
-            this.InactivosRadioButton = new System.Windows.Forms.RadioButton();
-            this.ActivosRadioButton = new System.Windows.Forms.RadioButton();
-            this.TodosRadioButton = new System.Windows.Forms.RadioButton();
-            this.CriterioTextBox = new System.Windows.Forms.TextBox();
             this.ConsultaAsignaturaDataGridView = new System.Windows.Forms.DataGridView();
-            this.FiltroComboBox = new System.Windows.Forms.ComboBox();
-            this.FiltroLabel = new System.Windows.Forms.Label();
             this.UsarFiltroFechascheckBox = new System.Windows.Forms.CheckBox();
+            ((System.ComponentModel.ISupportInitialize)(this.IdNumericUpDown)).BeginInit();
             this.panel1.SuspendLayout();
-            this.EsActivoGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConsultaAsignaturaDataGridView)).BeginInit();
             this.SuspendLayout();
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(3, 386);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(110, 45);
+            this.button2.TabIndex = 124;
+            this.button2.Text = "Seleccionar";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(827, 51);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(109, 43);
+            this.button1.TabIndex = 123;
+            this.button1.Text = "Nuevo";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // ClaveTextBox
+            // 
+            this.ClaveTextBox.Location = new System.Drawing.Point(185, 20);
+            this.ClaveTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.ClaveTextBox.Name = "ClaveTextBox";
+            this.ClaveTextBox.Size = new System.Drawing.Size(155, 23);
+            this.ClaveTextBox.TabIndex = 122;
+            // 
+            // IdNumericUpDown
+            // 
+            this.IdNumericUpDown.Location = new System.Drawing.Point(5, 20);
+            this.IdNumericUpDown.Name = "IdNumericUpDown";
+            this.IdNumericUpDown.Size = new System.Drawing.Size(159, 23);
+            this.IdNumericUpDown.TabIndex = 106;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(5, 2);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(75, 15);
+            this.label10.TabIndex = 121;
+            this.label10.Text = "Estudiante Id";
+            // 
+            // AsignaturaComboBox
+            // 
+            this.AsignaturaComboBox.FormattingEnabled = true;
+            this.AsignaturaComboBox.Location = new System.Drawing.Point(363, 20);
+            this.AsignaturaComboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.AsignaturaComboBox.Name = "AsignaturaComboBox";
+            this.AsignaturaComboBox.Size = new System.Drawing.Size(160, 23);
+            this.AsignaturaComboBox.TabIndex = 117;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(363, 2);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(64, 15);
+            this.label9.TabIndex = 116;
+            this.label9.Text = "Asignatura";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(548, 2);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(54, 15);
+            this.label6.TabIndex = 114;
+            this.label6.Text = "Creditos ";
+            // 
+            // CreditosTextBox
+            // 
+            this.CreditosTextBox.Location = new System.Drawing.Point(548, 19);
+            this.CreditosTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.CreditosTextBox.Name = "CreditosTextBox";
+            this.CreditosTextBox.Size = new System.Drawing.Size(160, 23);
+            this.CreditosTextBox.TabIndex = 112;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(329, 45);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 15);
+            this.label3.TabIndex = 110;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(185, 2);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(109, 15);
+            this.label1.TabIndex = 108;
+            this.label1.Text = "Nombre estudiante";
             // 
             // panel1
             // 
@@ -56,24 +159,24 @@ namespace Sistema_Academico.UI.Consultas
             this.panel1.Controls.Add(this.HastaLabel);
             this.panel1.Controls.Add(this.DesdeDateTimePicker);
             this.panel1.Controls.Add(this.DesdeLabel);
-            this.panel1.Location = new System.Drawing.Point(157, 12);
+            this.panel1.Location = new System.Drawing.Point(184, 51);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(318, 43);
-            this.panel1.TabIndex = 44;
+            this.panel1.Size = new System.Drawing.Size(523, 43);
+            this.panel1.TabIndex = 105;
             // 
             // HastaDateTimePicker
             // 
             this.HastaDateTimePicker.Enabled = false;
             this.HastaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.HastaDateTimePicker.Location = new System.Drawing.Point(202, 10);
+            this.HastaDateTimePicker.Location = new System.Drawing.Point(307, 9);
             this.HastaDateTimePicker.Name = "HastaDateTimePicker";
-            this.HastaDateTimePicker.Size = new System.Drawing.Size(97, 23);
+            this.HastaDateTimePicker.Size = new System.Drawing.Size(192, 23);
             this.HastaDateTimePicker.TabIndex = 11;
             // 
             // HastaLabel
             // 
             this.HastaLabel.AutoSize = true;
-            this.HastaLabel.Location = new System.Drawing.Point(159, 14);
+            this.HastaLabel.Location = new System.Drawing.Point(264, 13);
             this.HastaLabel.Name = "HastaLabel";
             this.HastaLabel.Size = new System.Drawing.Size(37, 15);
             this.HastaLabel.TabIndex = 10;
@@ -83,15 +186,15 @@ namespace Sistema_Academico.UI.Consultas
             // 
             this.DesdeDateTimePicker.Enabled = false;
             this.DesdeDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DesdeDateTimePicker.Location = new System.Drawing.Point(56, 10);
+            this.DesdeDateTimePicker.Location = new System.Drawing.Point(66, 9);
             this.DesdeDateTimePicker.Name = "DesdeDateTimePicker";
-            this.DesdeDateTimePicker.Size = new System.Drawing.Size(97, 23);
+            this.DesdeDateTimePicker.Size = new System.Drawing.Size(192, 23);
             this.DesdeDateTimePicker.TabIndex = 9;
             // 
             // DesdeLabel
             // 
             this.DesdeLabel.AutoSize = true;
-            this.DesdeLabel.Location = new System.Drawing.Point(11, 13);
+            this.DesdeLabel.Location = new System.Drawing.Point(21, 13);
             this.DesdeLabel.Name = "DesdeLabel";
             this.DesdeLabel.Size = new System.Drawing.Size(39, 15);
             this.DesdeLabel.TabIndex = 8;
@@ -99,65 +202,12 @@ namespace Sistema_Academico.UI.Consultas
             // 
             // BuscarButton
             // 
-            this.BuscarButton.Location = new System.Drawing.Point(584, 11);
+            this.BuscarButton.Location = new System.Drawing.Point(712, 51);
             this.BuscarButton.Name = "BuscarButton";
-            this.BuscarButton.Size = new System.Drawing.Size(88, 75);
-            this.BuscarButton.TabIndex = 43;
+            this.BuscarButton.Size = new System.Drawing.Size(109, 43);
+            this.BuscarButton.TabIndex = 104;
             this.BuscarButton.Text = "Buscar";
             this.BuscarButton.UseVisualStyleBackColor = true;
-            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
-            // 
-            // EsActivoGroupBox
-            // 
-            this.EsActivoGroupBox.Controls.Add(this.InactivosRadioButton);
-            this.EsActivoGroupBox.Controls.Add(this.ActivosRadioButton);
-            this.EsActivoGroupBox.Controls.Add(this.TodosRadioButton);
-            this.EsActivoGroupBox.Location = new System.Drawing.Point(480, 3);
-            this.EsActivoGroupBox.Name = "EsActivoGroupBox";
-            this.EsActivoGroupBox.Size = new System.Drawing.Size(98, 83);
-            this.EsActivoGroupBox.TabIndex = 42;
-            this.EsActivoGroupBox.TabStop = false;
-            this.EsActivoGroupBox.Text = "Es Activo?";
-            // 
-            // InactivosRadioButton
-            // 
-            this.InactivosRadioButton.AutoSize = true;
-            this.InactivosRadioButton.Location = new System.Drawing.Point(17, 59);
-            this.InactivosRadioButton.Name = "InactivosRadioButton";
-            this.InactivosRadioButton.Size = new System.Drawing.Size(72, 19);
-            this.InactivosRadioButton.TabIndex = 2;
-            this.InactivosRadioButton.Text = "Inactivos";
-            this.InactivosRadioButton.UseVisualStyleBackColor = true;
-            // 
-            // ActivosRadioButton
-            // 
-            this.ActivosRadioButton.AutoSize = true;
-            this.ActivosRadioButton.Location = new System.Drawing.Point(17, 37);
-            this.ActivosRadioButton.Name = "ActivosRadioButton";
-            this.ActivosRadioButton.Size = new System.Drawing.Size(64, 19);
-            this.ActivosRadioButton.TabIndex = 1;
-            this.ActivosRadioButton.Text = "Activos";
-            this.ActivosRadioButton.UseVisualStyleBackColor = true;
-            // 
-            // TodosRadioButton
-            // 
-            this.TodosRadioButton.AutoSize = true;
-            this.TodosRadioButton.Checked = true;
-            this.TodosRadioButton.Location = new System.Drawing.Point(17, 16);
-            this.TodosRadioButton.Name = "TodosRadioButton";
-            this.TodosRadioButton.Size = new System.Drawing.Size(56, 19);
-            this.TodosRadioButton.TabIndex = 0;
-            this.TodosRadioButton.TabStop = true;
-            this.TodosRadioButton.Text = "Todos";
-            this.TodosRadioButton.UseVisualStyleBackColor = true;
-            // 
-            // CriterioTextBox
-            // 
-            this.CriterioTextBox.Location = new System.Drawing.Point(157, 59);
-            this.CriterioTextBox.Multiline = true;
-            this.CriterioTextBox.Name = "CriterioTextBox";
-            this.CriterioTextBox.Size = new System.Drawing.Size(318, 26);
-            this.CriterioTextBox.TabIndex = 41;
             // 
             // ConsultaAsignaturaDataGridView
             // 
@@ -165,45 +215,20 @@ namespace Sistema_Academico.UI.Consultas
             this.ConsultaAsignaturaDataGridView.AllowUserToDeleteRows = false;
             this.ConsultaAsignaturaDataGridView.AllowUserToOrderColumns = true;
             this.ConsultaAsignaturaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ConsultaAsignaturaDataGridView.Location = new System.Drawing.Point(7, 93);
+            this.ConsultaAsignaturaDataGridView.Location = new System.Drawing.Point(3, 100);
             this.ConsultaAsignaturaDataGridView.Name = "ConsultaAsignaturaDataGridView";
             this.ConsultaAsignaturaDataGridView.ReadOnly = true;
             this.ConsultaAsignaturaDataGridView.RowTemplate.Height = 25;
-            this.ConsultaAsignaturaDataGridView.Size = new System.Drawing.Size(665, 251);
-            this.ConsultaAsignaturaDataGridView.TabIndex = 40;
-            // 
-            // FiltroComboBox
-            // 
-            this.FiltroComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.FiltroComboBox.FormattingEnabled = true;
-            this.FiltroComboBox.Items.AddRange(new object[] {
-            "Todo",
-            "AsignaturaId",
-            "Nombre",
-            "Descripción",
-            "Credito",
-            "Grupo"});
-            this.FiltroComboBox.Location = new System.Drawing.Point(47, 63);
-            this.FiltroComboBox.Name = "FiltroComboBox";
-            this.FiltroComboBox.Size = new System.Drawing.Size(104, 23);
-            this.FiltroComboBox.TabIndex = 39;
-            // 
-            // FiltroLabel
-            // 
-            this.FiltroLabel.AutoSize = true;
-            this.FiltroLabel.Location = new System.Drawing.Point(7, 66);
-            this.FiltroLabel.Name = "FiltroLabel";
-            this.FiltroLabel.Size = new System.Drawing.Size(34, 15);
-            this.FiltroLabel.TabIndex = 38;
-            this.FiltroLabel.Text = "Filtro";
+            this.ConsultaAsignaturaDataGridView.Size = new System.Drawing.Size(933, 281);
+            this.ConsultaAsignaturaDataGridView.TabIndex = 103;
             // 
             // UsarFiltroFechascheckBox
             // 
             this.UsarFiltroFechascheckBox.AutoSize = true;
-            this.UsarFiltroFechascheckBox.Location = new System.Drawing.Point(7, 27);
+            this.UsarFiltroFechascheckBox.Location = new System.Drawing.Point(4, 66);
             this.UsarFiltroFechascheckBox.Name = "UsarFiltroFechascheckBox";
             this.UsarFiltroFechascheckBox.Size = new System.Drawing.Size(134, 19);
-            this.UsarFiltroFechascheckBox.TabIndex = 37;
+            this.UsarFiltroFechascheckBox.TabIndex = 102;
             this.UsarFiltroFechascheckBox.Text = "Usar Filtro de Fechas";
             this.UsarFiltroFechascheckBox.UseVisualStyleBackColor = true;
             // 
@@ -211,21 +236,27 @@ namespace Sistema_Academico.UI.Consultas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(679, 346);
+            this.ClientSize = new System.Drawing.Size(941, 435);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ClaveTextBox);
+            this.Controls.Add(this.IdNumericUpDown);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.AsignaturaComboBox);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.CreditosTextBox);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BuscarButton);
-            this.Controls.Add(this.EsActivoGroupBox);
-            this.Controls.Add(this.CriterioTextBox);
             this.Controls.Add(this.ConsultaAsignaturaDataGridView);
-            this.Controls.Add(this.FiltroComboBox);
-            this.Controls.Add(this.FiltroLabel);
             this.Controls.Add(this.UsarFiltroFechascheckBox);
             this.Name = "cCalificaciones";
             this.Text = "cCalificaciones";
+            ((System.ComponentModel.ISupportInitialize)(this.IdNumericUpDown)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.EsActivoGroupBox.ResumeLayout(false);
-            this.EsActivoGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConsultaAsignaturaDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -234,20 +265,24 @@ namespace Sistema_Academico.UI.Consultas
 
         #endregion
 
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox ClaveTextBox;
+        private System.Windows.Forms.NumericUpDown IdNumericUpDown;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox AsignaturaComboBox;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox CreditosTextBox;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DateTimePicker HastaDateTimePicker;
         private System.Windows.Forms.Label HastaLabel;
         private System.Windows.Forms.DateTimePicker DesdeDateTimePicker;
         private System.Windows.Forms.Label DesdeLabel;
         private System.Windows.Forms.Button BuscarButton;
-        private System.Windows.Forms.GroupBox EsActivoGroupBox;
-        private System.Windows.Forms.RadioButton InactivosRadioButton;
-        private System.Windows.Forms.RadioButton ActivosRadioButton;
-        private System.Windows.Forms.RadioButton TodosRadioButton;
-        private System.Windows.Forms.TextBox CriterioTextBox;
         private System.Windows.Forms.DataGridView ConsultaAsignaturaDataGridView;
-        private System.Windows.Forms.ComboBox FiltroComboBox;
-        private System.Windows.Forms.Label FiltroLabel;
         private System.Windows.Forms.CheckBox UsarFiltroFechascheckBox;
     }
 }

@@ -36,8 +36,8 @@ namespace Sistema_Academico.UI.Registros
         {
             IdNumericUpDown.Value = profesores.ProfesorId;
             NombreTextBox.Text = profesores.Nombre;
-            profesores.Cedula = Convert.ToInt32(CedulaMaskedTextBox.Text);
-            profesores.Telefono = Convert.ToInt32(TelefonoMaskedTextBox.Text);
+            CedulaMaskedTextBox.Text = profesores.Cedula;
+            TelefonoMaskedTextBox.Text = profesores.Telefono;
             DireccionTextBox.Text = profesores.Direccion;
             EmailTextBox.Text = profesores.Email;
             ClaveTextBox.Text = profesores.Clave;
@@ -50,8 +50,8 @@ namespace Sistema_Academico.UI.Registros
 
             profesores.ProfesorId = (int)IdNumericUpDown.Value;
             profesores.Nombre = NombreTextBox.Text;
-            profesores.Cedula = Convert.ToInt32(CedulaMaskedTextBox.Text);
-            profesores.Telefono = Convert.ToInt32(TelefonoMaskedTextBox.Text);
+            profesores.Cedula = CedulaMaskedTextBox.Text;
+            profesores.Telefono = TelefonoMaskedTextBox.Text;
             profesores.Direccion = DireccionTextBox.Text;
             profesores.Email = EmailTextBox.Text;
             profesores.Clave = ClaveTextBox.Text;
