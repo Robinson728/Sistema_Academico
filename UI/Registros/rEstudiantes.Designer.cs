@@ -82,7 +82,7 @@ namespace Sistema_Academico.UI.Registros
             this.ActivoCheckBox.AutoSize = true;
             this.ActivoCheckBox.Checked = true;
             this.ActivoCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ActivoCheckBox.Location = new System.Drawing.Point(356, 7);
+            this.ActivoCheckBox.Location = new System.Drawing.Point(363, 7);
             this.ActivoCheckBox.Margin = new System.Windows.Forms.Padding(2);
             this.ActivoCheckBox.Name = "ActivoCheckBox";
             this.ActivoCheckBox.Size = new System.Drawing.Size(60, 19);
@@ -509,7 +509,7 @@ namespace Sistema_Academico.UI.Registros
             this.IdNumericUpDown.Location = new System.Drawing.Point(81, 6);
             this.IdNumericUpDown.Margin = new System.Windows.Forms.Padding(2);
             this.IdNumericUpDown.Name = "IdNumericUpDown";
-            this.IdNumericUpDown.Size = new System.Drawing.Size(72, 23);
+            this.IdNumericUpDown.Size = new System.Drawing.Size(142, 23);
             this.IdNumericUpDown.TabIndex = 48;
             // 
             // ErrorProvider

@@ -32,7 +32,6 @@ namespace Sistema_Academico.UI.Consultas
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.ClaveTextBox = new System.Windows.Forms.TextBox();
-            this.IdNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
             this.AsignaturaComboBox = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -48,7 +47,7 @@ namespace Sistema_Academico.UI.Consultas
             this.BuscarButton = new System.Windows.Forms.Button();
             this.ConsultaAsignaturaDataGridView = new System.Windows.Forms.DataGridView();
             this.UsarFiltroFechascheckBox = new System.Windows.Forms.CheckBox();
-            ((System.ComponentModel.ISupportInitialize)(this.IdNumericUpDown)).BeginInit();
+            this.IdTextBox = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConsultaAsignaturaDataGridView)).BeginInit();
             this.SuspendLayout();
@@ -76,15 +75,8 @@ namespace Sistema_Academico.UI.Consultas
             this.ClaveTextBox.Location = new System.Drawing.Point(185, 20);
             this.ClaveTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.ClaveTextBox.Name = "ClaveTextBox";
-            this.ClaveTextBox.Size = new System.Drawing.Size(155, 23);
+            this.ClaveTextBox.Size = new System.Drawing.Size(159, 23);
             this.ClaveTextBox.TabIndex = 122;
-            // 
-            // IdNumericUpDown
-            // 
-            this.IdNumericUpDown.Location = new System.Drawing.Point(5, 20);
-            this.IdNumericUpDown.Name = "IdNumericUpDown";
-            this.IdNumericUpDown.Size = new System.Drawing.Size(159, 23);
-            this.IdNumericUpDown.TabIndex = 106;
             // 
             // label10
             // 
@@ -102,7 +94,7 @@ namespace Sistema_Academico.UI.Consultas
             this.AsignaturaComboBox.Location = new System.Drawing.Point(363, 20);
             this.AsignaturaComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.AsignaturaComboBox.Name = "AsignaturaComboBox";
-            this.AsignaturaComboBox.Size = new System.Drawing.Size(160, 23);
+            this.AsignaturaComboBox.Size = new System.Drawing.Size(159, 23);
             this.AsignaturaComboBox.TabIndex = 117;
             // 
             // label9
@@ -130,7 +122,7 @@ namespace Sistema_Academico.UI.Consultas
             this.CreditosTextBox.Location = new System.Drawing.Point(548, 19);
             this.CreditosTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.CreditosTextBox.Name = "CreditosTextBox";
-            this.CreditosTextBox.Size = new System.Drawing.Size(160, 23);
+            this.CreditosTextBox.Size = new System.Drawing.Size(159, 23);
             this.CreditosTextBox.TabIndex = 112;
             // 
             // label3
@@ -166,8 +158,9 @@ namespace Sistema_Academico.UI.Consultas
             // 
             // HastaDateTimePicker
             // 
+            this.HastaDateTimePicker.CustomFormat = "dd/MM/yyyy";
             this.HastaDateTimePicker.Enabled = false;
-            this.HastaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.HastaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.HastaDateTimePicker.Location = new System.Drawing.Point(307, 9);
             this.HastaDateTimePicker.Name = "HastaDateTimePicker";
             this.HastaDateTimePicker.Size = new System.Drawing.Size(192, 23);
@@ -184,8 +177,9 @@ namespace Sistema_Academico.UI.Consultas
             // 
             // DesdeDateTimePicker
             // 
+            this.DesdeDateTimePicker.CustomFormat = "dd/MM/yyyy";
             this.DesdeDateTimePicker.Enabled = false;
-            this.DesdeDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DesdeDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.DesdeDateTimePicker.Location = new System.Drawing.Point(66, 9);
             this.DesdeDateTimePicker.Name = "DesdeDateTimePicker";
             this.DesdeDateTimePicker.Size = new System.Drawing.Size(192, 23);
@@ -232,15 +226,23 @@ namespace Sistema_Academico.UI.Consultas
             this.UsarFiltroFechascheckBox.Text = "Usar Filtro de Fechas";
             this.UsarFiltroFechascheckBox.UseVisualStyleBackColor = true;
             // 
+            // IdTextBox
+            // 
+            this.IdTextBox.Location = new System.Drawing.Point(3, 20);
+            this.IdTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.IdTextBox.Name = "IdTextBox";
+            this.IdTextBox.Size = new System.Drawing.Size(160, 23);
+            this.IdTextBox.TabIndex = 129;
+            // 
             // cCalificaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(941, 435);
+            this.Controls.Add(this.IdTextBox);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.ClaveTextBox);
-            this.Controls.Add(this.IdNumericUpDown);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.AsignaturaComboBox);
             this.Controls.Add(this.label9);
@@ -253,8 +255,7 @@ namespace Sistema_Academico.UI.Consultas
             this.Controls.Add(this.ConsultaAsignaturaDataGridView);
             this.Controls.Add(this.UsarFiltroFechascheckBox);
             this.Name = "cCalificaciones";
-            this.Text = "cCalificaciones";
-            ((System.ComponentModel.ISupportInitialize)(this.IdNumericUpDown)).EndInit();
+            this.Text = "Consulta de Calificaciones";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConsultaAsignaturaDataGridView)).EndInit();
@@ -268,7 +269,6 @@ namespace Sistema_Academico.UI.Consultas
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox ClaveTextBox;
-        private System.Windows.Forms.NumericUpDown IdNumericUpDown;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox AsignaturaComboBox;
         private System.Windows.Forms.Label label9;
@@ -284,5 +284,6 @@ namespace Sistema_Academico.UI.Consultas
         private System.Windows.Forms.Button BuscarButton;
         private System.Windows.Forms.DataGridView ConsultaAsignaturaDataGridView;
         private System.Windows.Forms.CheckBox UsarFiltroFechascheckBox;
+        private System.Windows.Forms.TextBox IdTextBox;
     }
 }

@@ -63,16 +63,16 @@ namespace Sistema_Academico.UI.Registros
             // 
             // IdnumericUpDown
             // 
-            this.IdnumericUpDown.Location = new System.Drawing.Point(165, 22);
+            this.IdnumericUpDown.Location = new System.Drawing.Point(138, 5);
             this.IdnumericUpDown.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.IdnumericUpDown.Name = "IdnumericUpDown";
-            this.IdnumericUpDown.Size = new System.Drawing.Size(75, 23);
+            this.IdnumericUpDown.Size = new System.Drawing.Size(234, 23);
             this.IdnumericUpDown.TabIndex = 0;
             // 
             // Idlabel
             // 
             this.Idlabel.AutoSize = true;
-            this.Idlabel.Location = new System.Drawing.Point(20, 24);
+            this.Idlabel.Location = new System.Drawing.Point(3, 9);
             this.Idlabel.Name = "Idlabel";
             this.Idlabel.Size = new System.Drawing.Size(55, 15);
             this.Idlabel.TabIndex = 1;
@@ -81,7 +81,7 @@ namespace Sistema_Academico.UI.Registros
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(413, 24);
+            this.label1.Location = new System.Drawing.Point(378, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(120, 15);
             this.label1.TabIndex = 2;
@@ -89,7 +89,7 @@ namespace Sistema_Academico.UI.Registros
             // 
             // CreditosTextBox
             // 
-            this.CreditosTextBox.Location = new System.Drawing.Point(165, 60);
+            this.CreditosTextBox.Location = new System.Drawing.Point(138, 34);
             this.CreditosTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CreditosTextBox.Name = "CreditosTextBox";
             this.CreditosTextBox.Size = new System.Drawing.Size(234, 23);
@@ -98,7 +98,7 @@ namespace Sistema_Academico.UI.Registros
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 100);
+            this.label2.Location = new System.Drawing.Point(3, 66);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(111, 15);
             this.label2.TabIndex = 4;
@@ -106,7 +106,7 @@ namespace Sistema_Academico.UI.Registros
             // 
             // TotalAsignaturasTextBox
             // 
-            this.TotalAsignaturasTextBox.Location = new System.Drawing.Point(165, 98);
+            this.TotalAsignaturasTextBox.Location = new System.Drawing.Point(138, 63);
             this.TotalAsignaturasTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TotalAsignaturasTextBox.Name = "TotalAsignaturasTextBox";
             this.TotalAsignaturasTextBox.Size = new System.Drawing.Size(234, 23);
@@ -115,7 +115,7 @@ namespace Sistema_Academico.UI.Registros
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 144);
+            this.label3.Location = new System.Drawing.Point(3, 95);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(114, 15);
             this.label3.TabIndex = 6;
@@ -123,7 +123,7 @@ namespace Sistema_Academico.UI.Registros
             // 
             // HorasPracticasTextBox
             // 
-            this.HorasPracticasTextBox.Location = new System.Drawing.Point(165, 142);
+            this.HorasPracticasTextBox.Location = new System.Drawing.Point(138, 92);
             this.HorasPracticasTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.HorasPracticasTextBox.Name = "HorasPracticasTextBox";
             this.HorasPracticasTextBox.Size = new System.Drawing.Size(234, 23);
@@ -132,7 +132,7 @@ namespace Sistema_Academico.UI.Registros
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(20, 62);
+            this.label4.Location = new System.Drawing.Point(3, 37);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(93, 15);
             this.label4.TabIndex = 8;
@@ -141,7 +141,7 @@ namespace Sistema_Academico.UI.Registros
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(413, 62);
+            this.label5.Location = new System.Drawing.Point(378, 37);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(153, 15);
             this.label5.TabIndex = 9;
@@ -150,7 +150,7 @@ namespace Sistema_Academico.UI.Registros
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(413, 100);
+            this.label6.Location = new System.Drawing.Point(378, 66);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(108, 15);
             this.label6.TabIndex = 10;
@@ -159,7 +159,7 @@ namespace Sistema_Academico.UI.Registros
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(20, 181);
+            this.label7.Location = new System.Drawing.Point(3, 124);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(129, 15);
             this.label7.TabIndex = 11;
@@ -168,7 +168,7 @@ namespace Sistema_Academico.UI.Registros
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(413, 144);
+            this.label8.Location = new System.Drawing.Point(378, 95);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(90, 15);
             this.label8.TabIndex = 12;
@@ -177,7 +177,7 @@ namespace Sistema_Academico.UI.Registros
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(20, 222);
+            this.label9.Location = new System.Drawing.Point(3, 153);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(91, 15);
             this.label9.TabIndex = 13;
@@ -186,7 +186,7 @@ namespace Sistema_Academico.UI.Registros
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(413, 181);
+            this.label10.Location = new System.Drawing.Point(378, 124);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(143, 15);
             this.label10.TabIndex = 14;
@@ -194,7 +194,7 @@ namespace Sistema_Academico.UI.Registros
             // 
             // HorasPensumTextBox
             // 
-            this.HorasPensumTextBox.Location = new System.Drawing.Point(165, 178);
+            this.HorasPensumTextBox.Location = new System.Drawing.Point(138, 121);
             this.HorasPensumTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.HorasPensumTextBox.Name = "HorasPensumTextBox";
             this.HorasPensumTextBox.Size = new System.Drawing.Size(234, 23);
@@ -202,15 +202,15 @@ namespace Sistema_Academico.UI.Registros
             // 
             // TituloTextBox
             // 
-            this.TituloTextBox.Location = new System.Drawing.Point(165, 220);
+            this.TituloTextBox.Location = new System.Drawing.Point(138, 150);
             this.TituloTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TituloTextBox.Name = "TituloTextBox";
-            this.TituloTextBox.Size = new System.Drawing.Size(657, 23);
+            this.TituloTextBox.Size = new System.Drawing.Size(633, 23);
             this.TituloTextBox.TabIndex = 16;
             // 
             // SemestresAcademicosTextBox
             // 
-            this.SemestresAcademicosTextBox.Location = new System.Drawing.Point(588, 62);
+            this.SemestresAcademicosTextBox.Location = new System.Drawing.Point(537, 34);
             this.SemestresAcademicosTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SemestresAcademicosTextBox.Name = "SemestresAcademicosTextBox";
             this.SemestresAcademicosTextBox.Size = new System.Drawing.Size(234, 23);
@@ -218,7 +218,7 @@ namespace Sistema_Academico.UI.Registros
             // 
             // HorasTeoricasTextBox
             // 
-            this.HorasTeoricasTextBox.Location = new System.Drawing.Point(588, 100);
+            this.HorasTeoricasTextBox.Location = new System.Drawing.Point(537, 63);
             this.HorasTeoricasTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.HorasTeoricasTextBox.Name = "HorasTeoricasTextBox";
             this.HorasTeoricasTextBox.Size = new System.Drawing.Size(234, 23);
@@ -226,7 +226,7 @@ namespace Sistema_Academico.UI.Registros
             // 
             // NombreTextBox
             // 
-            this.NombreTextBox.Location = new System.Drawing.Point(588, 22);
+            this.NombreTextBox.Location = new System.Drawing.Point(537, 5);
             this.NombreTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.NombreTextBox.Name = "NombreTextBox";
             this.NombreTextBox.Size = new System.Drawing.Size(234, 23);
@@ -234,7 +234,7 @@ namespace Sistema_Academico.UI.Registros
             // 
             // DuracionTextBox
             // 
-            this.DuracionTextBox.Location = new System.Drawing.Point(588, 140);
+            this.DuracionTextBox.Location = new System.Drawing.Point(537, 92);
             this.DuracionTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DuracionTextBox.Name = "DuracionTextBox";
             this.DuracionTextBox.Size = new System.Drawing.Size(234, 23);
@@ -242,7 +242,7 @@ namespace Sistema_Academico.UI.Registros
             // 
             // AsignaturasElectivasTextBox
             // 
-            this.AsignaturasElectivasTextBox.Location = new System.Drawing.Point(588, 178);
+            this.AsignaturasElectivasTextBox.Location = new System.Drawing.Point(537, 121);
             this.AsignaturasElectivasTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AsignaturasElectivasTextBox.Name = "AsignaturasElectivasTextBox";
             this.AsignaturasElectivasTextBox.Size = new System.Drawing.Size(234, 23);
@@ -251,7 +251,7 @@ namespace Sistema_Academico.UI.Registros
             // EliminarButton
             // 
             this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.EliminarButton.Location = new System.Drawing.Point(464, 254);
+            this.EliminarButton.Location = new System.Drawing.Point(388, 178);
             this.EliminarButton.Margin = new System.Windows.Forms.Padding(2);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(88, 42);
@@ -264,7 +264,7 @@ namespace Sistema_Academico.UI.Registros
             // GuardarButton
             // 
             this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.GuardarButton.Location = new System.Drawing.Point(372, 254);
+            this.GuardarButton.Location = new System.Drawing.Point(296, 178);
             this.GuardarButton.Margin = new System.Windows.Forms.Padding(2);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(88, 42);
@@ -277,7 +277,7 @@ namespace Sistema_Academico.UI.Registros
             // NuevoButton
             // 
             this.NuevoButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.NuevoButton.Location = new System.Drawing.Point(280, 254);
+            this.NuevoButton.Location = new System.Drawing.Point(204, 178);
             this.NuevoButton.Margin = new System.Windows.Forms.Padding(2);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(88, 42);
@@ -294,7 +294,7 @@ namespace Sistema_Academico.UI.Registros
             // BuscarButton
             // 
             this.BuscarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BuscarButton.Location = new System.Drawing.Point(556, 254);
+            this.BuscarButton.Location = new System.Drawing.Point(480, 178);
             this.BuscarButton.Name = "BuscarButton";
             this.BuscarButton.Size = new System.Drawing.Size(93, 42);
             this.BuscarButton.TabIndex = 61;
@@ -307,7 +307,7 @@ namespace Sistema_Academico.UI.Registros
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(842, 310);
+            this.ClientSize = new System.Drawing.Size(776, 224);
             this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.EliminarButton);
             this.Controls.Add(this.GuardarButton);

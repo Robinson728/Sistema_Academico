@@ -42,9 +42,9 @@ namespace Sistema_Academico.UI.Registros
             IdNumericUpDown.Value = grupos.GrupoId;
             AsignaturaComboBox.Text = grupos.Asignatura;
             ProfesorComboBox.Text = grupos.Profesor;
-            //grupos.CantidadEstudiantes = Convert.ToInt32(CantidadEstudiantesTextBox.Text);
+            CantidadEstudiantesTextBox.Text = grupos.CantidadEstudiantes.ToString();
             AulaTextBox.Text = grupos.Aula;
-            //grupos.NumeroGrupo = Convert.ToInt32(NumeroGrupoTextBox.Text);
+            NumeroGrupoTextBox.Text = grupos.NumeroGrupo.ToString();
         }
 
         private Grupos LlenaClase()

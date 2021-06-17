@@ -144,7 +144,7 @@ namespace Sistema_Academico.UI.Registros
             // 
             this.IdNumericUpDown.Location = new System.Drawing.Point(77, 6);
             this.IdNumericUpDown.Name = "IdNumericUpDown";
-            this.IdNumericUpDown.Size = new System.Drawing.Size(65, 23);
+            this.IdNumericUpDown.Size = new System.Drawing.Size(109, 23);
             this.IdNumericUpDown.TabIndex = 18;
             // 
             // NombreTextBox
@@ -193,7 +193,7 @@ namespace Sistema_Academico.UI.Registros
             this.Controls.Add(this.NombreTextBox);
             this.Controls.Add(this.IdLabel);
             this.Name = "rSemestres";
-            this.Text = "rSemestres";
+            this.Text = "Registro de Semestres";
             this.PeriodoSemestreGroupBox.ResumeLayout(false);
             this.PeriodoSemestreGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IdNumericUpDown)).EndInit();

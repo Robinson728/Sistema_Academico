@@ -67,7 +67,7 @@ namespace Sistema_Academico.UI.Registros
             this.IdNumericUpDown.Location = new System.Drawing.Point(73, 7);
             this.IdNumericUpDown.Margin = new System.Windows.Forms.Padding(2);
             this.IdNumericUpDown.Name = "IdNumericUpDown";
-            this.IdNumericUpDown.Size = new System.Drawing.Size(72, 23);
+            this.IdNumericUpDown.Size = new System.Drawing.Size(130, 23);
             this.IdNumericUpDown.TabIndex = 55;
             // 
             // label3

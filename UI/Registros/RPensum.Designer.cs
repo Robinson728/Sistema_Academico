@@ -330,7 +330,7 @@ namespace Sistema_Academico.UI.Registros
             // 
             this.IdNumericUpDown.Location = new System.Drawing.Point(71, 5);
             this.IdNumericUpDown.Name = "IdNumericUpDown";
-            this.IdNumericUpDown.Size = new System.Drawing.Size(96, 23);
+            this.IdNumericUpDown.Size = new System.Drawing.Size(251, 23);
             this.IdNumericUpDown.TabIndex = 0;
             // 
             // EliminarButton

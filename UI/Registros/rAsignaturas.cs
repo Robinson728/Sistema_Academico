@@ -36,8 +36,8 @@ namespace Sistema_Academico.UI.Registros
             AsignaturaIdNumericUpDown.Value = asignaturas.AsignaturaId;
             NombreTextBox.Text = asignaturas.Nombre;
             DescripcionTextBox.Text = asignaturas.Descripcion;
-            /*asignaturas.Creditos = Convert.ToInt32(CreditosTextBox.Text);
-            asignaturas.Grupo = Convert.ToInt32(GrupoTextBox.Text);*/
+            CreditosTextBox.Text = asignaturas.Creditos.ToString();
+            GrupoTextBox.Text = asignaturas.Grupo.ToString();
             HoraEntradaDateTimePicker.Value = asignaturas.HoraInicio;
             HoraSalidaDateTimePicker.Value = asignaturas.HoraFinal;
         }
