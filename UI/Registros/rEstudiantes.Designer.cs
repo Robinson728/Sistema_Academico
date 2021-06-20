@@ -71,7 +71,7 @@ namespace Sistema_Academico.UI.Registros
             this.label15 = new System.Windows.Forms.Label();
             this.IdNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.ErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
-            this.button1 = new System.Windows.Forms.Button();
+            this.BuscarButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IdNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).BeginInit();
@@ -516,23 +516,24 @@ namespace Sistema_Academico.UI.Registros
             // 
             this.ErrorProvider.ContainerControl = this;
             // 
-            // button1
+            // BuscarButton
             // 
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(312, 178);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 42);
-            this.button1.TabIndex = 68;
-            this.button1.Text = "Buscar";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
+            this.BuscarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BuscarButton.Location = new System.Drawing.Point(312, 178);
+            this.BuscarButton.Name = "BuscarButton";
+            this.BuscarButton.Size = new System.Drawing.Size(93, 42);
+            this.BuscarButton.TabIndex = 68;
+            this.BuscarButton.Text = "Buscar";
+            this.BuscarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BuscarButton.UseVisualStyleBackColor = true;
+            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
             // rEstudiantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(427, 225);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.ClaveTextBox);
             this.Controls.Add(this.label10);
@@ -605,6 +606,6 @@ namespace Sistema_Academico.UI.Registros
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.NumericUpDown IdNumericUpDown;
         private System.Windows.Forms.ErrorProvider ErrorProvider;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BuscarButton;
     }
 }

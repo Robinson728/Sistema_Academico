@@ -30,12 +30,12 @@ namespace Sistema_Academico.UI.Consultas
         private void InitializeComponent()
         {
             this.FechaIngresoDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.ClaveTextBox = new System.Windows.Forms.TextBox();
+            this.SeleccionarButton = new System.Windows.Forms.Button();
+            this.NuevoButton = new System.Windows.Forms.Button();
+            this.NombreTextBox = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.HorasTeoricasTextBox = new System.Windows.Forms.TextBox();
-            this.HorasPracticasTextBox = new System.Windows.Forms.TextBox();
+            this.ClaveTextBox = new System.Windows.Forms.TextBox();
+            this.EmailTextBox = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -53,8 +53,8 @@ namespace Sistema_Academico.UI.Consultas
             this.BuscarButton = new System.Windows.Forms.Button();
             this.ConsultaAsignaturaDataGridView = new System.Windows.Forms.DataGridView();
             this.UsarFiltroFechascheckBox = new System.Windows.Forms.CheckBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.MatriculaMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.TelefonoMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
             this.IdTextBox = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
@@ -74,31 +74,33 @@ namespace Sistema_Academico.UI.Consultas
             this.FechaIngresoDateTimePicker.TabIndex = 75;
             this.FechaIngresoDateTimePicker.Value = new System.DateTime(2021, 3, 22, 16, 32, 1, 0);
             // 
-            // button2
+            // SeleccionarButton
             // 
-            this.button2.Location = new System.Drawing.Point(5, 430);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(121, 45);
-            this.button2.TabIndex = 124;
-            this.button2.Text = "Seleccionar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.SeleccionarButton.Location = new System.Drawing.Point(5, 430);
+            this.SeleccionarButton.Name = "SeleccionarButton";
+            this.SeleccionarButton.Size = new System.Drawing.Size(121, 45);
+            this.SeleccionarButton.TabIndex = 124;
+            this.SeleccionarButton.Text = "Seleccionar";
+            this.SeleccionarButton.UseVisualStyleBackColor = true;
+            this.SeleccionarButton.Click += new System.EventHandler(this.SeleccionarButton_Click);
             // 
-            // button1
+            // NuevoButton
             // 
-            this.button1.Location = new System.Drawing.Point(821, 98);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(109, 43);
-            this.button1.TabIndex = 123;
-            this.button1.Text = "Nuevo";
-            this.button1.UseVisualStyleBackColor = true;
+            this.NuevoButton.Location = new System.Drawing.Point(821, 98);
+            this.NuevoButton.Name = "NuevoButton";
+            this.NuevoButton.Size = new System.Drawing.Size(109, 43);
+            this.NuevoButton.TabIndex = 123;
+            this.NuevoButton.Text = "Nuevo";
+            this.NuevoButton.UseVisualStyleBackColor = true;
+            this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
             // 
-            // ClaveTextBox
+            // NombreTextBox
             // 
-            this.ClaveTextBox.Location = new System.Drawing.Point(185, 21);
-            this.ClaveTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.ClaveTextBox.Name = "ClaveTextBox";
-            this.ClaveTextBox.Size = new System.Drawing.Size(159, 23);
-            this.ClaveTextBox.TabIndex = 122;
+            this.NombreTextBox.Location = new System.Drawing.Point(185, 21);
+            this.NombreTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.NombreTextBox.Name = "NombreTextBox";
+            this.NombreTextBox.Size = new System.Drawing.Size(159, 23);
+            this.NombreTextBox.TabIndex = 122;
             // 
             // label10
             // 
@@ -110,21 +112,21 @@ namespace Sistema_Academico.UI.Consultas
             this.label10.TabIndex = 121;
             this.label10.Text = "Estudiante Id";
             // 
-            // HorasTeoricasTextBox
+            // ClaveTextBox
             // 
-            this.HorasTeoricasTextBox.Location = new System.Drawing.Point(364, 67);
-            this.HorasTeoricasTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.HorasTeoricasTextBox.Name = "HorasTeoricasTextBox";
-            this.HorasTeoricasTextBox.Size = new System.Drawing.Size(159, 23);
-            this.HorasTeoricasTextBox.TabIndex = 119;
+            this.ClaveTextBox.Location = new System.Drawing.Point(364, 67);
+            this.ClaveTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.ClaveTextBox.Name = "ClaveTextBox";
+            this.ClaveTextBox.Size = new System.Drawing.Size(159, 23);
+            this.ClaveTextBox.TabIndex = 119;
             // 
-            // HorasPracticasTextBox
+            // EmailTextBox
             // 
-            this.HorasPracticasTextBox.Location = new System.Drawing.Point(185, 67);
-            this.HorasPracticasTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.HorasPracticasTextBox.Name = "HorasPracticasTextBox";
-            this.HorasPracticasTextBox.Size = new System.Drawing.Size(159, 23);
-            this.HorasPracticasTextBox.TabIndex = 118;
+            this.EmailTextBox.Location = new System.Drawing.Point(185, 67);
+            this.EmailTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.EmailTextBox.Name = "EmailTextBox";
+            this.EmailTextBox.Size = new System.Drawing.Size(159, 23);
+            this.EmailTextBox.TabIndex = 118;
             // 
             // label9
             // 
@@ -272,6 +274,7 @@ namespace Sistema_Academico.UI.Consultas
             this.BuscarButton.TabIndex = 104;
             this.BuscarButton.Text = "Buscar";
             this.BuscarButton.UseVisualStyleBackColor = true;
+            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
             // ConsultaAsignaturaDataGridView
             // 
@@ -296,21 +299,21 @@ namespace Sistema_Academico.UI.Consultas
             this.UsarFiltroFechascheckBox.Text = "Usar Filtro de Fechas";
             this.UsarFiltroFechascheckBox.UseVisualStyleBackColor = true;
             // 
-            // maskedTextBox1
+            // MatriculaMaskedTextBox
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(364, 21);
-            this.maskedTextBox1.Mask = "0000-0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(159, 23);
-            this.maskedTextBox1.TabIndex = 125;
+            this.MatriculaMaskedTextBox.Location = new System.Drawing.Point(364, 21);
+            this.MatriculaMaskedTextBox.Mask = "0000-0000";
+            this.MatriculaMaskedTextBox.Name = "MatriculaMaskedTextBox";
+            this.MatriculaMaskedTextBox.Size = new System.Drawing.Size(159, 23);
+            this.MatriculaMaskedTextBox.TabIndex = 125;
             // 
-            // maskedTextBox2
+            // TelefonoMaskedTextBox
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(544, 21);
-            this.maskedTextBox2.Mask = "000-000-0000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(159, 23);
-            this.maskedTextBox2.TabIndex = 126;
+            this.TelefonoMaskedTextBox.Location = new System.Drawing.Point(544, 21);
+            this.TelefonoMaskedTextBox.Mask = "000-000-0000";
+            this.TelefonoMaskedTextBox.Name = "TelefonoMaskedTextBox";
+            this.TelefonoMaskedTextBox.Size = new System.Drawing.Size(159, 23);
+            this.TelefonoMaskedTextBox.TabIndex = 126;
             // 
             // IdTextBox
             // 
@@ -337,14 +340,14 @@ namespace Sistema_Academico.UI.Consultas
             this.ClientSize = new System.Drawing.Size(934, 478);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.IdTextBox);
-            this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.ClaveTextBox);
+            this.Controls.Add(this.TelefonoMaskedTextBox);
+            this.Controls.Add(this.MatriculaMaskedTextBox);
+            this.Controls.Add(this.SeleccionarButton);
+            this.Controls.Add(this.NuevoButton);
+            this.Controls.Add(this.NombreTextBox);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.HorasTeoricasTextBox);
-            this.Controls.Add(this.HorasPracticasTextBox);
+            this.Controls.Add(this.ClaveTextBox);
+            this.Controls.Add(this.EmailTextBox);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -371,12 +374,12 @@ namespace Sistema_Academico.UI.Consultas
         #endregion
 
         private System.Windows.Forms.DateTimePicker FechaIngresoDateTimePicker;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox ClaveTextBox;
+        private System.Windows.Forms.Button SeleccionarButton;
+        private System.Windows.Forms.Button NuevoButton;
+        private System.Windows.Forms.TextBox NombreTextBox;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox HorasTeoricasTextBox;
-        private System.Windows.Forms.TextBox HorasPracticasTextBox;
+        private System.Windows.Forms.TextBox ClaveTextBox;
+        private System.Windows.Forms.TextBox EmailTextBox;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -394,8 +397,8 @@ namespace Sistema_Academico.UI.Consultas
         private System.Windows.Forms.Button BuscarButton;
         private System.Windows.Forms.DataGridView ConsultaAsignaturaDataGridView;
         private System.Windows.Forms.CheckBox UsarFiltroFechascheckBox;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox MatriculaMaskedTextBox;
+        private System.Windows.Forms.MaskedTextBox TelefonoMaskedTextBox;
         private System.Windows.Forms.TextBox IdTextBox;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Sistema_Academico.Models;
 using Sistema_Academico.BLL;
+using Sistema_Academico.UI.Consultas;
 
 namespace Sistema_Academico.UI.Registros
 {
@@ -103,18 +104,19 @@ namespace Sistema_Academico.UI.Registros
             return paso;
         }
 
+        public void RecibirEstudia(int id)
+        {
+            Estudiantes estudiantes = EstudiantesBLL.Buscar(id);
+
+            LlenaCampo(estudiantes);
+        }
+
         private void BuscarButton_Click(object sender, EventArgs e)
         {
-            Estudiantes estudiantes = new Estudiantes();
-            int id;
-            int.TryParse(IdNumericUpDown.Text, out id);
-
-            estudiantes = EstudiantesBLL.Buscar(id);
-
-            if (estudiantes != null)
-                LlenaCampo(estudiantes);
-            else
-                MessageBox.Show("Transacción Fallida!!", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            ErrorProvider.Clear();
+            cEstudiantes estudiantes = new cEstudiantes();
+            estudiantes.Show();
+            Close();
         }
 
         private void NuevoButton_Click(object sender, EventArgs e)
@@ -154,5 +156,6 @@ namespace Sistema_Academico.UI.Registros
             else
                 ErrorProvider.SetError(IdNumericUpDown, "Id no existente");
         }
+
     }
 }
