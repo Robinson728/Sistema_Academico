@@ -13,9 +13,9 @@ using System.Windows.Forms;
 
 namespace Sistema_Academico.UI.Consultas
 {
-    public partial class cProfesores : Form
+    public partial class cGrupos : Form
     {
-        public cProfesores()
+        public cGrupos()
         {
             InitializeComponent();
         }

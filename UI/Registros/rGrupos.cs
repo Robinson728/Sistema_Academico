@@ -145,10 +145,10 @@ namespace Sistema_Academico.UI.Registros
                 ErrorProvider.SetError(IdNumericUpDown, "Id no existente");
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void BuscarButton_Click(object sender, EventArgs e)
         {
             ErrorProvider.Clear();
-            cProfesores grupos = new cProfesores();
+            cGrupos grupos = new cGrupos();
             grupos.Show();
             Close();
         }

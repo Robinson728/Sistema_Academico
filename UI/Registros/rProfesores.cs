@@ -102,7 +102,7 @@ namespace Sistema_Academico.UI.Registros
 
         public void RecibirProfesores(int id)
         {
-             Profesores profesores= ProfesoresBLL.Buscar(id);
+            Profesores profesores = ProfesoresBLL.Buscar(id);
 
             LlenaCampo(profesores);
         }
@@ -162,7 +162,7 @@ namespace Sistema_Academico.UI.Registros
         private void Buscarbutton_Click_1(object sender, EventArgs e)
         {
             ErrorProvider.Clear();
-            cProfesores profesores = new cProfesores();
+            cProfesor profesores = new cProfesor();
             profesores.Show();
             Close();
         }

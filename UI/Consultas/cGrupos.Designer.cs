@@ -1,7 +1,7 @@
 ﻿
 namespace Sistema_Academico.UI.Consultas
 {
-    partial class cProfesores
+    partial class cGrupos
     {
         /// <summary>
         /// Required designer variable.
