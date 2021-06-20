@@ -62,12 +62,12 @@ namespace Sistema_Academico.UI.Consultas
             ConsultaAsignaturaDataGridView.DataSource = lista;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void NuevoButton_Click(object sender, EventArgs e)
         {
             Limpiar();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void SeleccionarButton_Click(object sender, EventArgs e)
         {
             string id;
 

@@ -68,7 +68,7 @@ namespace Sistema_Academico.UI.Registros
             // EliminarButton
             // 
             this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.EliminarButton.Location = new System.Drawing.Point(199, 178);
+            this.EliminarButton.Location = new System.Drawing.Point(199, 179);
             this.EliminarButton.Margin = new System.Windows.Forms.Padding(2);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(93, 42);
@@ -81,7 +81,7 @@ namespace Sistema_Academico.UI.Registros
             // GuardarButton
             // 
             this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.GuardarButton.Location = new System.Drawing.Point(102, 178);
+            this.GuardarButton.Location = new System.Drawing.Point(102, 179);
             this.GuardarButton.Margin = new System.Windows.Forms.Padding(2);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(93, 42);
@@ -94,7 +94,7 @@ namespace Sistema_Academico.UI.Registros
             // NuevoButton
             // 
             this.NuevoButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.NuevoButton.Location = new System.Drawing.Point(5, 178);
+            this.NuevoButton.Location = new System.Drawing.Point(5, 179);
             this.NuevoButton.Margin = new System.Windows.Forms.Padding(2);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(93, 42);
@@ -233,6 +233,7 @@ namespace Sistema_Academico.UI.Registros
             this.ClaveTextBox.Location = new System.Drawing.Point(74, 151);
             this.ClaveTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.ClaveTextBox.Name = "ClaveTextBox";
+            this.ClaveTextBox.PasswordChar = '*';
             this.ClaveTextBox.Size = new System.Drawing.Size(120, 23);
             this.ClaveTextBox.TabIndex = 46;
             // 
@@ -263,7 +264,7 @@ namespace Sistema_Academico.UI.Registros
             // button1
             // 
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(296, 178);
+            this.button1.Location = new System.Drawing.Point(296, 179);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(93, 42);
             this.button1.TabIndex = 54;
@@ -275,7 +276,7 @@ namespace Sistema_Academico.UI.Registros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(394, 224);
+            this.ClientSize = new System.Drawing.Size(394, 225);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.ClaveTextBox);

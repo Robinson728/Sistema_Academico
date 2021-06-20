@@ -29,8 +29,8 @@ namespace Sistema_Academico.UI.Consultas
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.SeleccionarButton = new System.Windows.Forms.Button();
+            this.NuevoButton = new System.Windows.Forms.Button();
             this.AsignaturaTextBox = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.NumeroGrupoTextBox = new System.Windows.Forms.TextBox();
@@ -56,25 +56,25 @@ namespace Sistema_Academico.UI.Consultas
             ((System.ComponentModel.ISupportInitialize)(this.ConsultaAsignaturaDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // button2
+            // SeleccionarButton
             // 
-            this.button2.Location = new System.Drawing.Point(5, 431);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(121, 45);
-            this.button2.TabIndex = 124;
-            this.button2.Text = "Seleccionar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.SeleccionarButton.Location = new System.Drawing.Point(5, 431);
+            this.SeleccionarButton.Name = "SeleccionarButton";
+            this.SeleccionarButton.Size = new System.Drawing.Size(121, 45);
+            this.SeleccionarButton.TabIndex = 124;
+            this.SeleccionarButton.Text = "Seleccionar";
+            this.SeleccionarButton.UseVisualStyleBackColor = true;
+            this.SeleccionarButton.Click += new System.EventHandler(this.SeleccionarButton_Click);
             // 
-            // button1
+            // NuevoButton
             // 
-            this.button1.Location = new System.Drawing.Point(638, 99);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(109, 43);
-            this.button1.TabIndex = 123;
-            this.button1.Text = "Nuevo";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.NuevoButton.Location = new System.Drawing.Point(638, 99);
+            this.NuevoButton.Name = "NuevoButton";
+            this.NuevoButton.Size = new System.Drawing.Size(109, 43);
+            this.NuevoButton.TabIndex = 123;
+            this.NuevoButton.Text = "Nuevo";
+            this.NuevoButton.UseVisualStyleBackColor = true;
+            this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
             // 
             // AsignaturaTextBox
             // 
@@ -284,8 +284,8 @@ namespace Sistema_Academico.UI.Consultas
             this.Controls.Add(this.IdTextBox);
             this.Controls.Add(this.AulaTextBox);
             this.Controls.Add(this.ProfesorTextBox);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.SeleccionarButton);
+            this.Controls.Add(this.NuevoButton);
             this.Controls.Add(this.AsignaturaTextBox);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.NumeroGrupoTextBox);
@@ -312,8 +312,8 @@ namespace Sistema_Academico.UI.Consultas
 
         #endregion
 
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button SeleccionarButton;
+        private System.Windows.Forms.Button NuevoButton;
         private System.Windows.Forms.TextBox AsignaturaTextBox;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox NumeroGrupoTextBox;
