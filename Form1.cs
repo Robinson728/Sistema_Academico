@@ -49,7 +49,7 @@ namespace Sistema_Academico
 
         public void cGruposToolStripMenuItem_ItemClicked(object sender, EventArgs e)
         {
-            cGrupos grupos = new cGrupos();
+            cProfesores grupos = new cProfesores();
             grupos.MdiParent = this;
             grupos.Show();
         }

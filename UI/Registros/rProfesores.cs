@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Sistema_Academico.Models;
 using Sistema_Academico.BLL;
+using Sistema_Academico.UI.Consultas;
 
 namespace Sistema_Academico.UI.Registros
 {
@@ -60,6 +61,7 @@ namespace Sistema_Academico.UI.Registros
             return profesores;
         }
 
+
         private bool Validar()
         {
             bool paso = true;
@@ -96,6 +98,13 @@ namespace Sistema_Academico.UI.Registros
             }
 
             return paso;
+        }
+
+        public void RecibirProfesores(int id)
+        {
+             Profesores profesores= ProfesoresBLL.Buscar(id);
+
+            LlenaCampo(profesores);
         }
 
         private void BuscarButton_Click(object sender, EventArgs e)
@@ -148,6 +157,14 @@ namespace Sistema_Academico.UI.Registros
                 MessageBox.Show("Transacción Exitosa!!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else
                 ErrorProvider.SetError(IdNumericUpDown, "Id no existente");
+        }
+
+        private void Buscarbutton_Click_1(object sender, EventArgs e)
+        {
+            ErrorProvider.Clear();
+            cProfesores profesores = new cProfesores();
+            profesores.Show();
+            Close();
         }
     }
 }

@@ -148,7 +148,7 @@ namespace Sistema_Academico.UI.Registros
         private void button1_Click(object sender, EventArgs e)
         {
             ErrorProvider.Clear();
-            cGrupos grupos = new cGrupos();
+            cProfesores grupos = new cProfesores();
             grupos.Show();
             Close();
         }
