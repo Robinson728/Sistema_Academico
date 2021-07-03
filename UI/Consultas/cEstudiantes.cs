@@ -26,9 +26,9 @@ namespace Sistema_Academico.UI.Consultas
             NombreTextBox.Clear();
             MatriculaMaskedTextBox.Clear();
             TelefonoMaskedTextBox.Clear();
-            CarreraComboBox.Items.Clear();
+            CarreraTextBox.Clear();
             EmailTextBox.Clear();
-            ClaveTextBox.Clear();
+            ConsultaAsignaturaDataGridView.DataSource = null;
         }
 
         private void BuscarButton_Click(object sender, EventArgs e)
@@ -36,31 +36,30 @@ namespace Sistema_Academico.UI.Consultas
             var lista = new List<Estudiantes>();
 
             if ((IdTextBox.Text == string.Empty) && (NombreTextBox.Text == string.Empty) && (MatriculaMaskedTextBox.Text == string.Empty)
-                    && (TelefonoMaskedTextBox.Text == string.Empty) && (CarreraComboBox.Text == string.Empty) && (EmailTextBox.Text == string.Empty) && (ClaveTextBox.Text == string.Empty))
+                    && (TelefonoMaskedTextBox.Text == string.Empty) && (CarreraTextBox.Text == string.Empty) && (EmailTextBox.Text == string.Empty))
             {
                 lista = EstudiantesBLL.GetList(r => true);
             }
+            else
+            {
+                if (IdTextBox.Text != string.Empty)
+                    lista = EstudiantesBLL.GetList(r => r.EstudianteId == Conversiones.ToInt(IdTextBox.Text));
 
-            if (IdTextBox.Text != string.Empty)
-                lista = EstudiantesBLL.GetList(r => r.EstudianteId == Conversiones.ToInt(IdTextBox.Text));
+                if (NombreTextBox.Text != string.Empty)
+                    lista = EstudiantesBLL.GetList(r => r.Nombre.Contains(NombreTextBox.Text));
 
-            if (NombreTextBox.Text != string.Empty)
-                lista = EstudiantesBLL.GetList(r => r.Nombre.Contains(NombreTextBox.Text));
+                if (MatriculaMaskedTextBox.Text != string.Empty)
+                    lista = EstudiantesBLL.GetList(r => r.Matricula.Contains(MatriculaMaskedTextBox.Text));
 
-            if (MatriculaMaskedTextBox.Text != string.Empty)
-                lista = EstudiantesBLL.GetList(r => r.Matricula == Conversiones.ToInt(MatriculaMaskedTextBox.Text));
+                if (TelefonoMaskedTextBox.Text != string.Empty)
+                    lista = EstudiantesBLL.GetList(r => r.Telefono.Contains(TelefonoMaskedTextBox.Text));
 
-            if (TelefonoMaskedTextBox.Text != string.Empty)
-                lista = EstudiantesBLL.GetList(r => r.Telefono == Conversiones.ToInt(TelefonoMaskedTextBox.Text));
+                if (CarreraTextBox.Text != string.Empty)
+                    lista = EstudiantesBLL.GetList(r => r.Carrera.Contains(CarreraTextBox.Text));
 
-            if (CarreraComboBox.Text != string.Empty)
-                lista = EstudiantesBLL.GetList(r => r.Carrera.Contains(CarreraComboBox.Text));
-
-            if (EmailTextBox.Text != string.Empty)
-                lista = EstudiantesBLL.GetList(r => r.Email.Contains(EmailTextBox.Text));
-
-            if (ClaveTextBox.Text != string.Empty)
-                lista = EstudiantesBLL.GetList(r => r.Clave.Contains(ClaveTextBox.Text));
+                if (EmailTextBox.Text != string.Empty)
+                    lista = EstudiantesBLL.GetList(r => r.Email.Contains(EmailTextBox.Text));
+            }
 
             ConsultaAsignaturaDataGridView.DataSource = null;
             ConsultaAsignaturaDataGridView.DataSource = lista;
@@ -82,8 +81,8 @@ namespace Sistema_Academico.UI.Consultas
             }
 
             id = ConsultaAsignaturaDataGridView.CurrentRow.Cells[0].Value.ToString();
-            rEstudiantes estudiantes = new rEstudiantes();
-            estudiantes.RecibirEstudia(Conversiones.ToInt(id));
+            var estudiantes = new rEstudiantes();
+            estudiantes.RecibirEstudiante(Conversiones.ToInt(id));
             estudiantes.Show();
             Close();
         }

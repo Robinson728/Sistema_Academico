@@ -127,14 +127,14 @@ namespace Sistema_Academico.Migrations
                     b.Property<DateTime>("FechaIngreso")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("Matricula")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("Matricula")
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Nombre")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("Telefono")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("Telefono")
+                        .HasColumnType("TEXT");
 
                     b.HasKey("EstudianteId");
 

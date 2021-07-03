@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using Sistema_Academico.UI.Registros;
 using Sistema_Academico.UI.Consultas;
 
-namespace Sistema_Academico
+namespace Sistema_Academico.UI
 {
     public partial class MainForms : Form
     {

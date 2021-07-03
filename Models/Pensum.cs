@@ -19,6 +19,6 @@ namespace Sistema_Academico.Models
         public string PreRequisitos { get; set; }
         public string Clave { get; set; }
         public string Semestre { get; set; }
-        public DateTime FechaCreacion { get; set; }
+        public DateTime FechaCreacion { get; set; } = DateTime.Now;
     }
 }

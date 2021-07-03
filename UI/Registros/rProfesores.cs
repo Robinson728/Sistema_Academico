@@ -107,20 +107,6 @@ namespace Sistema_Academico.UI.Registros
             LlenaCampo(profesores);
         }
 
-        private void BuscarButton_Click(object sender, EventArgs e)
-        {
-            Profesores profesores = new Profesores();
-            int id;
-            int.TryParse(IdNumericUpDown.Text, out id);
-
-            profesores = ProfesoresBLL.Buscar(id);
-
-            if (profesores != null)
-                LlenaCampo(profesores);
-            else
-                MessageBox.Show("Transacción Fallida!!", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
         private void NuevoButton_Click(object sender, EventArgs e)
         {
             Limpiar();
@@ -159,7 +145,7 @@ namespace Sistema_Academico.UI.Registros
                 ErrorProvider.SetError(IdNumericUpDown, "Id no existente");
         }
 
-        private void Buscarbutton_Click_1(object sender, EventArgs e)
+        private void Buscarbutton_Click(object sender, EventArgs e)
         {
             ErrorProvider.Clear();
             cProfesor profesores = new cProfesor();

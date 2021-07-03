@@ -34,17 +34,13 @@ namespace Sistema_Academico.UI.Consultas
             this.NuevoButton = new System.Windows.Forms.Button();
             this.NombreTextBox = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.ClaveTextBox = new System.Windows.Forms.TextBox();
             this.EmailTextBox = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.CarreraComboBox = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.HastaDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.HastaLabel = new System.Windows.Forms.Label();
@@ -56,7 +52,7 @@ namespace Sistema_Academico.UI.Consultas
             this.MatriculaMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
             this.TelefonoMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
             this.IdTextBox = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.CarreraTextBox = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConsultaAsignaturaDataGridView)).BeginInit();
             this.SuspendLayout();
@@ -76,9 +72,9 @@ namespace Sistema_Academico.UI.Consultas
             // 
             // SeleccionarButton
             // 
-            this.SeleccionarButton.Location = new System.Drawing.Point(5, 430);
+            this.SeleccionarButton.Location = new System.Drawing.Point(5, 429);
             this.SeleccionarButton.Name = "SeleccionarButton";
-            this.SeleccionarButton.Size = new System.Drawing.Size(121, 45);
+            this.SeleccionarButton.Size = new System.Drawing.Size(121, 37);
             this.SeleccionarButton.TabIndex = 124;
             this.SeleccionarButton.Text = "Seleccionar";
             this.SeleccionarButton.UseVisualStyleBackColor = true;
@@ -86,7 +82,7 @@ namespace Sistema_Academico.UI.Consultas
             // 
             // NuevoButton
             // 
-            this.NuevoButton.Location = new System.Drawing.Point(821, 98);
+            this.NuevoButton.Location = new System.Drawing.Point(641, 98);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(109, 43);
             this.NuevoButton.TabIndex = 123;
@@ -96,7 +92,7 @@ namespace Sistema_Academico.UI.Consultas
             // 
             // NombreTextBox
             // 
-            this.NombreTextBox.Location = new System.Drawing.Point(185, 21);
+            this.NombreTextBox.Location = new System.Drawing.Point(184, 21);
             this.NombreTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.NombreTextBox.Name = "NombreTextBox";
             this.NombreTextBox.Size = new System.Drawing.Size(159, 23);
@@ -112,17 +108,9 @@ namespace Sistema_Academico.UI.Consultas
             this.label10.TabIndex = 121;
             this.label10.Text = "Estudiante Id";
             // 
-            // ClaveTextBox
-            // 
-            this.ClaveTextBox.Location = new System.Drawing.Point(364, 67);
-            this.ClaveTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.ClaveTextBox.Name = "ClaveTextBox";
-            this.ClaveTextBox.Size = new System.Drawing.Size(159, 23);
-            this.ClaveTextBox.TabIndex = 119;
-            // 
             // EmailTextBox
             // 
-            this.EmailTextBox.Location = new System.Drawing.Point(185, 67);
+            this.EmailTextBox.Location = new System.Drawing.Point(184, 67);
             this.EmailTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.EmailTextBox.Name = "EmailTextBox";
             this.EmailTextBox.Size = new System.Drawing.Size(159, 23);
@@ -131,27 +119,17 @@ namespace Sistema_Academico.UI.Consultas
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(364, 3);
+            this.label9.Location = new System.Drawing.Point(363, 3);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(57, 15);
             this.label9.TabIndex = 116;
             this.label9.Text = "Matrícula";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(544, 50);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(80, 15);
-            this.label7.TabIndex = 115;
-            this.label7.Text = "Fecha Ingreso";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(544, 3);
+            this.label6.Location = new System.Drawing.Point(363, 50);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(52, 15);
@@ -161,22 +139,12 @@ namespace Sistema_Academico.UI.Consultas
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(185, 50);
+            this.label5.Location = new System.Drawing.Point(184, 50);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(36, 15);
             this.label5.TabIndex = 113;
             this.label5.Text = "Email";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(364, 50);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 15);
-            this.label4.TabIndex = 111;
-            this.label4.Text = "Clave";
             // 
             // label3
             // 
@@ -200,21 +168,12 @@ namespace Sistema_Academico.UI.Consultas
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(185, 3);
+            this.label1.Location = new System.Drawing.Point(184, 3);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 15);
             this.label1.TabIndex = 108;
             this.label1.Text = "Nombre";
-            // 
-            // CarreraComboBox
-            // 
-            this.CarreraComboBox.FormattingEnabled = true;
-            this.CarreraComboBox.Location = new System.Drawing.Point(5, 67);
-            this.CarreraComboBox.Margin = new System.Windows.Forms.Padding(2);
-            this.CarreraComboBox.Name = "CarreraComboBox";
-            this.CarreraComboBox.Size = new System.Drawing.Size(159, 23);
-            this.CarreraComboBox.TabIndex = 107;
             // 
             // panel1
             // 
@@ -223,9 +182,9 @@ namespace Sistema_Academico.UI.Consultas
             this.panel1.Controls.Add(this.HastaLabel);
             this.panel1.Controls.Add(this.DesdeDateTimePicker);
             this.panel1.Controls.Add(this.DesdeLabel);
-            this.panel1.Location = new System.Drawing.Point(186, 98);
+            this.panel1.Location = new System.Drawing.Point(185, 98);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(517, 43);
+            this.panel1.Size = new System.Drawing.Size(337, 43);
             this.panel1.TabIndex = 105;
             // 
             // HastaDateTimePicker
@@ -233,15 +192,15 @@ namespace Sistema_Academico.UI.Consultas
             this.HastaDateTimePicker.CustomFormat = "dd/MM/yyyy";
             this.HastaDateTimePicker.Enabled = false;
             this.HastaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.HastaDateTimePicker.Location = new System.Drawing.Point(304, 9);
+            this.HastaDateTimePicker.Location = new System.Drawing.Point(217, 9);
             this.HastaDateTimePicker.Name = "HastaDateTimePicker";
-            this.HastaDateTimePicker.Size = new System.Drawing.Size(192, 23);
+            this.HastaDateTimePicker.Size = new System.Drawing.Size(102, 23);
             this.HastaDateTimePicker.TabIndex = 11;
             // 
             // HastaLabel
             // 
             this.HastaLabel.AutoSize = true;
-            this.HastaLabel.Location = new System.Drawing.Point(261, 13);
+            this.HastaLabel.Location = new System.Drawing.Point(174, 13);
             this.HastaLabel.Name = "HastaLabel";
             this.HastaLabel.Size = new System.Drawing.Size(37, 15);
             this.HastaLabel.TabIndex = 10;
@@ -252,15 +211,15 @@ namespace Sistema_Academico.UI.Consultas
             this.DesdeDateTimePicker.CustomFormat = "dd/MM/yyyy";
             this.DesdeDateTimePicker.Enabled = false;
             this.DesdeDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DesdeDateTimePicker.Location = new System.Drawing.Point(63, 9);
+            this.DesdeDateTimePicker.Location = new System.Drawing.Point(60, 9);
             this.DesdeDateTimePicker.Name = "DesdeDateTimePicker";
-            this.DesdeDateTimePicker.Size = new System.Drawing.Size(192, 23);
+            this.DesdeDateTimePicker.Size = new System.Drawing.Size(102, 23);
             this.DesdeDateTimePicker.TabIndex = 9;
             // 
             // DesdeLabel
             // 
             this.DesdeLabel.AutoSize = true;
-            this.DesdeLabel.Location = new System.Drawing.Point(18, 13);
+            this.DesdeLabel.Location = new System.Drawing.Point(15, 13);
             this.DesdeLabel.Name = "DesdeLabel";
             this.DesdeLabel.Size = new System.Drawing.Size(39, 15);
             this.DesdeLabel.TabIndex = 8;
@@ -268,7 +227,7 @@ namespace Sistema_Academico.UI.Consultas
             // 
             // BuscarButton
             // 
-            this.BuscarButton.Location = new System.Drawing.Point(708, 98);
+            this.BuscarButton.Location = new System.Drawing.Point(528, 98);
             this.BuscarButton.Name = "BuscarButton";
             this.BuscarButton.Size = new System.Drawing.Size(109, 43);
             this.BuscarButton.TabIndex = 104;
@@ -286,7 +245,7 @@ namespace Sistema_Academico.UI.Consultas
             this.ConsultaAsignaturaDataGridView.Name = "ConsultaAsignaturaDataGridView";
             this.ConsultaAsignaturaDataGridView.ReadOnly = true;
             this.ConsultaAsignaturaDataGridView.RowTemplate.Height = 25;
-            this.ConsultaAsignaturaDataGridView.Size = new System.Drawing.Size(925, 278);
+            this.ConsultaAsignaturaDataGridView.Size = new System.Drawing.Size(745, 278);
             this.ConsultaAsignaturaDataGridView.TabIndex = 103;
             // 
             // UsarFiltroFechascheckBox
@@ -301,16 +260,14 @@ namespace Sistema_Academico.UI.Consultas
             // 
             // MatriculaMaskedTextBox
             // 
-            this.MatriculaMaskedTextBox.Location = new System.Drawing.Point(364, 21);
-            this.MatriculaMaskedTextBox.Mask = "0000-0000";
+            this.MatriculaMaskedTextBox.Location = new System.Drawing.Point(363, 21);
             this.MatriculaMaskedTextBox.Name = "MatriculaMaskedTextBox";
             this.MatriculaMaskedTextBox.Size = new System.Drawing.Size(159, 23);
             this.MatriculaMaskedTextBox.TabIndex = 125;
             // 
             // TelefonoMaskedTextBox
             // 
-            this.TelefonoMaskedTextBox.Location = new System.Drawing.Point(544, 21);
-            this.TelefonoMaskedTextBox.Mask = "000-000-0000";
+            this.TelefonoMaskedTextBox.Location = new System.Drawing.Point(363, 67);
             this.TelefonoMaskedTextBox.Name = "TelefonoMaskedTextBox";
             this.TelefonoMaskedTextBox.Size = new System.Drawing.Size(159, 23);
             this.TelefonoMaskedTextBox.TabIndex = 126;
@@ -323,22 +280,20 @@ namespace Sistema_Academico.UI.Consultas
             this.IdTextBox.Size = new System.Drawing.Size(159, 23);
             this.IdTextBox.TabIndex = 129;
             // 
-            // dateTimePicker1
+            // CarreraTextBox
             // 
-            this.dateTimePicker1.CustomFormat = "dd/MM/yyyy";
-            this.dateTimePicker1.Enabled = false;
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(544, 67);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(159, 23);
-            this.dateTimePicker1.TabIndex = 130;
+            this.CarreraTextBox.Location = new System.Drawing.Point(5, 67);
+            this.CarreraTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.CarreraTextBox.Name = "CarreraTextBox";
+            this.CarreraTextBox.Size = new System.Drawing.Size(159, 23);
+            this.CarreraTextBox.TabIndex = 130;
             // 
             // cEstudiantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(934, 478);
-            this.Controls.Add(this.dateTimePicker1);
+            this.ClientSize = new System.Drawing.Size(755, 470);
+            this.Controls.Add(this.CarreraTextBox);
             this.Controls.Add(this.IdTextBox);
             this.Controls.Add(this.TelefonoMaskedTextBox);
             this.Controls.Add(this.MatriculaMaskedTextBox);
@@ -346,17 +301,13 @@ namespace Sistema_Academico.UI.Consultas
             this.Controls.Add(this.NuevoButton);
             this.Controls.Add(this.NombreTextBox);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.ClaveTextBox);
             this.Controls.Add(this.EmailTextBox);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.CarreraComboBox);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.ConsultaAsignaturaDataGridView);
@@ -378,17 +329,13 @@ namespace Sistema_Academico.UI.Consultas
         private System.Windows.Forms.Button NuevoButton;
         private System.Windows.Forms.TextBox NombreTextBox;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox ClaveTextBox;
         private System.Windows.Forms.TextBox EmailTextBox;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox CarreraComboBox;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DateTimePicker HastaDateTimePicker;
         private System.Windows.Forms.Label HastaLabel;
@@ -400,6 +347,6 @@ namespace Sistema_Academico.UI.Consultas
         private System.Windows.Forms.MaskedTextBox MatriculaMaskedTextBox;
         private System.Windows.Forms.MaskedTextBox TelefonoMaskedTextBox;
         private System.Windows.Forms.TextBox IdTextBox;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox CarreraTextBox;
     }
 }

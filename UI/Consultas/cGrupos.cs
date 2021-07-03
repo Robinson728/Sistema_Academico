@@ -30,7 +30,7 @@ namespace Sistema_Academico.UI.Consultas
             CantidadEstudiantesTextBox.Clear();
         }
 
-        private void BuscarButton_Click_1(object sender, EventArgs e)
+        private void BuscarButton_Click(object sender, EventArgs e)
         {
             var lista = new List<Grupos>();
 

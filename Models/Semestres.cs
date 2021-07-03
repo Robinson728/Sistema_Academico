@@ -12,7 +12,7 @@ namespace Sistema_Academico.Models
         [Key]
         public int SemestreId { get; set; }
         public string Nombre { get; set; }
-        public DateTime FechaInicio { get; set; }
+        public DateTime FechaInicio { get; set; } = DateTime.Now;
         public DateTime FechaFin { get; set; }
     }
 }

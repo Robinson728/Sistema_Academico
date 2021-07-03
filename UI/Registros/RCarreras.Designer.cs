@@ -346,7 +346,6 @@ namespace Sistema_Academico.UI.Registros
 
         #endregion
 
-        private System.Windows.Forms.Label CarreraIdlabel;
         private System.Windows.Forms.NumericUpDown IdnumericUpDown;
         private System.Windows.Forms.Label Idlabel;
         private System.Windows.Forms.Label label1;

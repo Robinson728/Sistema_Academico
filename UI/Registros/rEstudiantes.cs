@@ -18,6 +18,10 @@ namespace Sistema_Academico.UI.Registros
         public rEstudiantes()
         {
             InitializeComponent();
+
+            CarreraComboBox.DataSource = CarrerasBLL.GetCarreras();
+            CarreraComboBox.DisplayMember = "Nombre";
+            CarreraComboBox.ValueMember = "CarreraId";
         }
 
         private void Limpiar()
@@ -36,8 +40,8 @@ namespace Sistema_Academico.UI.Registros
         {
             IdNumericUpDown.Value = estudiantes.EstudianteId;
             NombreTextBox.Text = estudiantes.Nombre;
-            estudiantes.Matricula = Convert.ToInt32(MatriculaMaskedTextBox.Text);
-            estudiantes.Telefono = Convert.ToInt32(TelefonoMaskedTextBox.Text);
+            MatriculaMaskedTextBox.Text = estudiantes.Matricula;
+            TelefonoMaskedTextBox.Text = estudiantes.Telefono;
             CarreraComboBox.Text = estudiantes.Carrera;
             EmailTextBox.Text = estudiantes.Email;
             ClaveTextBox.Text = estudiantes.Clave;
@@ -50,8 +54,8 @@ namespace Sistema_Academico.UI.Registros
 
             estudiantes.EstudianteId = (int)IdNumericUpDown.Value;
             estudiantes.Nombre = NombreTextBox.Text;
-            estudiantes.Matricula = Convert.ToInt32(MatriculaMaskedTextBox.Text);
-            estudiantes.Telefono = Convert.ToInt32(TelefonoMaskedTextBox.Text);
+            estudiantes.Matricula = MatriculaMaskedTextBox.Text;
+            estudiantes.Telefono = TelefonoMaskedTextBox.Text;
             estudiantes.Carrera = CarreraComboBox.Text;
             estudiantes.Email = EmailTextBox.Text;
             estudiantes.Clave = ClaveTextBox.Text;
@@ -104,19 +108,11 @@ namespace Sistema_Academico.UI.Registros
             return paso;
         }
 
-        public void RecibirEstudia(int id)
+        public void RecibirEstudiante(int id)
         {
             Estudiantes estudiantes = EstudiantesBLL.Buscar(id);
 
             LlenaCampo(estudiantes);
-        }
-
-        private void BuscarButton_Click(object sender, EventArgs e)
-        {
-            ErrorProvider.Clear();
-            cEstudiantes estudiantes = new cEstudiantes();
-            estudiantes.Show();
-            Close();
         }
 
         private void NuevoButton_Click(object sender, EventArgs e)
@@ -157,5 +153,12 @@ namespace Sistema_Academico.UI.Registros
                 ErrorProvider.SetError(IdNumericUpDown, "Id no existente");
         }
 
+        private void BuscarButton_Click(object sender, EventArgs e)
+        {
+            ErrorProvider.Clear();
+            cEstudiantes estudiantes = new cEstudiantes();
+            estudiantes.Show();
+            Close();
+        }
     }
 }

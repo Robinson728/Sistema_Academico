@@ -17,6 +17,6 @@ namespace Sistema_Academico.Models
         public string Direccion { get; set; }
         public string Email { get; set; }
         public string Clave { get; set; }
-        public DateTime FechaIngreso { get; set; }
+        public DateTime FechaIngreso { get; set; } = DateTime.Now;
     }
 }

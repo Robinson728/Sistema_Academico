@@ -9,7 +9,7 @@ using Sistema_Academico.DAL;
 namespace Sistema_Academico.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20210614233835_Inicial")]
+    [Migration("20210620220910_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -129,14 +129,14 @@ namespace Sistema_Academico.Migrations
                     b.Property<DateTime>("FechaIngreso")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("Matricula")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("Matricula")
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Nombre")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("Telefono")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("Telefono")
+                        .HasColumnType("TEXT");
 
                     b.HasKey("EstudianteId");
 

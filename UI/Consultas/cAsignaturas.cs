@@ -77,7 +77,7 @@ namespace Sistema_Academico.UI.Consultas
             }
 
             id = ConsultaAsignaturaDataGridView.CurrentRow.Cells[0].Value.ToString();
-            rAsignaturas asignaturas = new rAsignaturas();
+            var asignaturas = new rAsignaturas();
             asignaturas.RecibirAsignatura(Conversiones.ToInt(id));
             asignaturas.Show();
             Close();

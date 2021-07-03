@@ -1,5 +1,5 @@
 ﻿
-namespace Sistema_Academico
+namespace Sistema_Academico.UI
 {
     partial class MainForms
     {
@@ -53,20 +53,20 @@ namespace Sistema_Academico
             this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.RegistrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rAsignaturasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.rGruposToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rCalificacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rCarrerasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rEstudiantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rGruposToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rPensumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rProfesoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rSeleccionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rSemestresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ConsultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cAsignaturasTolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cGruposToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cCalificacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cCarrerasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cEstudiantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cGruposToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cPensumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cProfesorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cSemestresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -277,12 +277,6 @@ namespace Sistema_Academico
             this.rAsignaturasToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.rAsignaturasToolStripMenuItem.Text = "Asignaturas";
             // 
-            // rGruposToolStripMenuItem
-            // 
-            this.rGruposToolStripMenuItem.Name = "rGruposToolStripMenuItem";
-            this.rGruposToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
-            this.rGruposToolStripMenuItem.Text = "Grupos";
-            // 
             // rCalificacionesToolStripMenuItem
             // 
             this.rCalificacionesToolStripMenuItem.Name = "rCalificacionesToolStripMenuItem";
@@ -300,6 +294,12 @@ namespace Sistema_Academico
             this.rEstudiantesToolStripMenuItem.Name = "rEstudiantesToolStripMenuItem";
             this.rEstudiantesToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.rEstudiantesToolStripMenuItem.Text = "Estudiantes";
+            // 
+            // rGruposToolStripMenuItem
+            // 
+            this.rGruposToolStripMenuItem.Name = "rGruposToolStripMenuItem";
+            this.rGruposToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.rGruposToolStripMenuItem.Text = "Grupos";
             // 
             // rPensumToolStripMenuItem
             // 
@@ -346,12 +346,6 @@ namespace Sistema_Academico
             this.cAsignaturasTolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.cAsignaturasTolStripMenuItem.Text = "Asignaturas";
             // 
-            // cGruposToolStripMenuItem
-            // 
-            this.cGruposToolStripMenuItem.Name = "cGruposToolStripMenuItem";
-            this.cGruposToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
-            this.cGruposToolStripMenuItem.Text = "Grupos";
-            // 
             // cCalificacionesToolStripMenuItem
             // 
             this.cCalificacionesToolStripMenuItem.Name = "cCalificacionesToolStripMenuItem";
@@ -369,6 +363,12 @@ namespace Sistema_Academico
             this.cEstudiantesToolStripMenuItem.Name = "cEstudiantesToolStripMenuItem";
             this.cEstudiantesToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.cEstudiantesToolStripMenuItem.Text = "Estudiantes";
+            // 
+            // cGruposToolStripMenuItem
+            // 
+            this.cGruposToolStripMenuItem.Name = "cGruposToolStripMenuItem";
+            this.cGruposToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.cGruposToolStripMenuItem.Text = "Grupos";
             // 
             // cPensumToolStripMenuItem
             // 
@@ -439,6 +439,7 @@ namespace Sistema_Academico
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForms";
             this.Text = "Main Forms";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -473,21 +474,10 @@ namespace Sistema_Academico
         private System.Windows.Forms.ToolStripMenuItem rAsignaturasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rGruposToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rCalificacionesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
         private System.Windows.Forms.ToolStripMenuItem rProfesoresToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem8;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem9;
         private System.Windows.Forms.ToolStripMenuItem ConsultasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cAsignaturasTolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cGruposToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem10;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem11;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem12;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem13;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem14;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem15;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem contentsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem indexToolStripMenuItem;
