@@ -27,8 +27,7 @@ namespace Sistema_Academico.UI.Consultas
             DescripcionTextBox.Clear();
             CreditosTextBox.Clear();
             GrupoTextBox.Clear();
-            HorasInicioTextBox.Clear();
-            HorasFinTextBox.Clear();
+            ConsultaAsignaturaDataGridView.DataSource = null;
         }
 
         private void BuscarButton_Click(object sender, EventArgs e)
@@ -36,26 +35,28 @@ namespace Sistema_Academico.UI.Consultas
             var lista = new List<Asignaturas>();
 
             if((IdTextBox.Text == string.Empty) && (NombreTextBox.Text==string.Empty) && (DescripcionTextBox.Text==string.Empty)
-                    && (SemestreTextBox.Text==string.Empty) && (CreditosTextBox.Text==string.Empty) && (GrupoTextBox.Text==string.Empty)
-                        && (HorasInicioTextBox.Text==string.Empty) && (HorasFinTextBox.Text==string.Empty))
+                    && (SemestreTextBox.Text==string.Empty) && (CreditosTextBox.Text==string.Empty) && (GrupoTextBox.Text==string.Empty))
             {
                 lista = AsignaturasBLL.GetList(r => true);
             }
+            else
+            {
+                if (IdTextBox.Text != string.Empty)
+                    lista = AsignaturasBLL.GetList(r => r.AsignaturaId == Conversiones.ToInt(IdTextBox.Text));
 
-            if (IdTextBox.Text != string.Empty)
-                lista = AsignaturasBLL.GetList(r => r.AsignaturaId == Conversiones.ToInt(IdTextBox.Text));
+                if (NombreTextBox.Text != string.Empty)
+                    lista = AsignaturasBLL.GetList(r => r.Nombre.Contains(NombreTextBox.Text));
 
-            if (NombreTextBox.Text != string.Empty)
-                lista = AsignaturasBLL.GetList(r => r.Nombre.Contains(NombreTextBox.Text));
+                if (DescripcionTextBox.Text != string.Empty)
+                    lista = AsignaturasBLL.GetList(r => r.Descripcion.Contains(DescripcionTextBox.Text));
 
-            if (DescripcionTextBox.Text != string.Empty)
-                lista = AsignaturasBLL.GetList(r => r.Descripcion.Contains(DescripcionTextBox.Text));
+                if (CreditosTextBox.Text != string.Empty)
+                    lista = AsignaturasBLL.GetList(r => r.Creditos == Conversiones.ToInt(CreditosTextBox.Text));
 
-            if (CreditosTextBox.Text != string.Empty)
-                lista = AsignaturasBLL.GetList(r => r.Creditos == Conversiones.ToInt(CreditosTextBox.Text));
+                if (GrupoTextBox.Text != string.Empty)
+                    lista = AsignaturasBLL.GetList(r => r.Grupo == Conversiones.ToInt(GrupoTextBox.Text));
+            }
 
-            if (GrupoTextBox.Text != string.Empty)
-                lista = AsignaturasBLL.GetList(r => r.Grupo == Conversiones.ToInt(GrupoTextBox.Text));
 
             ConsultaAsignaturaDataGridView.DataSource = null;
             ConsultaAsignaturaDataGridView.DataSource = lista;

@@ -28,6 +28,7 @@ namespace Sistema_Academico.UI.Consultas
             AulaTextBox.Clear();
             NumeroGrupoTextBox.Clear();
             CantidadEstudiantesTextBox.Clear();
+            ConsultaAsignaturaDataGridView.DataSource = null;
         }
 
         private void BuscarButton_Click(object sender, EventArgs e)
@@ -39,24 +40,27 @@ namespace Sistema_Academico.UI.Consultas
             {
                 lista = GruposBLL.GetList(r => true);
             }
+            else
+            {
+                if (IdTextBox.Text != string.Empty)
+                    lista = GruposBLL.GetList(r => r.GrupoId == Conversiones.ToInt(IdTextBox.Text));
 
-            if (IdTextBox.Text != string.Empty)
-                lista = GruposBLL.GetList(r => r.GrupoId == Conversiones.ToInt(IdTextBox.Text));
+                if (AsignaturaTextBox.Text != string.Empty)
+                    lista = GruposBLL.GetList(r => r.Asignatura.Contains(AsignaturaTextBox.Text));
 
-            if (AsignaturaTextBox.Text != string.Empty)
-                lista = GruposBLL.GetList(r => r.Asignatura.Contains(AsignaturaTextBox.Text));
+                if (ProfesorTextBox.Text != string.Empty)
+                    lista = GruposBLL.GetList(r => r.Profesor.Contains(ProfesorTextBox.Text));
 
-            if (ProfesorTextBox.Text != string.Empty)
-                lista = GruposBLL.GetList(r => r.Profesor.Contains(ProfesorTextBox.Text));
+                if (AulaTextBox.Text != string.Empty)
+                    lista = GruposBLL.GetList(r => r.Aula.Contains(AulaTextBox.Text));
 
-            if (AulaTextBox.Text != string.Empty)
-                lista = GruposBLL.GetList(r => r.Aula.Contains(AulaTextBox.Text));
+                if (NumeroGrupoTextBox.Text != string.Empty)
+                    lista = GruposBLL.GetList(r => r.NumeroGrupo == Conversiones.ToInt(NumeroGrupoTextBox.Text));
 
-            if (NumeroGrupoTextBox.Text != string.Empty)
-                lista = GruposBLL.GetList(r => r.NumeroGrupo == Conversiones.ToInt(NumeroGrupoTextBox.Text));
+                if (CantidadEstudiantesTextBox.Text != string.Empty)
+                    lista = GruposBLL.GetList(r => r.CantidadEstudiantes == Conversiones.ToInt(CantidadEstudiantesTextBox.Text));
+            }
 
-            if (CantidadEstudiantesTextBox.Text != string.Empty)
-                lista = GruposBLL.GetList(r => r.CantidadEstudiantes == Conversiones.ToInt(CantidadEstudiantesTextBox.Text));
 
             ConsultaAsignaturaDataGridView.DataSource = null;
             ConsultaAsignaturaDataGridView.DataSource = lista;
