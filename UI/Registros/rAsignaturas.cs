@@ -27,8 +27,6 @@ namespace Sistema_Academico.UI.Registros
             DescripcionTextBox.Clear();
             CreditosTextBox.Clear();
             GrupoTextBox.Clear();
-            HoraEntradaDateTimePicker.Value = DateTime.Now;
-            HoraSalidaDateTimePicker.Value = DateTime.Now;
         }
 
         private void LlenaCampo(Asignaturas asignaturas)
@@ -38,8 +36,6 @@ namespace Sistema_Academico.UI.Registros
             DescripcionTextBox.Text = asignaturas.Descripcion;
             CreditosTextBox.Text = asignaturas.Creditos.ToString();
             GrupoTextBox.Text = asignaturas.Grupo.ToString();
-            HoraEntradaDateTimePicker.Value = asignaturas.HoraInicio;
-            HoraSalidaDateTimePicker.Value = asignaturas.HoraFinal;
         }
 
         private Asignaturas LlenaClase()
@@ -51,8 +47,6 @@ namespace Sistema_Academico.UI.Registros
             asignaturas.Descripcion = DescripcionTextBox.Text;
             asignaturas.Creditos = Convert.ToInt32(CreditosTextBox.Text);
             asignaturas.Grupo = Convert.ToInt32(GrupoTextBox.Text);
-            asignaturas.HoraInicio = HoraEntradaDateTimePicker.Value;
-            asignaturas.HoraFinal = HoraSalidaDateTimePicker.Value;
 
             return asignaturas;
         }

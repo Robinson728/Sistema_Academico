@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="UI\Registros\rSeleccionAsignaturas.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="DATA\" />
   </ItemGroup>
 
@@ -18,12 +22,6 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="DATA\GestionAcademico.db">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
 
 </Project>

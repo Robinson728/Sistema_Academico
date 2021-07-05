@@ -16,5 +16,7 @@ namespace Sistema_Academico.Models
         public int CantidadEstudiantes { get; set; }
         public string Aula { get; set; }
         public int NumeroGrupo { get; set; }
+        public DateTime HoraInicio { get; set; }
+        public DateTime HoraFin { get; set; }
     }
 }

@@ -18,6 +18,7 @@ namespace Sistema_Academico.DAL
         public DbSet<Pensum> Pensum { get; set; }
         public DbSet<Profesores> Profesores { get; set; }
         public DbSet<Semestres> Semestres { get; set; }
+        public DbSet<SeleccionAsignatura> SeleccionAsignatura { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

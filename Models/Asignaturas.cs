@@ -15,7 +15,5 @@ namespace Sistema_Academico.Models
         public string Descripcion { get; set; }
         public int Creditos { get; set; }
         public int Grupo { get; set; }
-        public DateTime HoraInicio { get; set; }
-        public DateTime HoraFinal { get; set; }
     }
 }

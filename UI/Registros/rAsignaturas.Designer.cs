@@ -39,13 +39,6 @@ namespace Sistema_Academico.UI.Registros
             this.CreditosTextBox = new System.Windows.Forms.TextBox();
             this.GrupoLabel = new System.Windows.Forms.Label();
             this.CreditosLabel = new System.Windows.Forms.Label();
-            this.HorarioGroupBox = new System.Windows.Forms.GroupBox();
-            this.HoraEntradaDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.HoraSalidaDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.HoraEntradaLabel = new System.Windows.Forms.Label();
-            this.HoraSalidaLabel = new System.Windows.Forms.Label();
-            this.HoraSLabel = new System.Windows.Forms.Label();
-            this.HoraELabel = new System.Windows.Forms.Label();
             this.DescripcionTextBox = new System.Windows.Forms.TextBox();
             this.NombreTextBox = new System.Windows.Forms.TextBox();
             this.AsignaturaIdNumericUpDown = new System.Windows.Forms.NumericUpDown();
@@ -59,7 +52,6 @@ namespace Sistema_Academico.UI.Registros
             this.BuscarButton = new System.Windows.Forms.Button();
             this.AsignaturaDetalleGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EstudiantesDataGridView)).BeginInit();
-            this.HorarioGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AsignaturaIdNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).BeginInit();
             this.SuspendLayout();
@@ -67,9 +59,11 @@ namespace Sistema_Academico.UI.Registros
             // AsignaturaDetalleGroupBox
             // 
             this.AsignaturaDetalleGroupBox.Controls.Add(this.EstudiantesDataGridView);
-            this.AsignaturaDetalleGroupBox.Location = new System.Drawing.Point(3, 202);
+            this.AsignaturaDetalleGroupBox.Location = new System.Drawing.Point(9, 215);
+            this.AsignaturaDetalleGroupBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.AsignaturaDetalleGroupBox.Name = "AsignaturaDetalleGroupBox";
-            this.AsignaturaDetalleGroupBox.Size = new System.Drawing.Size(576, 235);
+            this.AsignaturaDetalleGroupBox.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.AsignaturaDetalleGroupBox.Size = new System.Drawing.Size(658, 313);
             this.AsignaturaDetalleGroupBox.TabIndex = 48;
             this.AsignaturaDetalleGroupBox.TabStop = false;
             this.AsignaturaDetalleGroupBox.Text = "Lista De Estudiantes";
@@ -84,22 +78,27 @@ namespace Sistema_Academico.UI.Registros
             this.Column1,
             this.Column2,
             this.Column3});
-            this.EstudiantesDataGridView.Location = new System.Drawing.Point(6, 20);
+            this.EstudiantesDataGridView.Location = new System.Drawing.Point(7, 27);
+            this.EstudiantesDataGridView.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.EstudiantesDataGridView.Name = "EstudiantesDataGridView";
             this.EstudiantesDataGridView.ReadOnly = true;
+            this.EstudiantesDataGridView.RowHeadersWidth = 51;
             this.EstudiantesDataGridView.RowTemplate.Height = 25;
-            this.EstudiantesDataGridView.Size = new System.Drawing.Size(564, 207);
+            this.EstudiantesDataGridView.Size = new System.Drawing.Size(645, 276);
             this.EstudiantesDataGridView.TabIndex = 0;
             // 
             // Column1
             // 
             this.Column1.HeaderText = "Matrícula";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
+            this.Column1.Width = 125;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "Nombre";
+            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             this.Column2.Width = 250;
@@ -107,165 +106,105 @@ namespace Sistema_Academico.UI.Registros
             // Column3
             // 
             this.Column3.HeaderText = "Carrera";
+            this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
             this.Column3.Width = 170;
             // 
             // GrupoTextBox
             // 
-            this.GrupoTextBox.Location = new System.Drawing.Point(408, 158);
+            this.GrupoTextBox.Location = new System.Drawing.Point(384, 180);
+            this.GrupoTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.GrupoTextBox.Name = "GrupoTextBox";
-            this.GrupoTextBox.Size = new System.Drawing.Size(171, 23);
+            this.GrupoTextBox.Size = new System.Drawing.Size(255, 27);
             this.GrupoTextBox.TabIndex = 45;
             // 
             // CreditosTextBox
             // 
-            this.CreditosTextBox.Location = new System.Drawing.Point(408, 129);
+            this.CreditosTextBox.Location = new System.Drawing.Point(72, 179);
+            this.CreditosTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.CreditosTextBox.Name = "CreditosTextBox";
-            this.CreditosTextBox.Size = new System.Drawing.Size(171, 23);
+            this.CreditosTextBox.Size = new System.Drawing.Size(255, 27);
             this.CreditosTextBox.TabIndex = 44;
             // 
             // GrupoLabel
             // 
             this.GrupoLabel.AutoSize = true;
-            this.GrupoLabel.Location = new System.Drawing.Point(351, 161);
+            this.GrupoLabel.Location = new System.Drawing.Point(334, 183);
             this.GrupoLabel.Name = "GrupoLabel";
-            this.GrupoLabel.Size = new System.Drawing.Size(40, 15);
+            this.GrupoLabel.Size = new System.Drawing.Size(50, 20);
             this.GrupoLabel.TabIndex = 43;
             this.GrupoLabel.Text = "Grupo";
             // 
             // CreditosLabel
             // 
             this.CreditosLabel.AutoSize = true;
-            this.CreditosLabel.Location = new System.Drawing.Point(351, 132);
+            this.CreditosLabel.Location = new System.Drawing.Point(7, 183);
             this.CreditosLabel.Name = "CreditosLabel";
-            this.CreditosLabel.Size = new System.Drawing.Size(51, 15);
+            this.CreditosLabel.Size = new System.Drawing.Size(64, 20);
             this.CreditosLabel.TabIndex = 42;
             this.CreditosLabel.Text = "Creditos";
             // 
-            // HorarioGroupBox
-            // 
-            this.HorarioGroupBox.Controls.Add(this.HoraEntradaDateTimePicker);
-            this.HorarioGroupBox.Controls.Add(this.HoraSalidaDateTimePicker);
-            this.HorarioGroupBox.Controls.Add(this.HoraEntradaLabel);
-            this.HorarioGroupBox.Controls.Add(this.HoraSalidaLabel);
-            this.HorarioGroupBox.Controls.Add(this.HoraSLabel);
-            this.HorarioGroupBox.Controls.Add(this.HoraELabel);
-            this.HorarioGroupBox.Location = new System.Drawing.Point(3, 116);
-            this.HorarioGroupBox.Name = "HorarioGroupBox";
-            this.HorarioGroupBox.Size = new System.Drawing.Size(322, 80);
-            this.HorarioGroupBox.TabIndex = 41;
-            this.HorarioGroupBox.TabStop = false;
-            this.HorarioGroupBox.Text = "Horario";
-            // 
-            // HoraEntradaDateTimePicker
-            // 
-            this.HoraEntradaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.HoraEntradaDateTimePicker.Location = new System.Drawing.Point(48, 39);
-            this.HoraEntradaDateTimePicker.Name = "HoraEntradaDateTimePicker";
-            this.HoraEntradaDateTimePicker.Size = new System.Drawing.Size(107, 23);
-            this.HoraEntradaDateTimePicker.TabIndex = 34;
-            // 
-            // HoraSalidaDateTimePicker
-            // 
-            this.HoraSalidaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.HoraSalidaDateTimePicker.Location = new System.Drawing.Point(209, 39);
-            this.HoraSalidaDateTimePicker.Name = "HoraSalidaDateTimePicker";
-            this.HoraSalidaDateTimePicker.Size = new System.Drawing.Size(107, 23);
-            this.HoraSalidaDateTimePicker.TabIndex = 35;
-            this.HoraSalidaDateTimePicker.Value = new System.DateTime(2021, 3, 23, 14, 32, 0, 0);
-            // 
-            // HoraEntradaLabel
-            // 
-            this.HoraEntradaLabel.AutoSize = true;
-            this.HoraEntradaLabel.Location = new System.Drawing.Point(9, 20);
-            this.HoraEntradaLabel.Name = "HoraEntradaLabel";
-            this.HoraEntradaLabel.Size = new System.Drawing.Size(93, 15);
-            this.HoraEntradaLabel.TabIndex = 6;
-            this.HoraEntradaLabel.Text = "Hora De Entrada";
-            // 
-            // HoraSalidaLabel
-            // 
-            this.HoraSalidaLabel.AutoSize = true;
-            this.HoraSalidaLabel.Location = new System.Drawing.Point(170, 20);
-            this.HoraSalidaLabel.Name = "HoraSalidaLabel";
-            this.HoraSalidaLabel.Size = new System.Drawing.Size(84, 15);
-            this.HoraSalidaLabel.TabIndex = 7;
-            this.HoraSalidaLabel.Text = "Hora De Salida";
-            // 
-            // HoraSLabel
-            // 
-            this.HoraSLabel.AutoSize = true;
-            this.HoraSLabel.Location = new System.Drawing.Point(170, 42);
-            this.HoraSLabel.Name = "HoraSLabel";
-            this.HoraSLabel.Size = new System.Drawing.Size(33, 15);
-            this.HoraSLabel.TabIndex = 23;
-            this.HoraSLabel.Text = "Hora";
-            // 
-            // HoraELabel
-            // 
-            this.HoraELabel.AutoSize = true;
-            this.HoraELabel.Location = new System.Drawing.Point(9, 42);
-            this.HoraELabel.Name = "HoraELabel";
-            this.HoraELabel.Size = new System.Drawing.Size(33, 15);
-            this.HoraELabel.TabIndex = 11;
-            this.HoraELabel.Text = "Hora";
-            // 
             // DescripcionTextBox
             // 
-            this.DescripcionTextBox.Location = new System.Drawing.Point(86, 64);
+            this.DescripcionTextBox.Location = new System.Drawing.Point(95, 89);
+            this.DescripcionTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.DescripcionTextBox.Multiline = true;
             this.DescripcionTextBox.Name = "DescripcionTextBox";
-            this.DescripcionTextBox.Size = new System.Drawing.Size(493, 46);
+            this.DescripcionTextBox.Size = new System.Drawing.Size(563, 60);
             this.DescripcionTextBox.TabIndex = 39;
             // 
             // NombreTextBox
             // 
-            this.NombreTextBox.Location = new System.Drawing.Point(86, 35);
+            this.NombreTextBox.Location = new System.Drawing.Point(95, 51);
+            this.NombreTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.NombreTextBox.Name = "NombreTextBox";
-            this.NombreTextBox.Size = new System.Drawing.Size(493, 23);
+            this.NombreTextBox.Size = new System.Drawing.Size(563, 27);
             this.NombreTextBox.TabIndex = 38;
             // 
             // AsignaturaIdNumericUpDown
             // 
-            this.AsignaturaIdNumericUpDown.Location = new System.Drawing.Point(86, 6);
+            this.AsignaturaIdNumericUpDown.Location = new System.Drawing.Point(95, 12);
+            this.AsignaturaIdNumericUpDown.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.AsignaturaIdNumericUpDown.Name = "AsignaturaIdNumericUpDown";
-            this.AsignaturaIdNumericUpDown.Size = new System.Drawing.Size(62, 23);
+            this.AsignaturaIdNumericUpDown.ReadOnly = true;
+            this.AsignaturaIdNumericUpDown.Size = new System.Drawing.Size(71, 27);
             this.AsignaturaIdNumericUpDown.TabIndex = 37;
             // 
             // DescripcionLabel
             // 
             this.DescripcionLabel.AutoSize = true;
-            this.DescripcionLabel.Location = new System.Drawing.Point(3, 67);
+            this.DescripcionLabel.Location = new System.Drawing.Point(0, 93);
             this.DescripcionLabel.Name = "DescripcionLabel";
-            this.DescripcionLabel.Size = new System.Drawing.Size(69, 15);
+            this.DescripcionLabel.Size = new System.Drawing.Size(87, 20);
             this.DescripcionLabel.TabIndex = 36;
             this.DescripcionLabel.Text = "Descripción";
             // 
             // NombreLabel
             // 
             this.NombreLabel.AutoSize = true;
-            this.NombreLabel.Location = new System.Drawing.Point(3, 38);
+            this.NombreLabel.Location = new System.Drawing.Point(0, 55);
             this.NombreLabel.Name = "NombreLabel";
-            this.NombreLabel.Size = new System.Drawing.Size(51, 15);
+            this.NombreLabel.Size = new System.Drawing.Size(64, 20);
             this.NombreLabel.TabIndex = 35;
             this.NombreLabel.Text = "Nombre";
             // 
             // IdLabel
             // 
             this.IdLabel.AutoSize = true;
-            this.IdLabel.Location = new System.Drawing.Point(3, 10);
+            this.IdLabel.Location = new System.Drawing.Point(0, 17);
             this.IdLabel.Name = "IdLabel";
-            this.IdLabel.Size = new System.Drawing.Size(77, 15);
+            this.IdLabel.Size = new System.Drawing.Size(97, 20);
             this.IdLabel.TabIndex = 34;
             this.IdLabel.Text = "Asignatura Id";
             // 
             // EliminarButton
             // 
             this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.EliminarButton.Location = new System.Drawing.Point(295, 442);
+            this.EliminarButton.Location = new System.Drawing.Point(334, 536);
+            this.EliminarButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.EliminarButton.Name = "EliminarButton";
-            this.EliminarButton.Size = new System.Drawing.Size(93, 42);
+            this.EliminarButton.Size = new System.Drawing.Size(106, 56);
             this.EliminarButton.TabIndex = 51;
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -275,9 +214,10 @@ namespace Sistema_Academico.UI.Registros
             // NuevoButton
             // 
             this.NuevoButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.NuevoButton.Location = new System.Drawing.Point(97, 442);
+            this.NuevoButton.Location = new System.Drawing.Point(108, 536);
+            this.NuevoButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.NuevoButton.Name = "NuevoButton";
-            this.NuevoButton.Size = new System.Drawing.Size(93, 42);
+            this.NuevoButton.Size = new System.Drawing.Size(106, 56);
             this.NuevoButton.TabIndex = 50;
             this.NuevoButton.Text = "Nuevo";
             this.NuevoButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -287,9 +227,10 @@ namespace Sistema_Academico.UI.Registros
             // GuardarButton
             // 
             this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.GuardarButton.Location = new System.Drawing.Point(196, 442);
+            this.GuardarButton.Location = new System.Drawing.Point(221, 536);
+            this.GuardarButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.GuardarButton.Name = "GuardarButton";
-            this.GuardarButton.Size = new System.Drawing.Size(93, 42);
+            this.GuardarButton.Size = new System.Drawing.Size(106, 56);
             this.GuardarButton.TabIndex = 49;
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -303,9 +244,10 @@ namespace Sistema_Academico.UI.Registros
             // BuscarButton
             // 
             this.BuscarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BuscarButton.Location = new System.Drawing.Point(394, 442);
+            this.BuscarButton.Location = new System.Drawing.Point(447, 536);
+            this.BuscarButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BuscarButton.Name = "BuscarButton";
-            this.BuscarButton.Size = new System.Drawing.Size(93, 42);
+            this.BuscarButton.Size = new System.Drawing.Size(106, 56);
             this.BuscarButton.TabIndex = 52;
             this.BuscarButton.Text = "Buscar";
             this.BuscarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -314,9 +256,9 @@ namespace Sistema_Academico.UI.Registros
             // 
             // rAsignaturas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 489);
+            this.ClientSize = new System.Drawing.Size(667, 605);
             this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.EliminarButton);
             this.Controls.Add(this.NuevoButton);
@@ -326,19 +268,17 @@ namespace Sistema_Academico.UI.Registros
             this.Controls.Add(this.CreditosTextBox);
             this.Controls.Add(this.GrupoLabel);
             this.Controls.Add(this.CreditosLabel);
-            this.Controls.Add(this.HorarioGroupBox);
             this.Controls.Add(this.DescripcionTextBox);
             this.Controls.Add(this.NombreTextBox);
             this.Controls.Add(this.AsignaturaIdNumericUpDown);
             this.Controls.Add(this.DescripcionLabel);
             this.Controls.Add(this.NombreLabel);
             this.Controls.Add(this.IdLabel);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "rAsignaturas";
             this.Text = "Registro de Asignaturas";
             this.AsignaturaDetalleGroupBox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.EstudiantesDataGridView)).EndInit();
-            this.HorarioGroupBox.ResumeLayout(false);
-            this.HorarioGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AsignaturaIdNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).EndInit();
             this.ResumeLayout(false);
@@ -354,13 +294,6 @@ namespace Sistema_Academico.UI.Registros
         private System.Windows.Forms.TextBox CreditosTextBox;
         private System.Windows.Forms.Label GrupoLabel;
         private System.Windows.Forms.Label CreditosLabel;
-        private System.Windows.Forms.GroupBox HorarioGroupBox;
-        private System.Windows.Forms.DateTimePicker HoraEntradaDateTimePicker;
-        private System.Windows.Forms.DateTimePicker HoraSalidaDateTimePicker;
-        private System.Windows.Forms.Label HoraEntradaLabel;
-        private System.Windows.Forms.Label HoraSalidaLabel;
-        private System.Windows.Forms.Label HoraSLabel;
-        private System.Windows.Forms.Label HoraELabel;
         private System.Windows.Forms.TextBox DescripcionTextBox;
         private System.Windows.Forms.TextBox NombreTextBox;
         private System.Windows.Forms.NumericUpDown AsignaturaIdNumericUpDown;

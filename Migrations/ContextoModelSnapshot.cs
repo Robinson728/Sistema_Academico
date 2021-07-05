@@ -31,12 +31,6 @@ namespace Sistema_Academico.Migrations
                     b.Property<int>("Grupo")
                         .HasColumnType("INTEGER");
 
-                    b.Property<DateTime>("HoraFinal")
-                        .HasColumnType("TEXT");
-
-                    b.Property<DateTime>("HoraInicio")
-                        .HasColumnType("TEXT");
-
                     b.Property<string>("Nombre")
                         .HasColumnType("TEXT");
 
@@ -156,6 +150,12 @@ namespace Sistema_Academico.Migrations
                     b.Property<int>("CantidadEstudiantes")
                         .HasColumnType("INTEGER");
 
+                    b.Property<DateTime>("HoraFin")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("HoraInicio")
+                        .HasColumnType("TEXT");
+
                     b.Property<int>("NumeroGrupo")
                         .HasColumnType("INTEGER");
 
@@ -235,6 +235,38 @@ namespace Sistema_Academico.Migrations
                     b.HasKey("ProfesorId");
 
                     b.ToTable("Profesores");
+                });
+
+            modelBuilder.Entity("Sistema_Academico.Models.SeleccionAsignatura", b =>
+                {
+                    b.Property<int>("SeleccionId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Asignatura")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Aula")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("CantAsignaturas")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("GrupoId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("HoraFinal")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("HoraInicio")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Profesor")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("SeleccionId");
+
+                    b.ToTable("SeleccionAsignatura");
                 });
 
             modelBuilder.Entity("Sistema_Academico.Models.Semestres", b =>

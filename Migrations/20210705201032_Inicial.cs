@@ -16,9 +16,7 @@ namespace Sistema_Academico.Migrations
                     Nombre = table.Column<string>(type: "TEXT", nullable: true),
                     Descripcion = table.Column<string>(type: "TEXT", nullable: true),
                     Creditos = table.Column<int>(type: "INTEGER", nullable: false),
-                    Grupo = table.Column<int>(type: "INTEGER", nullable: false),
-                    HoraInicio = table.Column<DateTime>(type: "TEXT", nullable: false),
-                    HoraFinal = table.Column<DateTime>(type: "TEXT", nullable: false)
+                    Grupo = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -92,7 +90,9 @@ namespace Sistema_Academico.Migrations
                     Profesor = table.Column<string>(type: "TEXT", nullable: true),
                     CantidadEstudiantes = table.Column<int>(type: "INTEGER", nullable: false),
                     Aula = table.Column<string>(type: "TEXT", nullable: true),
-                    NumeroGrupo = table.Column<int>(type: "INTEGER", nullable: false)
+                    NumeroGrupo = table.Column<int>(type: "INTEGER", nullable: false),
+                    HoraInicio = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    HoraFin = table.Column<DateTime>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -140,6 +140,25 @@ namespace Sistema_Academico.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "SeleccionAsignatura",
+                columns: table => new
+                {
+                    SeleccionId = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    GrupoId = table.Column<int>(type: "INTEGER", nullable: false),
+                    Asignatura = table.Column<string>(type: "TEXT", nullable: true),
+                    Profesor = table.Column<string>(type: "TEXT", nullable: true),
+                    Aula = table.Column<string>(type: "TEXT", nullable: true),
+                    CantAsignaturas = table.Column<int>(type: "INTEGER", nullable: false),
+                    HoraInicio = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    HoraFinal = table.Column<DateTime>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_SeleccionAsignatura", x => x.SeleccionId);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Semestres",
                 columns: table => new
                 {
@@ -177,6 +196,9 @@ namespace Sistema_Academico.Migrations
 
             migrationBuilder.DropTable(
                 name: "Profesores");
+
+            migrationBuilder.DropTable(
+                name: "SeleccionAsignatura");
 
             migrationBuilder.DropTable(
                 name: "Semestres");
