@@ -46,9 +46,9 @@ namespace Sistema_Academico.UI.Consultas
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.CarreraComboBox = new System.Windows.Forms.ComboBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.SeleccionarButton = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.NombretextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -218,14 +218,15 @@ namespace Sistema_Academico.UI.Consultas
             this.CarreraComboBox.Size = new System.Drawing.Size(160, 23);
             this.CarreraComboBox.TabIndex = 107;
             // 
-            // button3
+            // SeleccionarButton
             // 
-            this.button3.Location = new System.Drawing.Point(4, 395);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(121, 45);
-            this.button3.TabIndex = 124;
-            this.button3.Text = "Seleccionar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.SeleccionarButton.Location = new System.Drawing.Point(4, 395);
+            this.SeleccionarButton.Name = "SeleccionarButton";
+            this.SeleccionarButton.Size = new System.Drawing.Size(121, 45);
+            this.SeleccionarButton.TabIndex = 124;
+            this.SeleccionarButton.Text = "Seleccionar";
+            this.SeleccionarButton.UseVisualStyleBackColor = true;
+            this.SeleccionarButton.Click += new System.EventHandler(this.SeleccionarButton_Click_1);
             // 
             // button4
             // 
@@ -236,13 +237,13 @@ namespace Sistema_Academico.UI.Consultas
             this.button4.Text = "Nuevo";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // NombretextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(183, 23);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(309, 23);
-            this.textBox1.TabIndex = 122;
+            this.NombretextBox.Location = new System.Drawing.Point(183, 23);
+            this.NombretextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.NombretextBox.Name = "NombretextBox";
+            this.NombretextBox.Size = new System.Drawing.Size(309, 23);
+            this.NombretextBox.TabIndex = 122;
             // 
             // label1
             // 
@@ -331,6 +332,7 @@ namespace Sistema_Academico.UI.Consultas
             this.BuscarButton.TabIndex = 104;
             this.BuscarButton.Text = "Buscar";
             this.BuscarButton.UseVisualStyleBackColor = true;
+            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
             // ConsultaAsignaturaDataGridView
             // 
@@ -369,9 +371,9 @@ namespace Sistema_Academico.UI.Consultas
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(723, 444);
             this.Controls.Add(this.IdTextBox);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.SeleccionarButton);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.NombretextBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label16);
@@ -409,9 +411,9 @@ namespace Sistema_Academico.UI.Consultas
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox CarreraComboBox;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button SeleccionarButton;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox NombretextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label16;

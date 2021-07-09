@@ -1,5 +1,6 @@
 ﻿using Sistema_Academico.BLL;
 using Sistema_Academico.Models;
+using Sistema_Academico.UI.Registros;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,27 +19,61 @@ namespace Sistema_Academico.UI.Consultas
         {
             InitializeComponent();
         }
+        private void Limpiar()
+        {
+            IdTextBox.Clear();
+            NombretextBox.Clear();
+           
+            ConsultaAsignaturaDataGridView.DataSource = null;
+        }
 
+      
+
+        private void NuevoButton_Click(object sender, EventArgs e)
+        {
+            Limpiar();
+        }
+
+       
         private void BuscarButton_Click(object sender, EventArgs e)
         {
-            /*var lista = new List<Semestres>();
+            var lista = new List<Semestres>();
 
-            if (!string.IsNullOrWhiteSpace(FiltroComboBox.Text))
+            if ((IdTextBox.Text == string.Empty) && (NombretextBox.Text == string.Empty))
             {
-                switch (FiltroComboBox.SelectedIndex)
-                {
-                    case 0: //AsignaturaId
-                        lista = SemestresBLL.GetList(r => r.SemestreId == Conversiones.ToInt(CriterioTextBox.Text));
-                        break;
-                    case 1: //Nombre
-                        lista = SemestresBLL.GetList(r => r.Nombre.Contains(CriterioTextBox.Text));
-                        break;
-                    default:
-                        break;
-                }
+                lista = SemestresBLL.GetList(r => true);
             }
             else
-                lista = SemestresBLL.GetList(r => true);*/
+            {
+                if (IdTextBox.Text != string.Empty)
+                    lista = SemestresBLL.GetList(r => r.SemestreId == Conversiones.ToInt(IdTextBox.Text));
+
+                if (NombretextBox.Text != string.Empty)
+                    lista = SemestresBLL.GetList(r => r.Nombre.Contains(NombretextBox.Text));
+
+            }
+
+            ConsultaAsignaturaDataGridView.DataSource = null;
+            ConsultaAsignaturaDataGridView.DataSource = lista;
+        }
+
+       
+
+        private void SeleccionarButton_Click_1(object sender, EventArgs e)
+        {
+            string id;
+
+            if (ConsultaAsignaturaDataGridView.CurrentRow == null)
+            {
+                MessageBox.Show("Seleccionar una Fila", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            id = ConsultaAsignaturaDataGridView.CurrentRow.Cells[0].Value.ToString();
+            var semestre = new rSemestres();
+            semestre.RecibirSemestre(Conversiones.ToInt(id));
+            semestre.Show();
+            Close();
         }
     }
 }

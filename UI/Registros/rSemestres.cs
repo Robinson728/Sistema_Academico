@@ -112,5 +112,11 @@ namespace Sistema_Academico.UI.Registros
             else
                 ErrorProvider.SetError(IdNumericUpDown, "Id no existente");
         }
+        public void RecibirSemestre(int id)
+        {
+            Semestres semestres = SemestresBLL.Buscar(id);
+
+            LlenaCampo(semestres);
+        }
     }
 }
