@@ -31,7 +31,12 @@ namespace Sistema_Academico.UI.Consultas
             ConsultaSeleccionDataGridView.DataSource = null;
         }
 
-        private void BuscarButton_Click(object sender, EventArgs e)
+        private void NuevoButton_Click_1(object sender, EventArgs e)
+        {
+            Limpiar();
+        }
+
+        private void BuscarButton_Click_1(object sender, EventArgs e)
         {
             var lista = new List<SeleccionAsignatura>();
 
@@ -66,12 +71,7 @@ namespace Sistema_Academico.UI.Consultas
             ConsultaSeleccionDataGridView.DataSource = lista;
         }
 
-        private void NuevoButton_Click(object sender, EventArgs e)
-        {
-            Limpiar();
-        }
-
-        private void SeleccionarButton_Click(object sender, EventArgs e)
+        private void SeleccionarButton_Click_1(object sender, EventArgs e)
         {
             string id;
 

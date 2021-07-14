@@ -194,6 +194,8 @@ namespace Sistema_Academico.UI.Registros
         {
             cantidad = 0;
             int i = SelecciondataGridView.Rows.Count;
+            var paso = false;
+
             for(int j = 0; j < i; j++)
             {
                 bool seleccion = Convert.ToBoolean(SelecciondataGridView.Rows[j].Cells[0].Value);
@@ -205,16 +207,16 @@ namespace Sistema_Academico.UI.Registros
                     SeleccionAsignatura selecciones;
                     selecciones = LlenarClase();
 
-                    var paso = SeleccionarBLL.Guardar(selecciones);
-
-                    if (paso)
-                    {
-                        MessageBox.Show("Transacción Exitosa!!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                    else
-                        MessageBox.Show("Transacción Fallida!!", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    paso = SeleccionarBLL.Guardar(selecciones);
                 }
             }
+
+            if (paso)
+            {
+                MessageBox.Show("Transacción Exitosa!!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+                MessageBox.Show("Transacción Fallida!!", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void BuscarButton_Click(object sender, EventArgs e)

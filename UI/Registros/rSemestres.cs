@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Sistema_Academico.Models;
 using Sistema_Academico.BLL;
+using Sistema_Academico.UI.Consultas;
 
 namespace Sistema_Academico.UI.Registros
 {
@@ -59,6 +60,13 @@ namespace Sistema_Academico.UI.Registros
             }
 
             return paso;
+        }
+
+        public void RecibirSemestres(int id)
+        {
+            Semestres semestres = SemestresBLL.Buscar(id);
+
+            LlenaCampo(semestres);
         }
 
         private void BuscarButton_Click(object sender, EventArgs e)
@@ -117,6 +125,14 @@ namespace Sistema_Academico.UI.Registros
             Semestres semestres = SemestresBLL.Buscar(id);
 
             LlenaCampo(semestres);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ErrorProvider.Clear();
+            cSemestres semestres = new cSemestres();
+            semestres.Show();
+            Close();
         }
     }
 }

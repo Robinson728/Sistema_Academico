@@ -129,6 +129,28 @@ namespace Sistema_Academico.BLL
             return Estudiantes;
         }
 
+        public static bool ConfirmarClave(string matricula, string clave)
+        {
+            bool paso = false;
+            Contexto contexto = new Contexto();
+
+            try
+            {
+                paso = contexto.Estudiantes.Any(e => e.Matricula == matricula && e.Clave == clave);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                contexto.Dispose();
+            }
+
+            return paso;
+        }
+
         public static List<Estudiantes> GetList(Expression<Func<Estudiantes, bool>> criterio)
         {
             List<Estudiantes> lista = new List<Estudiantes>();

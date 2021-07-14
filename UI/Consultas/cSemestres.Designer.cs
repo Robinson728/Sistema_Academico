@@ -236,6 +236,7 @@ namespace Sistema_Academico.UI.Consultas
             this.button4.TabIndex = 123;
             this.button4.Text = "Nuevo";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // NombretextBox
             // 

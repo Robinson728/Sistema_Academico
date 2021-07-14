@@ -25,7 +25,6 @@ namespace Sistema_Academico.UI
             this.rGruposToolStripMenuItem.Click += new EventHandler(this.rGruposToolStripMenuItem_ItemClicked);
             this.rPensumToolStripMenuItem.Click += new EventHandler(this.rPensumToolStripMenuItem_ItemClicked);
             this.rProfesoresToolStripMenuItem.Click += new EventHandler(this.rProfesoresToolStripMenuItem_ItemClicked);
-            this.rSeleccionToolStripMenuItem.Click += new EventHandler(this.rSeleccionToolStripMenuItem_ItemClicked);
             this.rSemestresToolStripMenuItem.Click += new EventHandler(this.rSemestresToolStripMenuItem_ItemClicked);
 
             this.cAsignaturasTolStripMenuItem.Click += new EventHandler(this.cAsignaturasTolStripMenuItem_ItemClicked);
@@ -86,13 +85,6 @@ namespace Sistema_Academico.UI
             rProfesores profesores = new rProfesores();
             profesores.MdiParent = this;
             profesores.Show();
-        }
-        
-        public void rSeleccionToolStripMenuItem_ItemClicked(object sender, EventArgs e)
-        {
-            rSeleccionAsignaturas seleccionAsignaturas = new rSeleccionAsignaturas();
-            seleccionAsignaturas.MdiParent = this;
-            seleccionAsignaturas.Show();
         }
         
         public void rSemestresToolStripMenuItem_ItemClicked(object sender, EventArgs e)

@@ -22,19 +22,10 @@ namespace Sistema_Academico.UI.Consultas
         private void Limpiar()
         {
             IdTextBox.Clear();
-            NombretextBox.Clear();
-           
+            NombretextBox.Clear();          
             ConsultaAsignaturaDataGridView.DataSource = null;
-        }
-
-      
-
-        private void NuevoButton_Click(object sender, EventArgs e)
-        {
-            Limpiar();
-        }
-
-       
+        } 
+    
         private void BuscarButton_Click(object sender, EventArgs e)
         {
             var lista = new List<Semestres>();
@@ -50,14 +41,11 @@ namespace Sistema_Academico.UI.Consultas
 
                 if (NombretextBox.Text != string.Empty)
                     lista = SemestresBLL.GetList(r => r.Nombre.Contains(NombretextBox.Text));
-
             }
 
             ConsultaAsignaturaDataGridView.DataSource = null;
             ConsultaAsignaturaDataGridView.DataSource = lista;
         }
-
-       
 
         private void SeleccionarButton_Click_1(object sender, EventArgs e)
         {
@@ -74,6 +62,11 @@ namespace Sistema_Academico.UI.Consultas
             semestre.RecibirSemestre(Conversiones.ToInt(id));
             semestre.Show();
             Close();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Limpiar();
         }
     }
 }
