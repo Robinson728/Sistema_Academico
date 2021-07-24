@@ -18,6 +18,7 @@ namespace Sistema_Academico.Models
         public int CantAsignaturas { get; set; }
         public DateTime HoraInicio { get; set; }
         public DateTime HoraFinal { get; set; }
+        public bool Seleccionada { get; set; }
 
         public SeleccionAsignatura()
         {
@@ -26,6 +27,7 @@ namespace Sistema_Academico.Models
             CantAsignaturas = 0;
             HoraInicio = DateTime.Now;
             HoraFinal = DateTime.Now;
+            Seleccionada = false;
         }
     }
 }

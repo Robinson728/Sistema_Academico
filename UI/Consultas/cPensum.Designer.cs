@@ -51,11 +51,11 @@ namespace Sistema_Academico.UI.Consultas
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.CarreraComboBox = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.IdTextBox = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.AsignaturaTextBox = new System.Windows.Forms.TextBox();
+            this.CarreraTextBox = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConsultaAsignaturaDataGridView)).BeginInit();
             this.SuspendLayout();
@@ -272,15 +272,6 @@ namespace Sistema_Academico.UI.Consultas
             this.label1.TabIndex = 81;
             this.label1.Text = "Clave";
             // 
-            // CarreraComboBox
-            // 
-            this.CarreraComboBox.FormattingEnabled = true;
-            this.CarreraComboBox.Location = new System.Drawing.Point(3, 73);
-            this.CarreraComboBox.Margin = new System.Windows.Forms.Padding(2);
-            this.CarreraComboBox.Name = "CarreraComboBox";
-            this.CarreraComboBox.Size = new System.Drawing.Size(159, 23);
-            this.CarreraComboBox.TabIndex = 80;
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(814, 103);
@@ -307,20 +298,29 @@ namespace Sistema_Academico.UI.Consultas
             this.IdTextBox.Size = new System.Drawing.Size(159, 23);
             this.IdTextBox.TabIndex = 129;
             // 
-            // textBox1
+            // AsignaturaTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(359, 26);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(159, 23);
-            this.textBox1.TabIndex = 130;
+            this.AsignaturaTextBox.Location = new System.Drawing.Point(359, 26);
+            this.AsignaturaTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.AsignaturaTextBox.Name = "AsignaturaTextBox";
+            this.AsignaturaTextBox.Size = new System.Drawing.Size(159, 23);
+            this.AsignaturaTextBox.TabIndex = 130;
+            // 
+            // CarreraTextBox
+            // 
+            this.CarreraTextBox.Location = new System.Drawing.Point(3, 73);
+            this.CarreraTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.CarreraTextBox.Name = "CarreraTextBox";
+            this.CarreraTextBox.Size = new System.Drawing.Size(159, 23);
+            this.CarreraTextBox.TabIndex = 131;
             // 
             // cPensum
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(926, 485);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.CarreraTextBox);
+            this.Controls.Add(this.AsignaturaTextBox);
             this.Controls.Add(this.IdTextBox);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -338,7 +338,6 @@ namespace Sistema_Academico.UI.Consultas
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.CarreraComboBox);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.ConsultaAsignaturaDataGridView);
@@ -377,10 +376,10 @@ namespace Sistema_Academico.UI.Consultas
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox CarreraComboBox;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox IdTextBox;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox AsignaturaTextBox;
+        private System.Windows.Forms.TextBox CarreraTextBox;
     }
 }

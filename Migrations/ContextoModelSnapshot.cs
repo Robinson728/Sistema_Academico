@@ -264,6 +264,9 @@ namespace Sistema_Academico.Migrations
                     b.Property<string>("Profesor")
                         .HasColumnType("TEXT");
 
+                    b.Property<bool>("Seleccionada")
+                        .HasColumnType("INTEGER");
+
                     b.HasKey("SeleccionId");
 
                     b.ToTable("SeleccionAsignatura");

@@ -59,7 +59,6 @@ namespace Sistema_Academico.UI
             this.rGruposToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rPensumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rProfesoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.rSeleccionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rSemestresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ConsultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cAsignaturasTolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -76,7 +75,6 @@ namespace Sistema_Academico.UI
             this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cSeleccionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -266,7 +264,6 @@ namespace Sistema_Academico.UI
             this.rGruposToolStripMenuItem,
             this.rPensumToolStripMenuItem,
             this.rProfesoresToolStripMenuItem,
-            this.rSeleccionToolStripMenuItem,
             this.rSemestresToolStripMenuItem});
             this.RegistrosToolStripMenuItem.Name = "RegistrosToolStripMenuItem";
             this.RegistrosToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
@@ -314,12 +311,6 @@ namespace Sistema_Academico.UI
             this.rProfesoresToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.rProfesoresToolStripMenuItem.Text = "Profesores";
             // 
-            // rSeleccionToolStripMenuItem
-            // 
-            this.rSeleccionToolStripMenuItem.Name = "rSeleccionToolStripMenuItem";
-            this.rSeleccionToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
-            this.rSeleccionToolStripMenuItem.Text = "Selección Asignaturas";
-            // 
             // rSemestresToolStripMenuItem
             // 
             this.rSemestresToolStripMenuItem.Name = "rSemestresToolStripMenuItem";
@@ -336,7 +327,6 @@ namespace Sistema_Academico.UI
             this.cGruposToolStripMenuItem,
             this.cPensumToolStripMenuItem,
             this.cProfesorToolStripMenuItem,
-            this.cSeleccionToolStripMenuItem,
             this.cSemestresToolStripMenuItem});
             this.ConsultasToolStripMenuItem.Name = "ConsultasToolStripMenuItem";
             this.ConsultasToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
@@ -431,12 +421,6 @@ namespace Sistema_Academico.UI
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.aboutToolStripMenuItem.Text = "&About...";
             // 
-            // cSeleccionToolStripMenuItem
-            // 
-            this.cSeleccionToolStripMenuItem.Name = "cSeleccionToolStripMenuItem";
-            this.cSeleccionToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
-            this.cSeleccionToolStripMenuItem.Text = "Selección de Asignaturas";
-            // 
             // MainForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -495,7 +479,6 @@ namespace Sistema_Academico.UI
         private System.Windows.Forms.ToolStripMenuItem rCarrerasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rEstudiantesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rPensumToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem rSeleccionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rSemestresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cCalificacionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cCarrerasToolStripMenuItem;
@@ -503,7 +486,6 @@ namespace Sistema_Academico.UI
         private System.Windows.Forms.ToolStripMenuItem cPensumToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cProfesorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cSemestresToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cSeleccionToolStripMenuItem;
     }
 }
 

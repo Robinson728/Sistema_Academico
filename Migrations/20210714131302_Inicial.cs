@@ -151,7 +151,8 @@ namespace Sistema_Academico.Migrations
                     Aula = table.Column<string>(type: "TEXT", nullable: true),
                     CantAsignaturas = table.Column<int>(type: "INTEGER", nullable: false),
                     HoraInicio = table.Column<DateTime>(type: "TEXT", nullable: false),
-                    HoraFinal = table.Column<DateTime>(type: "TEXT", nullable: false)
+                    HoraFinal = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    Seleccionada = table.Column<bool>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {

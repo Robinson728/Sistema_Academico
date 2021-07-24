@@ -220,7 +220,7 @@ namespace Sistema_Academico.UI.Consultas
             // 
             // SeleccionarButton
             // 
-            this.SeleccionarButton.Location = new System.Drawing.Point(4, 395);
+            this.SeleccionarButton.Location = new System.Drawing.Point(4, 394);
             this.SeleccionarButton.Name = "SeleccionarButton";
             this.SeleccionarButton.Size = new System.Drawing.Size(121, 45);
             this.SeleccionarButton.TabIndex = 124;
@@ -370,7 +370,7 @@ namespace Sistema_Academico.UI.Consultas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(723, 444);
+            this.ClientSize = new System.Drawing.Size(723, 443);
             this.Controls.Add(this.IdTextBox);
             this.Controls.Add(this.SeleccionarButton);
             this.Controls.Add(this.button4);

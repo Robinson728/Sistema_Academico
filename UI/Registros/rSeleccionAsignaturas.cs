@@ -25,6 +25,7 @@ namespace Sistema_Academico.UI.Registros
         private Button GuardarButton;
         int id;
         int cantidad;
+        bool escogida = false;
 
         public rSeleccionAsignaturas()
         {
@@ -48,18 +49,18 @@ namespace Sistema_Academico.UI.Registros
             // SeleccionIdlabel
             // 
             this.SeleccionIdlabel.AutoSize = true;
-            this.SeleccionIdlabel.Location = new System.Drawing.Point(12, 24);
+            this.SeleccionIdlabel.Location = new System.Drawing.Point(3, 9);
             this.SeleccionIdlabel.Name = "SeleccionIdlabel";
-            this.SeleccionIdlabel.Size = new System.Drawing.Size(89, 20);
+            this.SeleccionIdlabel.Size = new System.Drawing.Size(70, 15);
             this.SeleccionIdlabel.TabIndex = 2;
             this.SeleccionIdlabel.Text = "Seleccion Id";
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(107, 22);
+            this.numericUpDown1.Location = new System.Drawing.Point(79, 7);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.ReadOnly = true;
-            this.numericUpDown1.Size = new System.Drawing.Size(150, 27);
+            this.numericUpDown1.Size = new System.Drawing.Size(101, 23);
             this.numericUpDown1.TabIndex = 4;
             // 
             // SelecciondataGridView
@@ -67,7 +68,7 @@ namespace Sistema_Academico.UI.Registros
             this.SelecciondataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.SelecciondataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Seleccion});
-            this.SelecciondataGridView.Location = new System.Drawing.Point(13, 55);
+            this.SelecciondataGridView.Location = new System.Drawing.Point(3, 37);
             this.SelecciondataGridView.Name = "SelecciondataGridView";
             this.SelecciondataGridView.RowHeadersWidth = 51;
             this.SelecciondataGridView.RowTemplate.Height = 29;
@@ -86,7 +87,7 @@ namespace Sistema_Academico.UI.Registros
             // BuscarButton
             // 
             this.BuscarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BuscarButton.Location = new System.Drawing.Point(593, 370);
+            this.BuscarButton.Location = new System.Drawing.Point(521, 352);
             this.BuscarButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BuscarButton.Name = "BuscarButton";
             this.BuscarButton.Size = new System.Drawing.Size(106, 56);
@@ -99,7 +100,7 @@ namespace Sistema_Academico.UI.Registros
             // EliminarButton
             // 
             this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.EliminarButton.Location = new System.Drawing.Point(480, 370);
+            this.EliminarButton.Location = new System.Drawing.Point(408, 352);
             this.EliminarButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(106, 56);
@@ -111,7 +112,7 @@ namespace Sistema_Academico.UI.Registros
             // NuevoButton
             // 
             this.NuevoButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.NuevoButton.Location = new System.Drawing.Point(254, 370);
+            this.NuevoButton.Location = new System.Drawing.Point(182, 352);
             this.NuevoButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(106, 56);
@@ -123,7 +124,7 @@ namespace Sistema_Academico.UI.Registros
             // GuardarButton
             // 
             this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.GuardarButton.Location = new System.Drawing.Point(367, 370);
+            this.GuardarButton.Location = new System.Drawing.Point(295, 352);
             this.GuardarButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(106, 56);
@@ -135,7 +136,7 @@ namespace Sistema_Academico.UI.Registros
             // 
             // rSeleccionAsignaturas
             // 
-            this.ClientSize = new System.Drawing.Size(840, 448);
+            this.ClientSize = new System.Drawing.Size(809, 413);
             this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.EliminarButton);
             this.Controls.Add(this.NuevoButton);
@@ -166,6 +167,7 @@ namespace Sistema_Academico.UI.Registros
             seleccionasig.CantAsignaturas = cantidad;
             seleccionasig.HoraInicio = group.HoraInicio;
             seleccionasig.HoraFinal = group.HoraFin;
+            seleccionasig.Seleccionada = escogida;
 
             return seleccionasig;
         }
@@ -203,6 +205,7 @@ namespace Sistema_Academico.UI.Registros
                 {
                     SelecciondataGridView.Rows[j].Cells[0].Value = false;
                     cantidad++;
+                    escogida = true;
                     id = Convert.ToInt32(SelecciondataGridView.Rows[j].Cells[1].Value);
                     SeleccionAsignatura selecciones;
                     selecciones = LlenarClase();

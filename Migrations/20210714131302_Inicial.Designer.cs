@@ -9,7 +9,7 @@ using Sistema_Academico.DAL;
 namespace Sistema_Academico.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20210705201032_Inicial")]
+    [Migration("20210714131302_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -265,6 +265,9 @@ namespace Sistema_Academico.Migrations
 
                     b.Property<string>("Profesor")
                         .HasColumnType("TEXT");
+
+                    b.Property<bool>("Seleccionada")
+                        .HasColumnType("INTEGER");
 
                     b.HasKey("SeleccionId");
 

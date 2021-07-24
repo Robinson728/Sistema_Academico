@@ -31,22 +31,20 @@ namespace Sistema_Academico.UI.Consultas
         {
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.ClaveTextBox = new System.Windows.Forms.TextBox();
+            this.NombreTextBox = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.PreRequisitosTextBox = new System.Windows.Forms.TextBox();
+            this.DuracionTextBox = new System.Windows.Forms.TextBox();
             this.HorasTeoricasTextBox = new System.Windows.Forms.TextBox();
             this.HorasPracticasTextBox = new System.Windows.Forms.TextBox();
-            this.AsignaturaComboBox = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.CreditosTextBox = new System.Windows.Forms.TextBox();
+            this.TotalAsignaturaTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.CarreraComboBox = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.HastaDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.HastaLabel = new System.Windows.Forms.Label();
@@ -56,6 +54,8 @@ namespace Sistema_Academico.UI.Consultas
             this.ConsultaAsignaturaDataGridView = new System.Windows.Forms.DataGridView();
             this.UsarFiltroFechascheckBox = new System.Windows.Forms.CheckBox();
             this.IdTextBox = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.CreditosTextBox = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConsultaAsignaturaDataGridView)).BeginInit();
             this.SuspendLayout();
@@ -78,13 +78,13 @@ namespace Sistema_Academico.UI.Consultas
             this.button1.Text = "Nuevo";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // ClaveTextBox
+            // NombreTextBox
             // 
-            this.ClaveTextBox.Location = new System.Drawing.Point(184, 21);
-            this.ClaveTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.ClaveTextBox.Name = "ClaveTextBox";
-            this.ClaveTextBox.Size = new System.Drawing.Size(159, 23);
-            this.ClaveTextBox.TabIndex = 122;
+            this.NombreTextBox.Location = new System.Drawing.Point(182, 21);
+            this.NombreTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.NombreTextBox.Name = "NombreTextBox";
+            this.NombreTextBox.Size = new System.Drawing.Size(159, 23);
+            this.NombreTextBox.TabIndex = 122;
             // 
             // label10
             // 
@@ -96,17 +96,17 @@ namespace Sistema_Academico.UI.Consultas
             this.label10.TabIndex = 121;
             this.label10.Text = "Carrera Id";
             // 
-            // PreRequisitosTextBox
+            // DuracionTextBox
             // 
-            this.PreRequisitosTextBox.Location = new System.Drawing.Point(540, 67);
-            this.PreRequisitosTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.PreRequisitosTextBox.Name = "PreRequisitosTextBox";
-            this.PreRequisitosTextBox.Size = new System.Drawing.Size(160, 23);
-            this.PreRequisitosTextBox.TabIndex = 120;
+            this.DuracionTextBox.Location = new System.Drawing.Point(538, 67);
+            this.DuracionTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.DuracionTextBox.Name = "DuracionTextBox";
+            this.DuracionTextBox.Size = new System.Drawing.Size(159, 23);
+            this.DuracionTextBox.TabIndex = 120;
             // 
             // HorasTeoricasTextBox
             // 
-            this.HorasTeoricasTextBox.Location = new System.Drawing.Point(362, 67);
+            this.HorasTeoricasTextBox.Location = new System.Drawing.Point(360, 67);
             this.HorasTeoricasTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.HorasTeoricasTextBox.Name = "HorasTeoricasTextBox";
             this.HorasTeoricasTextBox.Size = new System.Drawing.Size(159, 23);
@@ -114,20 +114,11 @@ namespace Sistema_Academico.UI.Consultas
             // 
             // HorasPracticasTextBox
             // 
-            this.HorasPracticasTextBox.Location = new System.Drawing.Point(184, 67);
+            this.HorasPracticasTextBox.Location = new System.Drawing.Point(182, 67);
             this.HorasPracticasTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.HorasPracticasTextBox.Name = "HorasPracticasTextBox";
             this.HorasPracticasTextBox.Size = new System.Drawing.Size(159, 23);
             this.HorasPracticasTextBox.TabIndex = 118;
-            // 
-            // AsignaturaComboBox
-            // 
-            this.AsignaturaComboBox.FormattingEnabled = true;
-            this.AsignaturaComboBox.Location = new System.Drawing.Point(362, 21);
-            this.AsignaturaComboBox.Margin = new System.Windows.Forms.Padding(2);
-            this.AsignaturaComboBox.Name = "AsignaturaComboBox";
-            this.AsignaturaComboBox.Size = new System.Drawing.Size(159, 23);
-            this.AsignaturaComboBox.TabIndex = 117;
             // 
             // label9
             // 
@@ -145,9 +136,9 @@ namespace Sistema_Academico.UI.Consultas
             this.label7.Location = new System.Drawing.Point(540, 50);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(55, 15);
+            this.label7.Size = new System.Drawing.Size(93, 15);
             this.label7.TabIndex = 115;
-            this.label7.Text = "Duración";
+            this.label7.Text = "Duración (Años)";
             // 
             // label6
             // 
@@ -169,13 +160,13 @@ namespace Sistema_Academico.UI.Consultas
             this.label5.TabIndex = 113;
             this.label5.Text = "Horas Prácticas";
             // 
-            // CreditosTextBox
+            // TotalAsignaturaTextBox
             // 
-            this.CreditosTextBox.Location = new System.Drawing.Point(540, 21);
-            this.CreditosTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.CreditosTextBox.Name = "CreditosTextBox";
-            this.CreditosTextBox.Size = new System.Drawing.Size(159, 23);
-            this.CreditosTextBox.TabIndex = 112;
+            this.TotalAsignaturaTextBox.Location = new System.Drawing.Point(538, 21);
+            this.TotalAsignaturaTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.TotalAsignaturaTextBox.Name = "TotalAsignaturaTextBox";
+            this.TotalAsignaturaTextBox.Size = new System.Drawing.Size(159, 23);
+            this.TotalAsignaturaTextBox.TabIndex = 112;
             // 
             // label4
             // 
@@ -215,15 +206,6 @@ namespace Sistema_Academico.UI.Consultas
             this.label1.Size = new System.Drawing.Size(51, 15);
             this.label1.TabIndex = 108;
             this.label1.Text = "Nombre";
-            // 
-            // CarreraComboBox
-            // 
-            this.CarreraComboBox.FormattingEnabled = true;
-            this.CarreraComboBox.Location = new System.Drawing.Point(4, 67);
-            this.CarreraComboBox.Margin = new System.Windows.Forms.Padding(2);
-            this.CarreraComboBox.Name = "CarreraComboBox";
-            this.CarreraComboBox.Size = new System.Drawing.Size(159, 23);
-            this.CarreraComboBox.TabIndex = 107;
             // 
             // panel1
             // 
@@ -283,6 +265,7 @@ namespace Sistema_Academico.UI.Consultas
             this.BuscarButton.TabIndex = 104;
             this.BuscarButton.Text = "Buscar";
             this.BuscarButton.UseVisualStyleBackColor = true;
+            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click_1);
             // 
             // ConsultaAsignaturaDataGridView
             // 
@@ -315,30 +298,46 @@ namespace Sistema_Academico.UI.Consultas
             this.IdTextBox.Size = new System.Drawing.Size(159, 23);
             this.IdTextBox.TabIndex = 129;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(4, 67);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(159, 23);
+            this.textBox1.TabIndex = 130;
+            // 
+            // CreditosTextBox
+            // 
+            this.CreditosTextBox.Location = new System.Drawing.Point(360, 21);
+            this.CreditosTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.CreditosTextBox.Name = "CreditosTextBox";
+            this.CreditosTextBox.Size = new System.Drawing.Size(159, 23);
+            this.CreditosTextBox.TabIndex = 131;
+            // 
             // cCarreras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(933, 479);
+            this.Controls.Add(this.CreditosTextBox);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.IdTextBox);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.ClaveTextBox);
+            this.Controls.Add(this.NombreTextBox);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.PreRequisitosTextBox);
+            this.Controls.Add(this.DuracionTextBox);
             this.Controls.Add(this.HorasTeoricasTextBox);
             this.Controls.Add(this.HorasPracticasTextBox);
-            this.Controls.Add(this.AsignaturaComboBox);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.CreditosTextBox);
+            this.Controls.Add(this.TotalAsignaturaTextBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.CarreraComboBox);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.ConsultaAsignaturaDataGridView);
@@ -357,22 +356,20 @@ namespace Sistema_Academico.UI.Consultas
 
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox ClaveTextBox;
+        private System.Windows.Forms.TextBox NombreTextBox;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox PreRequisitosTextBox;
+        private System.Windows.Forms.TextBox DuracionTextBox;
         private System.Windows.Forms.TextBox HorasTeoricasTextBox;
         private System.Windows.Forms.TextBox HorasPracticasTextBox;
-        private System.Windows.Forms.ComboBox AsignaturaComboBox;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox CreditosTextBox;
+        private System.Windows.Forms.TextBox TotalAsignaturaTextBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox CarreraComboBox;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DateTimePicker HastaDateTimePicker;
         private System.Windows.Forms.Label HastaLabel;
@@ -382,5 +379,7 @@ namespace Sistema_Academico.UI.Consultas
         private System.Windows.Forms.DataGridView ConsultaAsignaturaDataGridView;
         private System.Windows.Forms.CheckBox UsarFiltroFechascheckBox;
         private System.Windows.Forms.TextBox IdTextBox;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox CreditosTextBox;
     }
 }

@@ -91,31 +91,31 @@ namespace Sistema_Academico.UI.Consultas
             // 
             // IdTextBox
             // 
-            this.IdTextBox.Location = new System.Drawing.Point(10, 25);
-            this.IdTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.IdTextBox.Location = new System.Drawing.Point(3, 25);
+            this.IdTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.IdTextBox.Name = "IdTextBox";
             this.IdTextBox.Size = new System.Drawing.Size(159, 23);
             this.IdTextBox.TabIndex = 159;
             // 
             // AulaTextBox
             // 
-            this.AulaTextBox.Location = new System.Drawing.Point(10, 72);
-            this.AulaTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AulaTextBox.Location = new System.Drawing.Point(3, 72);
+            this.AulaTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.AulaTextBox.Name = "AulaTextBox";
             this.AulaTextBox.Size = new System.Drawing.Size(159, 23);
             this.AulaTextBox.TabIndex = 158;
             // 
             // ProfesorTextBox
             // 
-            this.ProfesorTextBox.Location = new System.Drawing.Point(367, 25);
-            this.ProfesorTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ProfesorTextBox.Location = new System.Drawing.Point(359, 25);
+            this.ProfesorTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.ProfesorTextBox.Name = "ProfesorTextBox";
             this.ProfesorTextBox.Size = new System.Drawing.Size(159, 23);
             this.ProfesorTextBox.TabIndex = 157;
             // 
             // SeleccionarButton
             // 
-            this.SeleccionarButton.Location = new System.Drawing.Point(10, 435);
+            this.SeleccionarButton.Location = new System.Drawing.Point(3, 435);
             this.SeleccionarButton.Name = "SeleccionarButton";
             this.SeleccionarButton.Size = new System.Drawing.Size(121, 45);
             this.SeleccionarButton.TabIndex = 156;
@@ -125,7 +125,7 @@ namespace Sistema_Academico.UI.Consultas
             // 
             // NuevoButton
             // 
-            this.NuevoButton.Location = new System.Drawing.Point(643, 103);
+            this.NuevoButton.Location = new System.Drawing.Point(636, 103);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(109, 43);
             this.NuevoButton.TabIndex = 155;
@@ -135,8 +135,8 @@ namespace Sistema_Academico.UI.Consultas
             // 
             // AsignaturaTextBox
             // 
-            this.AsignaturaTextBox.Location = new System.Drawing.Point(188, 25);
-            this.AsignaturaTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AsignaturaTextBox.Location = new System.Drawing.Point(181, 25);
+            this.AsignaturaTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.AsignaturaTextBox.Name = "AsignaturaTextBox";
             this.AsignaturaTextBox.Size = new System.Drawing.Size(159, 23);
             this.AsignaturaTextBox.TabIndex = 154;
@@ -144,7 +144,7 @@ namespace Sistema_Academico.UI.Consultas
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 8);
+            this.label2.Location = new System.Drawing.Point(3, 8);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 15);
@@ -153,8 +153,8 @@ namespace Sistema_Academico.UI.Consultas
             // 
             // NumeroGrupoTextBox
             // 
-            this.NumeroGrupoTextBox.Location = new System.Drawing.Point(188, 72);
-            this.NumeroGrupoTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.NumeroGrupoTextBox.Location = new System.Drawing.Point(181, 72);
+            this.NumeroGrupoTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.NumeroGrupoTextBox.Name = "NumeroGrupoTextBox";
             this.NumeroGrupoTextBox.Size = new System.Drawing.Size(159, 23);
             this.NumeroGrupoTextBox.TabIndex = 152;
@@ -162,7 +162,7 @@ namespace Sistema_Academico.UI.Consultas
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(367, 8);
+            this.label3.Location = new System.Drawing.Point(359, 8);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(51, 15);
@@ -172,7 +172,7 @@ namespace Sistema_Academico.UI.Consultas
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(367, 55);
+            this.label6.Location = new System.Drawing.Point(359, 55);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(70, 15);
@@ -182,7 +182,7 @@ namespace Sistema_Academico.UI.Consultas
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(188, 55);
+            this.label5.Location = new System.Drawing.Point(181, 55);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(134, 15);
@@ -191,8 +191,8 @@ namespace Sistema_Academico.UI.Consultas
             // 
             // CantidadEstudiantesTextBox
             // 
-            this.CantidadEstudiantesTextBox.Location = new System.Drawing.Point(367, 72);
-            this.CantidadEstudiantesTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CantidadEstudiantesTextBox.Location = new System.Drawing.Point(359, 72);
+            this.CantidadEstudiantesTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.CantidadEstudiantesTextBox.Name = "CantidadEstudiantesTextBox";
             this.CantidadEstudiantesTextBox.Size = new System.Drawing.Size(159, 23);
             this.CantidadEstudiantesTextBox.TabIndex = 148;
@@ -200,7 +200,7 @@ namespace Sistema_Academico.UI.Consultas
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(336, 94);
+            this.label4.Location = new System.Drawing.Point(329, 94);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(0, 15);
@@ -209,7 +209,7 @@ namespace Sistema_Academico.UI.Consultas
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(10, 55);
+            this.label7.Location = new System.Drawing.Point(4, 55);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(31, 15);
@@ -219,7 +219,7 @@ namespace Sistema_Academico.UI.Consultas
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(188, 8);
+            this.label8.Location = new System.Drawing.Point(181, 8);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(64, 15);
@@ -233,7 +233,7 @@ namespace Sistema_Academico.UI.Consultas
             this.panel1.Controls.Add(this.HastaLabel);
             this.panel1.Controls.Add(this.DesdeDateTimePicker);
             this.panel1.Controls.Add(this.DesdeLabel);
-            this.panel1.Location = new System.Drawing.Point(188, 103);
+            this.panel1.Location = new System.Drawing.Point(181, 103);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(337, 43);
             this.panel1.TabIndex = 144;
@@ -278,7 +278,7 @@ namespace Sistema_Academico.UI.Consultas
             // 
             // BuscarButton
             // 
-            this.BuscarButton.Location = new System.Drawing.Point(530, 103);
+            this.BuscarButton.Location = new System.Drawing.Point(523, 103);
             this.BuscarButton.Name = "BuscarButton";
             this.BuscarButton.Size = new System.Drawing.Size(109, 43);
             this.BuscarButton.TabIndex = 143;
@@ -292,7 +292,7 @@ namespace Sistema_Academico.UI.Consultas
             this.ConsultaSeleccionDataGridView.AllowUserToDeleteRows = false;
             this.ConsultaSeleccionDataGridView.AllowUserToOrderColumns = true;
             this.ConsultaSeleccionDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ConsultaSeleccionDataGridView.Location = new System.Drawing.Point(10, 152);
+            this.ConsultaSeleccionDataGridView.Location = new System.Drawing.Point(3, 152);
             this.ConsultaSeleccionDataGridView.Name = "ConsultaSeleccionDataGridView";
             this.ConsultaSeleccionDataGridView.ReadOnly = true;
             this.ConsultaSeleccionDataGridView.RowHeadersWidth = 51;
@@ -304,7 +304,7 @@ namespace Sistema_Academico.UI.Consultas
             // UsarFiltroFechascheckBox
             // 
             this.UsarFiltroFechascheckBox.AutoSize = true;
-            this.UsarFiltroFechascheckBox.Location = new System.Drawing.Point(11, 115);
+            this.UsarFiltroFechascheckBox.Location = new System.Drawing.Point(4, 115);
             this.UsarFiltroFechascheckBox.Name = "UsarFiltroFechascheckBox";
             this.UsarFiltroFechascheckBox.Size = new System.Drawing.Size(134, 19);
             this.UsarFiltroFechascheckBox.TabIndex = 141;
@@ -315,7 +315,7 @@ namespace Sistema_Academico.UI.Consultas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(773, 486);
+            this.ClientSize = new System.Drawing.Size(748, 485);
             this.Controls.Add(this.IdTextBox);
             this.Controls.Add(this.AulaTextBox);
             this.Controls.Add(this.ProfesorTextBox);

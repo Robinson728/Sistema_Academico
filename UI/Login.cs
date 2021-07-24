@@ -18,6 +18,12 @@ namespace Sistema_Academico.UI
             InitializeComponent();
         }
 
+        private void Limpiar()
+        {
+            UsuarioTextBox.Clear();
+            ClaveTextBox.Clear();
+        }
+
         private void IngresarButton_Click(object sender, EventArgs e)
         {
             if(UsuarioTextBox.Text=="Admin123" && ClaveTextBox.Text == "1234")
@@ -36,11 +42,18 @@ namespace Sistema_Academico.UI
                 UsuarioTextBox.Clear();
                 ClaveTextBox.Focus();
             }
+
+            Limpiar();
         }
 
         private void CancelarButton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
