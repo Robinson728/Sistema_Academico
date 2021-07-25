@@ -158,6 +158,12 @@ namespace Sistema_Academico.UI.Registros
             else
                 MessageBox.Show("Transacción Fallida!!", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+        public void RecibirPensum(int id)
+        {
+            Pensum pensum = PensumBLL.Buscar(id);
+
+            LlenaCampo(pensum);
+        }
 
         private void EliminarButton_Click(object sender, EventArgs e)
         {
