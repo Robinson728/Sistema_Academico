@@ -41,11 +41,11 @@ namespace Sistema_Academico.UI.Registros
             NombreTextBox.Text = carreras.Nombre;
             carreras.Creditos = Convert.ToInt32(CreditosTextBox.Text);
             carreras.TotalAsignaturas = Convert.ToInt32(TotalAsignaturasTextBox.Text);
-            carreras.HorasPracticas = Convert.ToInt32(HorasPracticasTextBox.Text);
-            carreras.HorasTeoricas = Convert.ToInt32(HorasTeoricasTextBox.Text);
-            carreras.HorasPensum = Convert.ToInt32(HorasPensumTextBox.Text);
+            carreras.HorasPracticas = Convert.ToSingle(HorasPracticasTextBox.Text);
+            carreras.HorasTeoricas = Convert.ToSingle(HorasTeoricasTextBox.Text);
+            carreras.HorasPensum = Convert.ToSingle(HorasPensumTextBox.Text);
             carreras.SemestresAcademicos = Convert.ToInt32(SemestresAcademicosTextBox.Text);
-            carreras.Duracion = Convert.ToInt32(DuracionTextBox.Text);
+            carreras.Duracion = Convert.ToSingle(DuracionTextBox.Text);
             carreras.TotalAsignaturasElectivas = Convert.ToInt32(AsignaturasElectivasTextBox.Text);
             TituloTextBox.Text = carreras.TituloOtorgado;
         }
