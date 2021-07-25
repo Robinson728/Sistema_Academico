@@ -60,7 +60,6 @@ namespace Sistema_Academico.UI.Consultas
 
             ConsultaAsignaturaDataGridView.DataSource = null;
             ConsultaAsignaturaDataGridView.DataSource = lista;
-
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -72,6 +72,7 @@ namespace Sistema_Academico.UI.Registros
             // 
             // CarreraComboBox
             // 
+            this.CarreraComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CarreraComboBox.FormattingEnabled = true;
             this.CarreraComboBox.Location = new System.Drawing.Point(71, 33);
             this.CarreraComboBox.Margin = new System.Windows.Forms.Padding(2);
@@ -178,6 +179,7 @@ namespace Sistema_Academico.UI.Registros
             // 
             // AsignaturaComboBox
             // 
+            this.AsignaturaComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.AsignaturaComboBox.FormattingEnabled = true;
             this.AsignaturaComboBox.Location = new System.Drawing.Point(71, 61);
             this.AsignaturaComboBox.Margin = new System.Windows.Forms.Padding(2);

@@ -36,9 +36,9 @@ namespace Sistema_Academico.UI.Consultas
         {
             var lista = new List<Carreras>();
 
-            if((IdTextBox.Text == string.Empty) && (NombreTextBox.Text == string.Empty) && (CreditosTextBox.Text == string.Empty)
+            if ((IdTextBox.Text == string.Empty) && (NombreTextBox.Text == string.Empty) && (CreditosTextBox.Text == string.Empty)
                     && (TotalAsignaturaTextBox.Text == string.Empty) && (HorasPensumTextBox.Text == string.Empty) && (HorasPracticasTextBox.Text == string.Empty)
-                        && (HorasTeoricasTextBox.Text==string.Empty) && (DuracionTextBox.Text == string.Empty))
+                        && (HorasTeoricasTextBox.Text == string.Empty) && (DuracionTextBox.Text == string.Empty))
             {
                 lista = CarrerasBLL.GetList(r => true);
             }
@@ -68,6 +68,9 @@ namespace Sistema_Academico.UI.Consultas
                 if (DuracionTextBox.Text != string.Empty)
                     lista = CarrerasBLL.GetList(r => r.Duracion == Conversiones.ToInt(DuracionTextBox.Text));
             }
+
+            ConsultaAsignaturaDataGridView.DataSource = null;
+            ConsultaAsignaturaDataGridView.DataSource = lista;
         }
 
         private void NuevoButton_Click(object sender, EventArgs e)

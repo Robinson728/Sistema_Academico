@@ -18,6 +18,14 @@ namespace Sistema_Academico.UI.Registros
         public RPensum()
         {
             InitializeComponent();
+
+            AsignaturaComboBox.DataSource = AsignaturasBLL.GetAsignaturas();
+            AsignaturaComboBox.DisplayMember = "Nombre";
+            AsignaturaComboBox.ValueMember = "AsignaturaId";
+
+            CarreraComboBox.DataSource = CarrerasBLL.GetCarreras();
+            CarreraComboBox.DisplayMember = "Nombre";
+            CarreraComboBox.ValueMember = "CarreraId";
         }
 
         private void Limpiar()
