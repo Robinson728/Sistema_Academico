@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Sistema_Academico.Models;
 using Sistema_Academico.BLL;
+using Sistema_Academico.UI.Consultas;
 
 namespace Sistema_Academico.UI.Registros
 {
@@ -120,18 +121,11 @@ namespace Sistema_Academico.UI.Registros
             return paso;
         }
 
-        private void BuscarButton_Click(object sender, EventArgs e)
+        public void RecibirPensum(int id)
         {
-            Pensum pensum = new Pensum();
-            int id;
-            int.TryParse(IdNumericUpDown.Text, out id);
+            Pensum pensum = PensumBLL.Buscar(id);
 
-            pensum = PensumBLL.Buscar(id);
-
-            if (pensum != null)
-                LlenaCampo(pensum);
-            else
-                MessageBox.Show("Transacción Fallida!!", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            LlenaCampo(pensum);
         }
 
         private void NuevoButton_Click(object sender, EventArgs e)
@@ -158,12 +152,6 @@ namespace Sistema_Academico.UI.Registros
             else
                 MessageBox.Show("Transacción Fallida!!", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
-        public void RecibirPensum(int id)
-        {
-            Pensum pensum = PensumBLL.Buscar(id);
-
-            LlenaCampo(pensum);
-        }
 
         private void EliminarButton_Click(object sender, EventArgs e)
         {
@@ -176,6 +164,14 @@ namespace Sistema_Academico.UI.Registros
                 MessageBox.Show("Transacción Exitosa!!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else
                 ErrorProvider.SetError(IdNumericUpDown, "Id no existente");
+        }
+
+        private void BuscarButton_Click_1(object sender, EventArgs e)
+        {
+            ErrorProvider.Clear();
+            cPensum pensum = new cPensum();
+            pensum.Show();
+            Close();
         }
     }
 }
