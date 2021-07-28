@@ -58,11 +58,13 @@ namespace Sistema_Academico.UI.Consultas
             // 
             // SeleccionarButton
             // 
+            this.SeleccionarButton.Image = global::Sistema_Academico.Properties.Resources.grifo;
             this.SeleccionarButton.Location = new System.Drawing.Point(4, 434);
             this.SeleccionarButton.Name = "SeleccionarButton";
-            this.SeleccionarButton.Size = new System.Drawing.Size(121, 36);
+            this.SeleccionarButton.Size = new System.Drawing.Size(121, 43);
             this.SeleccionarButton.TabIndex = 124;
             this.SeleccionarButton.Text = "Seleccionar";
+            this.SeleccionarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.SeleccionarButton.UseVisualStyleBackColor = true;
             this.SeleccionarButton.Click += new System.EventHandler(this.SeleccionarButton_Click);
             // 
@@ -203,11 +205,13 @@ namespace Sistema_Academico.UI.Consultas
             // 
             // BuscarButton
             // 
+            this.BuscarButton.Image = global::Sistema_Academico.Properties.Resources.Icono_Buscar_2;
             this.BuscarButton.Location = new System.Drawing.Point(524, 103);
             this.BuscarButton.Name = "BuscarButton";
             this.BuscarButton.Size = new System.Drawing.Size(109, 43);
             this.BuscarButton.TabIndex = 104;
             this.BuscarButton.Text = "Buscar";
+            this.BuscarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BuscarButton.UseVisualStyleBackColor = true;
             this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
@@ -267,11 +271,13 @@ namespace Sistema_Academico.UI.Consultas
             // 
             // NuevoButton
             // 
+            this.NuevoButton.Image = global::Sistema_Academico.Properties.Resources.icono_nuevo;
             this.NuevoButton.Location = new System.Drawing.Point(637, 103);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(109, 43);
             this.NuevoButton.TabIndex = 133;
             this.NuevoButton.Text = "Nuevo";
+            this.NuevoButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.NuevoButton.UseVisualStyleBackColor = true;
             this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
             // 
@@ -279,7 +285,7 @@ namespace Sistema_Academico.UI.Consultas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(750, 474);
+            this.ClientSize = new System.Drawing.Size(750, 481);
             this.Controls.Add(this.NuevoButton);
             this.Controls.Add(this.DirecciontextBox);
             this.Controls.Add(this.TelefonomaskedTextBox);

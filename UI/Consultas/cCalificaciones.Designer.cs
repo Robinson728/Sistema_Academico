@@ -54,20 +54,24 @@ namespace Sistema_Academico.UI.Consultas
             // 
             // button2
             // 
+            this.button2.Image = global::Sistema_Academico.Properties.Resources.grifo;
             this.button2.Location = new System.Drawing.Point(3, 386);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(110, 45);
             this.button2.TabIndex = 124;
             this.button2.Text = "Seleccionar";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
+            this.button1.Image = global::Sistema_Academico.Properties.Resources.icono_nuevo;
             this.button1.Location = new System.Drawing.Point(827, 51);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(109, 43);
             this.button1.TabIndex = 123;
             this.button1.Text = "Nuevo";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
             // 
             // ClaveTextBox
@@ -196,11 +200,13 @@ namespace Sistema_Academico.UI.Consultas
             // 
             // BuscarButton
             // 
+            this.BuscarButton.Image = global::Sistema_Academico.Properties.Resources.Icono_Buscar_2;
             this.BuscarButton.Location = new System.Drawing.Point(712, 51);
             this.BuscarButton.Name = "BuscarButton";
             this.BuscarButton.Size = new System.Drawing.Size(109, 43);
             this.BuscarButton.TabIndex = 104;
             this.BuscarButton.Text = "Buscar";
+            this.BuscarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BuscarButton.UseVisualStyleBackColor = true;
             // 
             // ConsultaAsignaturaDataGridView

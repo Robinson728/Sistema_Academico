@@ -92,6 +92,16 @@ namespace Sistema_Academico.UI.Registros
             return pensum;
         }
 
+        /*private int getDes(int id)
+        {
+            //int number = AsignaturaComboBox.SelectedIndex;
+            Asignaturas asignaturas = new Asignaturas();
+
+            asignaturas = AsignaturasBLL.Buscar(id);
+
+            return asignaturas.Creditos;
+        }*/
+
         private bool Validar()
         {
             bool paso = true;

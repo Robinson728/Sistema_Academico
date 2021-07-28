@@ -117,4 +117,32 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Icono_Buscar_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icono_Buscar_2.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono_guardar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono_guardar.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icono_Eliminar_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icono_Eliminar_2.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icono_Seleccionar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icono_Seleccionar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icono_ingresar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icono_ingresar.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono_eliminar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono_eliminar.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono_nuevo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono_nuevo.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icono_Más" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icono_Más.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="grifo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\grifo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

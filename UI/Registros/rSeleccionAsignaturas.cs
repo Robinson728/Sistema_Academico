@@ -86,11 +86,12 @@ namespace Sistema_Academico.UI.Registros
             // 
             // BuscarButton
             // 
+            this.BuscarButton.Image = global::Sistema_Academico.Properties.Resources.Icono_Buscar_2;
             this.BuscarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BuscarButton.Location = new System.Drawing.Point(521, 352);
+            this.BuscarButton.Location = new System.Drawing.Point(503, 350);
             this.BuscarButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BuscarButton.Name = "BuscarButton";
-            this.BuscarButton.Size = new System.Drawing.Size(106, 56);
+            this.BuscarButton.Size = new System.Drawing.Size(93, 42);
             this.BuscarButton.TabIndex = 56;
             this.BuscarButton.Text = "Buscar";
             this.BuscarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -99,11 +100,12 @@ namespace Sistema_Academico.UI.Registros
             // 
             // EliminarButton
             // 
+            this.EliminarButton.Image = global::Sistema_Academico.Properties.Resources.icono_eliminar;
             this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.EliminarButton.Location = new System.Drawing.Point(408, 352);
+            this.EliminarButton.Location = new System.Drawing.Point(406, 350);
             this.EliminarButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.EliminarButton.Name = "EliminarButton";
-            this.EliminarButton.Size = new System.Drawing.Size(106, 56);
+            this.EliminarButton.Size = new System.Drawing.Size(93, 42);
             this.EliminarButton.TabIndex = 55;
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -111,11 +113,12 @@ namespace Sistema_Academico.UI.Registros
             // 
             // NuevoButton
             // 
+            this.NuevoButton.Image = global::Sistema_Academico.Properties.Resources.icono_nuevo;
             this.NuevoButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.NuevoButton.Location = new System.Drawing.Point(182, 352);
+            this.NuevoButton.Location = new System.Drawing.Point(212, 350);
             this.NuevoButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.NuevoButton.Name = "NuevoButton";
-            this.NuevoButton.Size = new System.Drawing.Size(106, 56);
+            this.NuevoButton.Size = new System.Drawing.Size(93, 42);
             this.NuevoButton.TabIndex = 54;
             this.NuevoButton.Text = "Nuevo";
             this.NuevoButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -123,11 +126,12 @@ namespace Sistema_Academico.UI.Registros
             // 
             // GuardarButton
             // 
+            this.GuardarButton.Image = global::Sistema_Academico.Properties.Resources.icono_guardar;
             this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.GuardarButton.Location = new System.Drawing.Point(295, 352);
+            this.GuardarButton.Location = new System.Drawing.Point(309, 350);
             this.GuardarButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.GuardarButton.Name = "GuardarButton";
-            this.GuardarButton.Size = new System.Drawing.Size(106, 56);
+            this.GuardarButton.Size = new System.Drawing.Size(93, 42);
             this.GuardarButton.TabIndex = 53;
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -136,7 +140,7 @@ namespace Sistema_Academico.UI.Registros
             // 
             // rSeleccionAsignaturas
             // 
-            this.ClientSize = new System.Drawing.Size(809, 413);
+            this.ClientSize = new System.Drawing.Size(809, 396);
             this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.EliminarButton);
             this.Controls.Add(this.NuevoButton);

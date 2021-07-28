@@ -294,6 +294,7 @@ namespace Sistema_Academico.UI.Registros
             // 
             // EliminarButton
             // 
+            this.EliminarButton.Image = global::Sistema_Academico.Properties.Resources.icono_eliminar;
             this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.EliminarButton.Location = new System.Drawing.Point(338, 464);
             this.EliminarButton.Margin = new System.Windows.Forms.Padding(2);
@@ -307,6 +308,7 @@ namespace Sistema_Academico.UI.Registros
             // 
             // GuardarButton
             // 
+            this.GuardarButton.Image = global::Sistema_Academico.Properties.Resources.icono_guardar;
             this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.GuardarButton.Location = new System.Drawing.Point(241, 464);
             this.GuardarButton.Margin = new System.Windows.Forms.Padding(2);
@@ -320,6 +322,7 @@ namespace Sistema_Academico.UI.Registros
             // 
             // NuevoButton
             // 
+            this.NuevoButton.Image = global::Sistema_Academico.Properties.Resources.icono_nuevo;
             this.NuevoButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.NuevoButton.Location = new System.Drawing.Point(144, 464);
             this.NuevoButton.Margin = new System.Windows.Forms.Padding(2);
@@ -328,6 +331,7 @@ namespace Sistema_Academico.UI.Registros
             this.NuevoButton.TabIndex = 73;
             this.NuevoButton.Text = "Nuevo";
             this.NuevoButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.NuevoButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.NuevoButton.UseVisualStyleBackColor = true;
             this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
             // 
@@ -341,6 +345,7 @@ namespace Sistema_Academico.UI.Registros
             // 
             // BuscarButton
             // 
+            this.BuscarButton.Image = global::Sistema_Academico.Properties.Resources.Icono_Buscar_2;
             this.BuscarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BuscarButton.Location = new System.Drawing.Point(435, 464);
             this.BuscarButton.Name = "BuscarButton";
@@ -378,6 +383,7 @@ namespace Sistema_Academico.UI.Registros
             // 
             // AgregarButton
             // 
+            this.AgregarButton.Image = global::Sistema_Academico.Properties.Resources.Icono_Más;
             this.AgregarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AgregarButton.Location = new System.Drawing.Point(568, 36);
             this.AgregarButton.Margin = new System.Windows.Forms.Padding(2);
@@ -386,19 +392,22 @@ namespace Sistema_Academico.UI.Registros
             this.AgregarButton.TabIndex = 84;
             this.AgregarButton.Text = "Agregar";
             this.AgregarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.AgregarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.AgregarButton.UseVisualStyleBackColor = true;
             this.AgregarButton.Click += new System.EventHandler(this.AgregarButton_Click);
             // 
             // RemoverButton
             // 
+            this.RemoverButton.Image = global::Sistema_Academico.Properties.Resources.Icono_Eliminar_2;
             this.RemoverButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.RemoverButton.Location = new System.Drawing.Point(5, 292);
             this.RemoverButton.Margin = new System.Windows.Forms.Padding(2);
             this.RemoverButton.Name = "RemoverButton";
-            this.RemoverButton.Size = new System.Drawing.Size(93, 42);
+            this.RemoverButton.Size = new System.Drawing.Size(97, 42);
             this.RemoverButton.TabIndex = 85;
             this.RemoverButton.Text = "Remover";
             this.RemoverButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.RemoverButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.RemoverButton.UseVisualStyleBackColor = true;
             this.RemoverButton.Click += new System.EventHandler(this.RemoverButton_Click);
             // 

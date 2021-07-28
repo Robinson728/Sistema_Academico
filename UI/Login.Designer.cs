@@ -76,6 +76,7 @@ namespace Sistema_Academico.UI
             // 
             // IngresarButton
             // 
+            this.IngresarButton.Image = global::Sistema_Academico.Properties.Resources.Icono_ingresar;
             this.IngresarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.IngresarButton.Location = new System.Drawing.Point(76, 184);
             this.IngresarButton.Name = "IngresarButton";
@@ -88,6 +89,7 @@ namespace Sistema_Academico.UI
             // 
             // CancelarButton
             // 
+            this.CancelarButton.Image = global::Sistema_Academico.Properties.Resources.Icono_Eliminar_2;
             this.CancelarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.CancelarButton.Location = new System.Drawing.Point(175, 184);
             this.CancelarButton.Name = "CancelarButton";

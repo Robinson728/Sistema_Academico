@@ -220,21 +220,25 @@ namespace Sistema_Academico.UI.Consultas
             // 
             // SeleccionarButton
             // 
+            this.SeleccionarButton.Image = global::Sistema_Academico.Properties.Resources.grifo;
             this.SeleccionarButton.Location = new System.Drawing.Point(4, 394);
             this.SeleccionarButton.Name = "SeleccionarButton";
             this.SeleccionarButton.Size = new System.Drawing.Size(121, 45);
             this.SeleccionarButton.TabIndex = 124;
             this.SeleccionarButton.Text = "Seleccionar";
+            this.SeleccionarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.SeleccionarButton.UseVisualStyleBackColor = true;
             this.SeleccionarButton.Click += new System.EventHandler(this.SeleccionarButton_Click_1);
             // 
             // button4
             // 
+            this.button4.Image = global::Sistema_Academico.Properties.Resources.icono_nuevo;
             this.button4.Location = new System.Drawing.Point(610, 54);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(109, 43);
             this.button4.TabIndex = 123;
             this.button4.Text = "Nuevo";
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -327,11 +331,13 @@ namespace Sistema_Academico.UI.Consultas
             // 
             // BuscarButton
             // 
+            this.BuscarButton.Image = global::Sistema_Academico.Properties.Resources.Icono_Buscar_2;
             this.BuscarButton.Location = new System.Drawing.Point(497, 54);
             this.BuscarButton.Name = "BuscarButton";
             this.BuscarButton.Size = new System.Drawing.Size(109, 43);
             this.BuscarButton.TabIndex = 104;
             this.BuscarButton.Text = "Buscar";
+            this.BuscarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BuscarButton.UseVisualStyleBackColor = true;
             this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 

@@ -51,6 +51,7 @@ namespace Sistema_Academico.UI.Registros
             // 
             // EliminarButton
             // 
+            this.EliminarButton.Image = global::Sistema_Academico.Properties.Resources.icono_eliminar;
             this.EliminarButton.Location = new System.Drawing.Point(198, 130);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(93, 42);
@@ -62,6 +63,7 @@ namespace Sistema_Academico.UI.Registros
             // 
             // GuardarButton
             // 
+            this.GuardarButton.Image = global::Sistema_Academico.Properties.Resources.icono_guardar;
             this.GuardarButton.Location = new System.Drawing.Point(101, 130);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(93, 42);
@@ -73,6 +75,7 @@ namespace Sistema_Academico.UI.Registros
             // 
             // NuevoButton
             // 
+            this.NuevoButton.Image = global::Sistema_Academico.Properties.Resources.icono_nuevo;
             this.NuevoButton.Location = new System.Drawing.Point(4, 130);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(93, 42);
@@ -169,6 +172,7 @@ namespace Sistema_Academico.UI.Registros
             // 
             // button1
             // 
+            this.button1.Image = global::Sistema_Academico.Properties.Resources.Icono_Buscar_2;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button1.Location = new System.Drawing.Point(295, 130);
             this.button1.Name = "button1";

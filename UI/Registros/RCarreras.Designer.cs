@@ -251,6 +251,7 @@ namespace Sistema_Academico.UI.Registros
             // 
             // EliminarButton
             // 
+            this.EliminarButton.Image = global::Sistema_Academico.Properties.Resources.icono_eliminar;
             this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.EliminarButton.Location = new System.Drawing.Point(388, 178);
             this.EliminarButton.Margin = new System.Windows.Forms.Padding(2);
@@ -264,6 +265,7 @@ namespace Sistema_Academico.UI.Registros
             // 
             // GuardarButton
             // 
+            this.GuardarButton.Image = global::Sistema_Academico.Properties.Resources.icono_guardar;
             this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.GuardarButton.Location = new System.Drawing.Point(296, 178);
             this.GuardarButton.Margin = new System.Windows.Forms.Padding(2);
@@ -277,14 +279,14 @@ namespace Sistema_Academico.UI.Registros
             // 
             // NuevoButton
             // 
-            this.NuevoButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.NuevoButton.Image = global::Sistema_Academico.Properties.Resources.icono_nuevo;
             this.NuevoButton.Location = new System.Drawing.Point(204, 178);
             this.NuevoButton.Margin = new System.Windows.Forms.Padding(2);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(88, 42);
             this.NuevoButton.TabIndex = 58;
             this.NuevoButton.Text = "Nuevo";
-            this.NuevoButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.NuevoButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.NuevoButton.UseVisualStyleBackColor = true;
             this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
             // 
@@ -294,6 +296,7 @@ namespace Sistema_Academico.UI.Registros
             // 
             // BuscarButton
             // 
+            this.BuscarButton.Image = global::Sistema_Academico.Properties.Resources.Icono_Buscar_2;
             this.BuscarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BuscarButton.Location = new System.Drawing.Point(480, 178);
             this.BuscarButton.Name = "BuscarButton";

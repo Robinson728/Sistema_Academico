@@ -115,12 +115,6 @@ namespace Sistema_Academico.UI.Registros
                 HorasTeoricasTextBox.Focus();
                 paso = false;
             }
-            /*if (string.IsNullOrWhiteSpace(HorasPensumTextBox.Text))
-            {
-                ErrorProvider.SetError(HorasPensumTextBox, "Este campo no puede estar vacío");
-                HorasPensumTextBox.Focus();
-                paso = false;
-            }*/
             if (string.IsNullOrWhiteSpace(SemestresAcademicosTextBox.Text))
             {
                 ErrorProvider.SetError(SemestresAcademicosTextBox, "Este campo no puede estar vacío");
