@@ -272,49 +272,49 @@ namespace Sistema_Academico.UI
             // rAsignaturasToolStripMenuItem
             // 
             this.rAsignaturasToolStripMenuItem.Name = "rAsignaturasToolStripMenuItem";
-            this.rAsignaturasToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.rAsignaturasToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.rAsignaturasToolStripMenuItem.Text = "Asignaturas";
             // 
             // rCalificacionesToolStripMenuItem
             // 
             this.rCalificacionesToolStripMenuItem.Name = "rCalificacionesToolStripMenuItem";
-            this.rCalificacionesToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.rCalificacionesToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.rCalificacionesToolStripMenuItem.Text = "Calificaciones";
             // 
             // rCarrerasToolStripMenuItem
             // 
             this.rCarrerasToolStripMenuItem.Name = "rCarrerasToolStripMenuItem";
-            this.rCarrerasToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.rCarrerasToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.rCarrerasToolStripMenuItem.Text = "Carreras";
             // 
             // rEstudiantesToolStripMenuItem
             // 
             this.rEstudiantesToolStripMenuItem.Name = "rEstudiantesToolStripMenuItem";
-            this.rEstudiantesToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.rEstudiantesToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.rEstudiantesToolStripMenuItem.Text = "Estudiantes";
             // 
             // rGruposToolStripMenuItem
             // 
             this.rGruposToolStripMenuItem.Name = "rGruposToolStripMenuItem";
-            this.rGruposToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.rGruposToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.rGruposToolStripMenuItem.Text = "Grupos";
             // 
             // rPensumToolStripMenuItem
             // 
             this.rPensumToolStripMenuItem.Name = "rPensumToolStripMenuItem";
-            this.rPensumToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.rPensumToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.rPensumToolStripMenuItem.Text = "Pensum";
             // 
             // rProfesoresToolStripMenuItem
             // 
             this.rProfesoresToolStripMenuItem.Name = "rProfesoresToolStripMenuItem";
-            this.rProfesoresToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.rProfesoresToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.rProfesoresToolStripMenuItem.Text = "Profesores";
             // 
             // rSemestresToolStripMenuItem
             // 
             this.rSemestresToolStripMenuItem.Name = "rSemestresToolStripMenuItem";
-            this.rSemestresToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.rSemestresToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.rSemestresToolStripMenuItem.Text = "Semestres";
             // 
             // ConsultasToolStripMenuItem
@@ -335,49 +335,49 @@ namespace Sistema_Academico.UI
             // cAsignaturasTolStripMenuItem
             // 
             this.cAsignaturasTolStripMenuItem.Name = "cAsignaturasTolStripMenuItem";
-            this.cAsignaturasTolStripMenuItem.Size = new System.Drawing.Size(205, 22);
+            this.cAsignaturasTolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.cAsignaturasTolStripMenuItem.Text = "Asignaturas";
             // 
             // cCalificacionesToolStripMenuItem
             // 
             this.cCalificacionesToolStripMenuItem.Name = "cCalificacionesToolStripMenuItem";
-            this.cCalificacionesToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
+            this.cCalificacionesToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.cCalificacionesToolStripMenuItem.Text = "Calificaciones";
             // 
             // cCarrerasToolStripMenuItem
             // 
             this.cCarrerasToolStripMenuItem.Name = "cCarrerasToolStripMenuItem";
-            this.cCarrerasToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
+            this.cCarrerasToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.cCarrerasToolStripMenuItem.Text = "Carreras";
             // 
             // cEstudiantesToolStripMenuItem
             // 
             this.cEstudiantesToolStripMenuItem.Name = "cEstudiantesToolStripMenuItem";
-            this.cEstudiantesToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
+            this.cEstudiantesToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.cEstudiantesToolStripMenuItem.Text = "Estudiantes";
             // 
             // cGruposToolStripMenuItem
             // 
             this.cGruposToolStripMenuItem.Name = "cGruposToolStripMenuItem";
-            this.cGruposToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
+            this.cGruposToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.cGruposToolStripMenuItem.Text = "Grupos";
             // 
             // cPensumToolStripMenuItem
             // 
             this.cPensumToolStripMenuItem.Name = "cPensumToolStripMenuItem";
-            this.cPensumToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
+            this.cPensumToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.cPensumToolStripMenuItem.Text = "Pensum";
             // 
             // cProfesorToolStripMenuItem
             // 
             this.cProfesorToolStripMenuItem.Name = "cProfesorToolStripMenuItem";
-            this.cProfesorToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
+            this.cProfesorToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.cProfesorToolStripMenuItem.Text = "Profesor";
             // 
             // cSemestresToolStripMenuItem
             // 
             this.cSemestresToolStripMenuItem.Name = "cSemestresToolStripMenuItem";
-            this.cSemestresToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
+            this.cSemestresToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.cSemestresToolStripMenuItem.Text = "Semestres";
             // 
             // helpToolStripMenuItem
@@ -427,6 +427,7 @@ namespace Sistema_Academico.UI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForms";
