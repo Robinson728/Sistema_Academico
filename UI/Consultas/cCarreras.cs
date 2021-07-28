@@ -30,6 +30,7 @@ namespace Sistema_Academico.UI.Consultas
             HorasPracticasTextBox.Clear();
             HorasTeoricasTextBox.Clear();
             DuracionTextBox.Clear();
+            ConsultaAsignaturaDataGridView.DataSource = null;
         }
 
         private void BuscarButton_Click_1(object sender, EventArgs e)
@@ -57,16 +58,16 @@ namespace Sistema_Academico.UI.Consultas
                     lista = CarrerasBLL.GetList(r => r.TotalAsignaturas == Conversiones.ToInt(TotalAsignaturaTextBox.Text));
 
                 if (HorasPensumTextBox.Text != string.Empty)
-                    lista = CarrerasBLL.GetList(r => r.HorasPensum == Conversiones.ToInt(HorasPensumTextBox.Text));
+                    lista = CarrerasBLL.GetList(r => r.HorasPensum == Conversiones.ToDouble(HorasPensumTextBox.Text));
 
                 if (HorasPracticasTextBox.Text != string.Empty)
-                    lista = CarrerasBLL.GetList(r => r.HorasPracticas == Conversiones.ToInt(HorasPracticasTextBox.Text));
+                    lista = CarrerasBLL.GetList(r => r.HorasPracticas == Conversiones.ToDouble(HorasPracticasTextBox.Text));
 
                 if (HorasTeoricasTextBox.Text != string.Empty)
-                    lista = CarrerasBLL.GetList(r => r.HorasTeoricas == Conversiones.ToInt(HorasTeoricasTextBox.Text));
+                    lista = CarrerasBLL.GetList(r => r.HorasTeoricas == Conversiones.ToDouble(HorasTeoricasTextBox.Text));
 
                 if (DuracionTextBox.Text != string.Empty)
-                    lista = CarrerasBLL.GetList(r => r.Duracion == Conversiones.ToInt(DuracionTextBox.Text));
+                    lista = CarrerasBLL.GetList(r => r.Duracion == Conversiones.ToDouble(DuracionTextBox.Text));
             }
 
             ConsultaAsignaturaDataGridView.DataSource = null;

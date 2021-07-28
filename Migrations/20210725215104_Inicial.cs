@@ -106,12 +106,10 @@ namespace Sistema_Academico.Migrations
                     PensumId = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Carrera = table.Column<string>(type: "TEXT", nullable: true),
-                    Asignatura = table.Column<string>(type: "TEXT", nullable: true),
                     Creditos = table.Column<int>(type: "INTEGER", nullable: false),
                     HorasPracticas = table.Column<double>(type: "REAL", nullable: false),
                     HorasTeoricas = table.Column<double>(type: "REAL", nullable: false),
-                    PreRequisitos = table.Column<string>(type: "TEXT", nullable: true),
-                    Clave = table.Column<string>(type: "TEXT", nullable: true),
+                    HorasPensum = table.Column<double>(type: "REAL", nullable: false),
                     Semestre = table.Column<string>(type: "TEXT", nullable: true),
                     FechaCreacion = table.Column<DateTime>(type: "TEXT", nullable: false)
                 },
@@ -173,6 +171,36 @@ namespace Sistema_Academico.Migrations
                 {
                     table.PrimaryKey("PK_Semestres", x => x.SemestreId);
                 });
+
+            migrationBuilder.CreateTable(
+                name: "PensumDetalles",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    PensumId = table.Column<int>(type: "INTEGER", nullable: false),
+                    Asignatura = table.Column<string>(type: "TEXT", nullable: true),
+                    Practicas = table.Column<int>(type: "INTEGER", nullable: false),
+                    Teoricas = table.Column<int>(type: "INTEGER", nullable: false),
+                    Prerrequisitos = table.Column<string>(type: "TEXT", nullable: true),
+                    Clave = table.Column<string>(type: "TEXT", nullable: true),
+                    Creditos = table.Column<int>(type: "INTEGER", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_PensumDetalles", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_PensumDetalles_Pensum_PensumId",
+                        column: x => x.PensumId,
+                        principalTable: "Pensum",
+                        principalColumn: "PensumId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_PensumDetalles_PensumId",
+                table: "PensumDetalles",
+                column: "PensumId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -193,7 +221,7 @@ namespace Sistema_Academico.Migrations
                 name: "Grupos");
 
             migrationBuilder.DropTable(
-                name: "Pensum");
+                name: "PensumDetalles");
 
             migrationBuilder.DropTable(
                 name: "Profesores");
@@ -203,6 +231,9 @@ namespace Sistema_Academico.Migrations
 
             migrationBuilder.DropTable(
                 name: "Semestres");
+
+            migrationBuilder.DropTable(
+                name: "Pensum");
         }
     }
 }

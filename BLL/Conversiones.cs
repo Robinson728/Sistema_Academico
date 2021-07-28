@@ -16,5 +16,14 @@ namespace Sistema_Academico.BLL
 
             return retorno;
         }
+
+        public static double ToDouble(string valor)
+        {
+            double retorno;
+
+            double.TryParse(valor, out retorno);
+
+            return retorno;
+        }
     }
 }

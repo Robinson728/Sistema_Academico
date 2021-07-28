@@ -9,7 +9,7 @@ using Sistema_Academico.DAL;
 namespace Sistema_Academico.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20210714131302_Inicial")]
+    [Migration("20210725215104_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -175,13 +175,7 @@ namespace Sistema_Academico.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Asignatura")
-                        .HasColumnType("TEXT");
-
                     b.Property<string>("Carrera")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Clave")
                         .HasColumnType("TEXT");
 
                     b.Property<int>("Creditos")
@@ -190,14 +184,14 @@ namespace Sistema_Academico.Migrations
                     b.Property<DateTime>("FechaCreacion")
                         .HasColumnType("TEXT");
 
+                    b.Property<double>("HorasPensum")
+                        .HasColumnType("REAL");
+
                     b.Property<double>("HorasPracticas")
                         .HasColumnType("REAL");
 
                     b.Property<double>("HorasTeoricas")
                         .HasColumnType("REAL");
-
-                    b.Property<string>("PreRequisitos")
-                        .HasColumnType("TEXT");
 
                     b.Property<string>("Semestre")
                         .HasColumnType("TEXT");
@@ -205,6 +199,40 @@ namespace Sistema_Academico.Migrations
                     b.HasKey("PensumId");
 
                     b.ToTable("Pensum");
+                });
+
+            modelBuilder.Entity("Sistema_Academico.Models.PensumDetalles", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Asignatura")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Clave")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Creditos")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("PensumId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Practicas")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Prerrequisitos")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Teoricas")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PensumId");
+
+                    b.ToTable("PensumDetalles");
                 });
 
             modelBuilder.Entity("Sistema_Academico.Models.Profesores", b =>
@@ -292,6 +320,20 @@ namespace Sistema_Academico.Migrations
                     b.HasKey("SemestreId");
 
                     b.ToTable("Semestres");
+                });
+
+            modelBuilder.Entity("Sistema_Academico.Models.PensumDetalles", b =>
+                {
+                    b.HasOne("Sistema_Academico.Models.Pensum", null)
+                        .WithMany("Detalle")
+                        .HasForeignKey("PensumId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Sistema_Academico.Models.Pensum", b =>
+                {
+                    b.Navigation("Detalle");
                 });
 #pragma warning restore 612, 618
         }

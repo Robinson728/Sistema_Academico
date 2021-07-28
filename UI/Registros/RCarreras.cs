@@ -39,20 +39,21 @@ namespace Sistema_Academico.UI.Registros
         {
             IdnumericUpDown.Value = carreras.CarreraId;
             NombreTextBox.Text = carreras.Nombre;
-            carreras.Creditos = Convert.ToInt32(CreditosTextBox.Text);
-            carreras.TotalAsignaturas = Convert.ToInt32(TotalAsignaturasTextBox.Text);
-            carreras.HorasPracticas = Convert.ToSingle(HorasPracticasTextBox.Text);
-            carreras.HorasTeoricas = Convert.ToSingle(HorasTeoricasTextBox.Text);
-            carreras.HorasPensum = Convert.ToSingle(HorasPensumTextBox.Text);
-            carreras.SemestresAcademicos = Convert.ToInt32(SemestresAcademicosTextBox.Text);
-            carreras.Duracion = Convert.ToSingle(DuracionTextBox.Text);
-            carreras.TotalAsignaturasElectivas = Convert.ToInt32(AsignaturasElectivasTextBox.Text);
+            CreditosTextBox.Text = carreras.Creditos.ToString();
+            TotalAsignaturasTextBox.Text = carreras.TotalAsignaturas.ToString();
+            HorasPracticasTextBox.Text = carreras.HorasPracticas.ToString();
+            HorasTeoricasTextBox.Text = carreras.HorasTeoricas.ToString();
+            HorasPensumTextBox.Text = carreras.HorasPensum.ToString();
+            SemestresAcademicosTextBox.Text = carreras.SemestresAcademicos.ToString();
+            DuracionTextBox.Text = carreras.Duracion.ToString();
+            AsignaturasElectivasTextBox.Text = carreras.TotalAsignaturasElectivas.ToString();
             TituloTextBox.Text = carreras.TituloOtorgado;
         }
 
         private Carreras LlenaClase()
         {
             Carreras carreras = new Carreras();
+            int total = 0;
 
             carreras.CarreraId = (int)IdnumericUpDown.Value;
             carreras.Nombre = NombreTextBox.Text;
@@ -60,13 +61,24 @@ namespace Sistema_Academico.UI.Registros
             carreras.TotalAsignaturas = Convert.ToInt32(TotalAsignaturasTextBox.Text);
             carreras.HorasPracticas = Convert.ToInt32(HorasPracticasTextBox.Text);
             carreras.HorasTeoricas = Convert.ToInt32(HorasTeoricasTextBox.Text);
-            carreras.HorasPensum = Convert.ToInt32(HorasPensumTextBox.Text);
+            total = Sumatoria();
+            carreras.HorasPensum = total;
             carreras.SemestresAcademicos = Convert.ToInt32(SemestresAcademicosTextBox.Text);
             carreras.Duracion = Convert.ToInt32(DuracionTextBox.Text);
             carreras.TotalAsignaturasElectivas = Convert.ToInt32(AsignaturasElectivasTextBox.Text);
             carreras.TituloOtorgado = TituloTextBox.Text;
 
             return carreras;
+        }
+
+        private int Sumatoria()
+        {
+            int horapractica = Conversiones.ToInt(HorasPracticasTextBox.Text);
+            int horateorica = Conversiones.ToInt(HorasTeoricasTextBox.Text);
+            int acumulador = horapractica + horateorica;
+            HorasPensumTextBox.Text = Convert.ToString(acumulador);
+
+            return acumulador;
         }
 
         private bool Validar()
@@ -103,12 +115,12 @@ namespace Sistema_Academico.UI.Registros
                 HorasTeoricasTextBox.Focus();
                 paso = false;
             }
-            if (string.IsNullOrWhiteSpace(HorasPensumTextBox.Text))
+            /*if (string.IsNullOrWhiteSpace(HorasPensumTextBox.Text))
             {
                 ErrorProvider.SetError(HorasPensumTextBox, "Este campo no puede estar vacío");
                 HorasPensumTextBox.Focus();
                 paso = false;
-            }
+            }*/
             if (string.IsNullOrWhiteSpace(SemestresAcademicosTextBox.Text))
             {
                 ErrorProvider.SetError(SemestresAcademicosTextBox, "Este campo no puede estar vacío");
@@ -155,6 +167,12 @@ namespace Sistema_Academico.UI.Registros
 
             if (!Validar())
                 return;
+
+            /*int horapractica = Conversiones.ToInt(HorasPracticasTextBox.Text);
+            int horateorica = Conversiones.ToInt(HorasTeoricasTextBox.Text);
+            int acumulador = horapractica + horateorica;
+
+            HorasPensumTextBox.Text = Convert.ToString(acumulador);*/
 
             carreras = LlenaClase();
 

@@ -1,4 +1,5 @@
-﻿using Sistema_Academico.DAL;
+﻿using Microsoft.EntityFrameworkCore;
+using Sistema_Academico.DAL;
 using Sistema_Academico.Models;
 using System;
 using System.Collections.Generic;
@@ -68,7 +69,14 @@ namespace Sistema_Academico.BLL
             Contexto contexto = new Contexto();
             try
             {
-                contexto.Entry(pensums).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+                contexto.Database.ExecuteSqlRaw($"Delete from PensumDetalles where PensumId = {pensums.PensumId}");
+
+                foreach (var item in pensums.Detalle)
+                {
+                    contexto.Entry(item).State = EntityState.Added;
+                }
+
+                contexto.Entry(pensums).State = EntityState.Modified;
                 paso = contexto.SaveChanges() > 0;
             }
             catch (Exception)
@@ -92,7 +100,7 @@ namespace Sistema_Academico.BLL
                 var pensum = contexto.Pensum.Find(id);
                 if (pensum != null)
                 {
-                    contexto.Pensum.Remove(pensum);
+                    contexto.Entry(pensum).State = EntityState.Deleted;
                     paso = contexto.SaveChanges() > 0;
                 }
             }
@@ -114,7 +122,7 @@ namespace Sistema_Academico.BLL
             Pensum Pensum;
             try
             {
-                Pensum = contexto.Pensum.Find(id);
+                Pensum = contexto.Pensum.Include(r => r.Detalle).Where(r => r.PensumId == id).SingleOrDefault();
             }
             catch (Exception)
             {

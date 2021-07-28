@@ -111,10 +111,10 @@ namespace Sistema_Academico.BLL
         public static Carreras Buscar(int id)
         {
             Contexto contexto = new Contexto();
-            Carreras Carreras;
+            Carreras carreras;
             try
             {
-                Carreras = contexto.Carreras.Find(id);
+                carreras = contexto.Carreras.Find(id);
             }
             catch (Exception)
             {
@@ -125,7 +125,7 @@ namespace Sistema_Academico.BLL
                 contexto.Dispose();
             }
 
-            return Carreras;
+            return carreras;
         }
 
         public static List<Carreras> GetList(Expression<Func<Carreras, bool>> criterio)

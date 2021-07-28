@@ -150,7 +150,7 @@ namespace Sistema_Academico.UI.Registros
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(378, 66);
+            this.label6.Location = new System.Drawing.Point(3, 124);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(108, 15);
             this.label6.TabIndex = 10;
@@ -159,7 +159,7 @@ namespace Sistema_Academico.UI.Registros
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(3, 124);
+            this.label7.Location = new System.Drawing.Point(378, 66);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(129, 15);
             this.label7.TabIndex = 11;
@@ -194,7 +194,8 @@ namespace Sistema_Academico.UI.Registros
             // 
             // HorasPensumTextBox
             // 
-            this.HorasPensumTextBox.Location = new System.Drawing.Point(138, 121);
+            this.HorasPensumTextBox.Enabled = false;
+            this.HorasPensumTextBox.Location = new System.Drawing.Point(537, 63);
             this.HorasPensumTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.HorasPensumTextBox.Name = "HorasPensumTextBox";
             this.HorasPensumTextBox.Size = new System.Drawing.Size(234, 23);
@@ -218,7 +219,7 @@ namespace Sistema_Academico.UI.Registros
             // 
             // HorasTeoricasTextBox
             // 
-            this.HorasTeoricasTextBox.Location = new System.Drawing.Point(537, 63);
+            this.HorasTeoricasTextBox.Location = new System.Drawing.Point(138, 121);
             this.HorasTeoricasTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.HorasTeoricasTextBox.Name = "HorasTeoricasTextBox";
             this.HorasTeoricasTextBox.Size = new System.Drawing.Size(234, 23);
