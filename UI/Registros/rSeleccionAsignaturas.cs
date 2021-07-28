@@ -54,6 +54,7 @@ namespace Sistema_Academico.UI.Registros
             this.SeleccionIdlabel.Size = new System.Drawing.Size(70, 15);
             this.SeleccionIdlabel.TabIndex = 2;
             this.SeleccionIdlabel.Text = "Seleccion Id";
+            this.SeleccionIdlabel.Visible = false;
             // 
             // numericUpDown1
             // 
@@ -62,17 +63,18 @@ namespace Sistema_Academico.UI.Registros
             this.numericUpDown1.ReadOnly = true;
             this.numericUpDown1.Size = new System.Drawing.Size(101, 23);
             this.numericUpDown1.TabIndex = 4;
+            this.numericUpDown1.Visible = false;
             // 
             // SelecciondataGridView
             // 
             this.SelecciondataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.SelecciondataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Seleccion});
-            this.SelecciondataGridView.Location = new System.Drawing.Point(3, 37);
+            this.SelecciondataGridView.Location = new System.Drawing.Point(3, 7);
             this.SelecciondataGridView.Name = "SelecciondataGridView";
             this.SelecciondataGridView.RowHeadersWidth = 51;
             this.SelecciondataGridView.RowTemplate.Height = 29;
-            this.SelecciondataGridView.Size = new System.Drawing.Size(803, 308);
+            this.SelecciondataGridView.Size = new System.Drawing.Size(803, 338);
             this.SelecciondataGridView.TabIndex = 5;
             // 
             // Seleccion
