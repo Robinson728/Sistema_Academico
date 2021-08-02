@@ -19,7 +19,7 @@ namespace Sistema_Academico.UI
             InitializeComponent();
 
             this.rAsignaturasToolStripMenuItem.Click += new EventHandler(this.rAsignaturasToolStripMenuItem_ItemClicked);
-            this.rCalificacionesToolStripMenuItem.Click += new EventHandler(this.rCalificacionesToolStripMenuItem_ItemClicked);
+            //this.rCalificacionesToolStripMenuItem.Click += new EventHandler(this.rCalificacionesToolStripMenuItem_ItemClicked);
             this.rCarrerasToolStripMenuItem.Click += new EventHandler(this.rCarrerasToolStripMenuItem_ItemClicked);
             this.rEstudiantesToolStripMenuItem.Click += new EventHandler(this.rEstudiantesToolStripMenuItem_ItemClicked);
             this.rGruposToolStripMenuItem.Click += new EventHandler(this.rGruposToolStripMenuItem_ItemClicked);
@@ -28,7 +28,7 @@ namespace Sistema_Academico.UI
             this.rSemestresToolStripMenuItem.Click += new EventHandler(this.rSemestresToolStripMenuItem_ItemClicked);
 
             this.cAsignaturasTolStripMenuItem.Click += new EventHandler(this.cAsignaturasTolStripMenuItem_ItemClicked);
-            this.cCalificacionesToolStripMenuItem.Click += new EventHandler(this.cCalificacionesToolStripMenuItem_ItemClicked);
+            //this.cCalificacionesToolStripMenuItem.Click += new EventHandler(this.cCalificacionesToolStripMenuItem_ItemClicked);
             this.cCarrerasToolStripMenuItem.Click += new EventHandler(this.cCarrerasToolStripMenuItem_ItemClicked);
             this.cEstudiantesToolStripMenuItem.Click += new EventHandler(this.cEstudiantesToolStripMenuItem_ItemClicked);
             this.cGruposToolStripMenuItem.Click += new EventHandler(this.cGruposToolStripMenuItem_ItemClicked);
@@ -45,12 +45,12 @@ namespace Sistema_Academico.UI
             asignaturas.Show();
         }
         
-        public void rCalificacionesToolStripMenuItem_ItemClicked(object sender, EventArgs e)
+        /*public void rCalificacionesToolStripMenuItem_ItemClicked(object sender, EventArgs e)
         {
             rCalificaciones calificaciones = new rCalificaciones();
             calificaciones.MdiParent = this;
             calificaciones.Show();
-        }
+        }*/
         
         public void rCarrerasToolStripMenuItem_ItemClicked(object sender, EventArgs e)
         {
@@ -103,12 +103,12 @@ namespace Sistema_Academico.UI
             asignaturas.Show();
         }
 
-        public void cCalificacionesToolStripMenuItem_ItemClicked(object sender, EventArgs e)
+        /*public void cCalificacionesToolStripMenuItem_ItemClicked(object sender, EventArgs e)
         {
             cCalificaciones calificaciones = new cCalificaciones();
             calificaciones.MdiParent = this;
             calificaciones.Show();
-        }
+        }*/
 
         public void cCarrerasToolStripMenuItem_ItemClicked(object sender, EventArgs e)
         {

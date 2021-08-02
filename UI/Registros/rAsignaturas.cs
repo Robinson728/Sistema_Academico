@@ -25,8 +25,13 @@ namespace Sistema_Academico.UI.Registros
             AsignaturaIdNumericUpDown.Value = 0;
             NombreTextBox.Clear();
             DescripcionTextBox.Clear();
-            CreditosTextBox.Clear();
+            PrerrequisitosTextBox.Clear();
+            HorasPracticasTextBox.Clear();
+            HorasTeoricasTextBox.Clear();
             GrupoTextBox.Clear();
+            ClaveTextBox.Clear();
+            CreditosTextBox.Clear();
+            FechaCreacionDateTimePicker.Value = DateTime.Now;
         }
 
         private void LlenaCampo(Asignaturas asignaturas)
@@ -34,8 +39,13 @@ namespace Sistema_Academico.UI.Registros
             AsignaturaIdNumericUpDown.Value = asignaturas.AsignaturaId;
             NombreTextBox.Text = asignaturas.Nombre;
             DescripcionTextBox.Text = asignaturas.Descripcion;
-            CreditosTextBox.Text = asignaturas.Creditos.ToString();
+            PrerrequisitosTextBox.Text = asignaturas.Prerrequisitos;
+            HorasPracticasTextBox.Text = asignaturas.HorasPracticas.ToString();
+            HorasTeoricasTextBox.Text = asignaturas.HorasTeoricas.ToString();
             GrupoTextBox.Text = asignaturas.Grupo.ToString();
+            ClaveTextBox.Text = asignaturas.Clave;
+            CreditosTextBox.Text = asignaturas.Creditos.ToString();
+            FechaCreacionDateTimePicker.Value = asignaturas.FechaCreacion;
         }
 
         private Asignaturas LlenaClase()
@@ -45,8 +55,13 @@ namespace Sistema_Academico.UI.Registros
             asignaturas.AsignaturaId = (int)AsignaturaIdNumericUpDown.Value;
             asignaturas.Nombre = NombreTextBox.Text;
             asignaturas.Descripcion = DescripcionTextBox.Text;
-            asignaturas.Creditos = Convert.ToInt32(CreditosTextBox.Text);
-            asignaturas.Grupo = Convert.ToInt32(GrupoTextBox.Text);
+            asignaturas.Prerrequisitos = PrerrequisitosTextBox.Text;
+            asignaturas.HorasPracticas = Conversiones.ToDouble(HorasPracticasTextBox.Text);
+            asignaturas.HorasTeoricas = Conversiones.ToDouble(HorasTeoricasTextBox.Text);
+            asignaturas.Grupo = Conversiones.ToInt(GrupoTextBox.Text);
+            asignaturas.Clave = ClaveTextBox.Text;
+            asignaturas.Creditos = Conversiones.ToInt(CreditosTextBox.Text);
+            asignaturas.FechaCreacion = FechaCreacionDateTimePicker.Value;
 
             return asignaturas;
         }
@@ -67,16 +82,40 @@ namespace Sistema_Academico.UI.Registros
                 DescripcionTextBox.Focus();
                 paso = false;
             }
-            if (string.IsNullOrWhiteSpace(CreditosTextBox.Text))
+            if (string.IsNullOrWhiteSpace(PrerrequisitosTextBox.Text))
             {
-                ErrorProvider.SetError(CreditosTextBox, "Este campo no puede estar vacío");
-                CreditosTextBox.Focus();
+                ErrorProvider.SetError(PrerrequisitosTextBox, "Este campo no puede estar vacío");
+                PrerrequisitosTextBox.Focus();
+                paso = false;
+            }
+            if (string.IsNullOrWhiteSpace(HorasPracticasTextBox.Text))
+            {
+                ErrorProvider.SetError(HorasPracticasTextBox, "Este campo no puede estar vacío");
+                HorasPracticasTextBox.Focus();
+                paso = false;
+            }
+            if (string.IsNullOrWhiteSpace(HorasTeoricasTextBox.Text))
+            {
+                ErrorProvider.SetError(HorasTeoricasTextBox, "Este campo no puede estar vacío");
+                HorasTeoricasTextBox.Focus();
                 paso = false;
             }
             if (string.IsNullOrWhiteSpace(GrupoTextBox.Text))
             {
                 ErrorProvider.SetError(GrupoTextBox, "Este campo no puede estar vacío");
                 GrupoTextBox.Focus();
+                paso = false;
+            }
+            if (string.IsNullOrWhiteSpace(ClaveTextBox.Text))
+            {
+                ErrorProvider.SetError(ClaveTextBox, "Este campo no puede estar vacío");
+                ClaveTextBox.Focus();
+                paso = false;
+            }
+            if (string.IsNullOrWhiteSpace(CreditosTextBox.Text))
+            {
+                ErrorProvider.SetError(CreditosTextBox, "Este campo no puede estar vacío");
+                CreditosTextBox.Focus();
                 paso = false;
             }
 

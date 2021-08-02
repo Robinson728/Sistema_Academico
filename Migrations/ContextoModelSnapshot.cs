@@ -22,16 +22,31 @@ namespace Sistema_Academico.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("Clave")
+                        .HasColumnType("TEXT");
+
                     b.Property<int>("Creditos")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Descripcion")
                         .HasColumnType("TEXT");
 
+                    b.Property<DateTime>("FechaCreacion")
+                        .HasColumnType("TEXT");
+
                     b.Property<int>("Grupo")
                         .HasColumnType("INTEGER");
 
+                    b.Property<double>("HorasPracticas")
+                        .HasColumnType("REAL");
+
+                    b.Property<double>("HorasTeoricas")
+                        .HasColumnType("REAL");
+
                     b.Property<string>("Nombre")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Prerrequisitos")
                         .HasColumnType("TEXT");
 
                     b.HasKey("AsignaturaId");
@@ -70,6 +85,9 @@ namespace Sistema_Academico.Migrations
 
                     b.Property<double>("Duracion")
                         .HasColumnType("REAL");
+
+                    b.Property<DateTime>("FechaCreacion")
+                        .HasColumnType("TEXT");
 
                     b.Property<double>("HorasPensum")
                         .HasColumnType("REAL");
@@ -149,6 +167,9 @@ namespace Sistema_Academico.Migrations
 
                     b.Property<int>("CantidadEstudiantes")
                         .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("FechaCreacion")
+                        .HasColumnType("TEXT");
 
                     b.Property<DateTime>("HoraFin")
                         .HasColumnType("TEXT");

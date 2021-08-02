@@ -21,5 +21,6 @@ namespace Sistema_Academico.Models
         public int SemestresAcademicos { get; set; }
         public int TotalAsignaturasElectivas { get; set; }
         public string TituloOtorgado { get; set; }
+        public DateTime FechaCreacion { get; set; } = DateTime.Now;
     }
 }

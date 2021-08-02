@@ -30,7 +30,6 @@ namespace Sistema_Academico.UI.Registros
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.ActivoCheckBox = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.CarreraComboBox = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
@@ -77,19 +76,6 @@ namespace Sistema_Academico.UI.Registros
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
-            // ActivoCheckBox
-            // 
-            this.ActivoCheckBox.AutoSize = true;
-            this.ActivoCheckBox.Checked = true;
-            this.ActivoCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ActivoCheckBox.Location = new System.Drawing.Point(363, 7);
-            this.ActivoCheckBox.Margin = new System.Windows.Forms.Padding(2);
-            this.ActivoCheckBox.Name = "ActivoCheckBox";
-            this.ActivoCheckBox.Size = new System.Drawing.Size(60, 19);
-            this.ActivoCheckBox.TabIndex = 36;
-            this.ActivoCheckBox.Text = "Activo";
-            this.ActivoCheckBox.UseVisualStyleBackColor = true;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -121,7 +107,7 @@ namespace Sistema_Academico.UI.Registros
             this.CarreraComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.CarreraComboBox.Name = "CarreraComboBox";
             this.CarreraComboBox.Size = new System.Drawing.Size(342, 23);
-            this.CarreraComboBox.TabIndex = 30;
+            this.CarreraComboBox.TabIndex = 4;
             // 
             // label16
             // 
@@ -349,7 +335,7 @@ namespace Sistema_Academico.UI.Registros
             this.ClaveTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.ClaveTextBox.Name = "ClaveTextBox";
             this.ClaveTextBox.Size = new System.Drawing.Size(130, 23);
-            this.ClaveTextBox.TabIndex = 66;
+            this.ClaveTextBox.TabIndex = 6;
             // 
             // label10
             // 
@@ -369,7 +355,7 @@ namespace Sistema_Academico.UI.Registros
             this.EmailTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.EmailTextBox.Name = "EmailTextBox";
             this.EmailTextBox.Size = new System.Drawing.Size(342, 23);
-            this.EmailTextBox.TabIndex = 64;
+            this.EmailTextBox.TabIndex = 5;
             // 
             // label9
             // 
@@ -389,17 +375,17 @@ namespace Sistema_Academico.UI.Registros
             this.MatriculaMaskedTextBox.Mask = "0000-0000";
             this.MatriculaMaskedTextBox.Name = "MatriculaMaskedTextBox";
             this.MatriculaMaskedTextBox.Size = new System.Drawing.Size(142, 23);
-            this.MatriculaMaskedTextBox.TabIndex = 60;
+            this.MatriculaMaskedTextBox.TabIndex = 2;
             // 
             // TelefonoMaskedTextBox
             // 
             this.TelefonoMaskedTextBox.BackColor = System.Drawing.SystemColors.Window;
             this.TelefonoMaskedTextBox.Location = new System.Drawing.Point(283, 64);
             this.TelefonoMaskedTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.TelefonoMaskedTextBox.Mask = "(999)000-0000";
+            this.TelefonoMaskedTextBox.Mask = "000-000-0000";
             this.TelefonoMaskedTextBox.Name = "TelefonoMaskedTextBox";
             this.TelefonoMaskedTextBox.Size = new System.Drawing.Size(140, 23);
-            this.TelefonoMaskedTextBox.TabIndex = 59;
+            this.TelefonoMaskedTextBox.TabIndex = 3;
             // 
             // label12
             // 
@@ -419,7 +405,7 @@ namespace Sistema_Academico.UI.Registros
             this.EliminarButton.Margin = new System.Windows.Forms.Padding(2);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(93, 42);
-            this.EliminarButton.TabIndex = 57;
+            this.EliminarButton.TabIndex = 9;
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.EliminarButton.UseVisualStyleBackColor = true;
@@ -433,7 +419,7 @@ namespace Sistema_Academico.UI.Registros
             this.GuardarButton.Margin = new System.Windows.Forms.Padding(2);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(93, 42);
-            this.GuardarButton.TabIndex = 56;
+            this.GuardarButton.TabIndex = 7;
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.GuardarButton.UseVisualStyleBackColor = true;
@@ -447,7 +433,7 @@ namespace Sistema_Academico.UI.Registros
             this.NuevoButton.Margin = new System.Windows.Forms.Padding(2);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(93, 42);
-            this.NuevoButton.TabIndex = 55;
+            this.NuevoButton.TabIndex = 8;
             this.NuevoButton.Text = "Nuevo";
             this.NuevoButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.NuevoButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -485,7 +471,7 @@ namespace Sistema_Academico.UI.Registros
             this.NombreTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.NombreTextBox.Name = "NombreTextBox";
             this.NombreTextBox.Size = new System.Drawing.Size(342, 23);
-            this.NombreTextBox.TabIndex = 51;
+            this.NombreTextBox.TabIndex = 1;
             // 
             // label14
             // 
@@ -510,6 +496,7 @@ namespace Sistema_Academico.UI.Registros
             // IdNumericUpDown
             // 
             this.IdNumericUpDown.BackColor = System.Drawing.SystemColors.Window;
+            this.IdNumericUpDown.Enabled = false;
             this.IdNumericUpDown.Location = new System.Drawing.Point(81, 6);
             this.IdNumericUpDown.Margin = new System.Windows.Forms.Padding(2);
             this.IdNumericUpDown.Name = "IdNumericUpDown";
@@ -527,7 +514,7 @@ namespace Sistema_Academico.UI.Registros
             this.BuscarButton.Location = new System.Drawing.Point(312, 178);
             this.BuscarButton.Name = "BuscarButton";
             this.BuscarButton.Size = new System.Drawing.Size(93, 42);
-            this.BuscarButton.TabIndex = 68;
+            this.BuscarButton.TabIndex = 10;
             this.BuscarButton.Text = "Buscar";
             this.BuscarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BuscarButton.UseVisualStyleBackColor = true;
@@ -556,7 +543,6 @@ namespace Sistema_Academico.UI.Registros
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.IdNumericUpDown);
-            this.Controls.Add(this.ActivoCheckBox);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.CarreraComboBox);
             this.Name = "rEstudiantes";
@@ -570,7 +556,6 @@ namespace Sistema_Academico.UI.Registros
         }
 
         #endregion
-        private System.Windows.Forms.CheckBox ActivoCheckBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox CarreraComboBox;
         private System.Windows.Forms.Label label16;

@@ -33,6 +33,7 @@ namespace Sistema_Academico.UI.Registros
             DuracionTextBox.Clear();
             AsignaturasElectivasTextBox.Clear();
             TituloTextBox.Clear();
+            FechaCreacionDateTimePicker.Value = DateTime.Now;
         }
 
         private void LlenaCampo(Carreras carreras)
@@ -48,6 +49,7 @@ namespace Sistema_Academico.UI.Registros
             DuracionTextBox.Text = carreras.Duracion.ToString();
             AsignaturasElectivasTextBox.Text = carreras.TotalAsignaturasElectivas.ToString();
             TituloTextBox.Text = carreras.TituloOtorgado;
+            FechaCreacionDateTimePicker.Value = carreras.FechaCreacion;
         }
 
         private Carreras LlenaClase()
@@ -67,6 +69,7 @@ namespace Sistema_Academico.UI.Registros
             carreras.Duracion = Convert.ToInt32(DuracionTextBox.Text);
             carreras.TotalAsignaturasElectivas = Convert.ToInt32(AsignaturasElectivasTextBox.Text);
             carreras.TituloOtorgado = TituloTextBox.Text;
+            carreras.FechaCreacion = FechaCreacionDateTimePicker.Value;
 
             return carreras;
         }

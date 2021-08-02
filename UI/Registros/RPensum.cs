@@ -19,6 +19,7 @@ namespace Sistema_Academico.UI.Registros
         public RPensum()
         {
             InitializeComponent();
+
             this.Detalle = new List<PensumDetalles>();
 
             AsignaturaComboBox.DataSource = AsignaturasBLL.GetAsignaturas();
@@ -74,6 +75,15 @@ namespace Sistema_Academico.UI.Registros
             CargarGrid();
         }
 
+        private void LlenaAsignatura(Asignaturas asignaturas)
+        {
+            PreRequisitosTextBox.Text = asignaturas.Prerrequisitos;
+            ClaveTextBox.Text = asignaturas.Clave;
+            DetallePracticasTextBox.Text = asignaturas.HorasPracticas.ToString();
+            DetalleTeoricasTextBox.Text = asignaturas.HorasTeoricas.ToString();
+            DetalleCreditosTextBox.Text = asignaturas.Creditos.ToString();
+        }
+
         private Pensum LlenaClase()
         {
             Pensum pensum = new Pensum();
@@ -91,16 +101,6 @@ namespace Sistema_Academico.UI.Registros
 
             return pensum;
         }
-
-        /*private int getDes(int id)
-        {
-            //int number = AsignaturaComboBox.SelectedIndex;
-            Asignaturas asignaturas = new Asignaturas();
-
-            asignaturas = AsignaturasBLL.Buscar(id);
-
-            return asignaturas.Creditos;
-        }*/
 
         private bool Validar()
         {
@@ -141,7 +141,13 @@ namespace Sistema_Academico.UI.Registros
                 ErrorProvider.SetError(HorasTeoricasTextBox, "Este campo no puede estar vacío");
                 HorasTeoricasTextBox.Focus();
                 paso = false;
-            }        
+            }
+            if (this.Detalle.Count == 0)
+            {
+                ErrorProvider.SetError(PensumDataGridView, "No hay Asignaturas agregadas");
+                PensumDataGridView.Focus();
+                paso = false;
+            }
 
             return paso;
         }
@@ -329,6 +335,16 @@ namespace Sistema_Academico.UI.Registros
                     PensumDataGridView.Focus();
                 }
             }
+        }
+
+        private void AsignaturaComboBox_TextChanged(object sender, EventArgs e)
+        {
+            int id = 0;
+            Asignaturas asignaturas = new Asignaturas();
+            id = AsignaturaComboBox.SelectedIndex + 1;
+
+            asignaturas = AsignaturasBLL.Buscar(id);
+            LlenaAsignatura(asignaturas);
         }
     }
 }

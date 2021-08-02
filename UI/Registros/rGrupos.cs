@@ -37,7 +37,7 @@ namespace Sistema_Academico.UI.Registros
             NumeroGrupoTextBox.Clear();
             HoraSalidaDateTimePicker.Value = DateTime.Now;
             HoraEntradaDateTimePicker.Value = DateTime.Now;
-
+            FechaCreacionDateTimePicker.Value = DateTime.Now;
         }
 
         private void LlenaCampo(Grupos grupos)
@@ -50,6 +50,7 @@ namespace Sistema_Academico.UI.Registros
             NumeroGrupoTextBox.Text = grupos.NumeroGrupo.ToString();
             HoraEntradaDateTimePicker.Value = grupos.HoraInicio;
             HoraSalidaDateTimePicker.Value = grupos.HoraFin;
+            FechaCreacionDateTimePicker.Value = grupos.FechaCreacion;
         }
 
         private Grupos LlenaClase()
@@ -64,6 +65,7 @@ namespace Sistema_Academico.UI.Registros
             grupos.NumeroGrupo = Convert.ToInt32(NumeroGrupoTextBox.Text);
             grupos.HoraInicio = HoraEntradaDateTimePicker.Value;
             grupos.HoraFin = HoraSalidaDateTimePicker.Value;
+            grupos.FechaCreacion = FechaCreacionDateTimePicker.Value;
 
             return grupos;
         }
@@ -158,6 +160,17 @@ namespace Sistema_Academico.UI.Registros
             cGrupos grupos = new cGrupos();
             grupos.Show();
             Close();
+        }
+
+        private void AsignaturaComboBox_TextChanged(object sender, EventArgs e)
+        {
+            int id = 0;
+            Asignaturas asignaturas = new Asignaturas();
+
+            id = AsignaturaComboBox.SelectedIndex + 1;
+
+            asignaturas = AsignaturasBLL.Buscar(id);
+            NumeroGrupoTextBox.Text = asignaturas.Grupo.ToString();
         }
     }
 }

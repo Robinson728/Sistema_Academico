@@ -70,10 +70,10 @@ namespace Sistema_Academico.UI.Registros
             this.EliminarButton.Image = global::Sistema_Academico.Properties.Resources.icono_eliminar;
             this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.EliminarButton.Location = new System.Drawing.Point(199, 179);
-            this.EliminarButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EliminarButton.Margin = new System.Windows.Forms.Padding(2);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(93, 42);
-            this.EliminarButton.TabIndex = 35;
+            this.EliminarButton.TabIndex = 9;
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.EliminarButton.UseVisualStyleBackColor = true;
@@ -84,10 +84,10 @@ namespace Sistema_Academico.UI.Registros
             this.GuardarButton.Image = global::Sistema_Academico.Properties.Resources.icono_guardar;
             this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.GuardarButton.Location = new System.Drawing.Point(102, 179);
-            this.GuardarButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GuardarButton.Margin = new System.Windows.Forms.Padding(2);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(93, 42);
-            this.GuardarButton.TabIndex = 34;
+            this.GuardarButton.TabIndex = 7;
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.GuardarButton.UseVisualStyleBackColor = true;
@@ -98,10 +98,10 @@ namespace Sistema_Academico.UI.Registros
             this.NuevoButton.Image = global::Sistema_Academico.Properties.Resources.icono_nuevo;
             this.NuevoButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.NuevoButton.Location = new System.Drawing.Point(5, 179);
-            this.NuevoButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.NuevoButton.Margin = new System.Windows.Forms.Padding(2);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(93, 42);
-            this.NuevoButton.TabIndex = 33;
+            this.NuevoButton.TabIndex = 8;
             this.NuevoButton.Text = "Nuevo";
             this.NuevoButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.NuevoButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -125,7 +125,7 @@ namespace Sistema_Academico.UI.Registros
             this.FechaIngresoDateTimePicker.Enabled = false;
             this.FechaIngresoDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.FechaIngresoDateTimePicker.Location = new System.Drawing.Point(279, 151);
-            this.FechaIngresoDateTimePicker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FechaIngresoDateTimePicker.Margin = new System.Windows.Forms.Padding(2);
             this.FechaIngresoDateTimePicker.Name = "FechaIngresoDateTimePicker";
             this.FechaIngresoDateTimePicker.Size = new System.Drawing.Size(110, 23);
             this.FechaIngresoDateTimePicker.TabIndex = 28;
@@ -136,10 +136,10 @@ namespace Sistema_Academico.UI.Registros
             this.NombreTextBox.BackColor = System.Drawing.SystemColors.Window;
             this.NombreTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
             this.NombreTextBox.Location = new System.Drawing.Point(74, 35);
-            this.NombreTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.NombreTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.NombreTextBox.Name = "NombreTextBox";
             this.NombreTextBox.Size = new System.Drawing.Size(315, 23);
-            this.NombreTextBox.TabIndex = 25;
+            this.NombreTextBox.TabIndex = 1;
             // 
             // label3
             // 
@@ -164,8 +164,9 @@ namespace Sistema_Academico.UI.Registros
             // IdNumericUpDown
             // 
             this.IdNumericUpDown.BackColor = System.Drawing.SystemColors.Window;
+            this.IdNumericUpDown.Enabled = false;
             this.IdNumericUpDown.Location = new System.Drawing.Point(74, 6);
-            this.IdNumericUpDown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.IdNumericUpDown.Margin = new System.Windows.Forms.Padding(2);
             this.IdNumericUpDown.Name = "IdNumericUpDown";
             this.IdNumericUpDown.Size = new System.Drawing.Size(121, 23);
             this.IdNumericUpDown.TabIndex = 20;
@@ -174,31 +175,31 @@ namespace Sistema_Academico.UI.Registros
             // 
             this.TelefonoMaskedTextBox.BackColor = System.Drawing.SystemColors.Window;
             this.TelefonoMaskedTextBox.Location = new System.Drawing.Point(265, 64);
-            this.TelefonoMaskedTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.TelefonoMaskedTextBox.Mask = "(999)000-0000";
+            this.TelefonoMaskedTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.TelefonoMaskedTextBox.Mask = "000-000-0000";
             this.TelefonoMaskedTextBox.Name = "TelefonoMaskedTextBox";
             this.TelefonoMaskedTextBox.Size = new System.Drawing.Size(124, 23);
-            this.TelefonoMaskedTextBox.TabIndex = 39;
+            this.TelefonoMaskedTextBox.TabIndex = 3;
             // 
             // CedulaMaskedTextBox
             // 
             this.CedulaMaskedTextBox.BackColor = System.Drawing.SystemColors.Window;
             this.CedulaMaskedTextBox.Location = new System.Drawing.Point(74, 64);
-            this.CedulaMaskedTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CedulaMaskedTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.CedulaMaskedTextBox.Mask = "000-0000000-0";
             this.CedulaMaskedTextBox.Name = "CedulaMaskedTextBox";
             this.CedulaMaskedTextBox.Size = new System.Drawing.Size(121, 23);
-            this.CedulaMaskedTextBox.TabIndex = 40;
+            this.CedulaMaskedTextBox.TabIndex = 2;
             // 
             // DireccionTextBox
             // 
             this.DireccionTextBox.BackColor = System.Drawing.SystemColors.Window;
             this.DireccionTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
             this.DireccionTextBox.Location = new System.Drawing.Point(74, 93);
-            this.DireccionTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DireccionTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.DireccionTextBox.Name = "DireccionTextBox";
             this.DireccionTextBox.Size = new System.Drawing.Size(315, 23);
-            this.DireccionTextBox.TabIndex = 42;
+            this.DireccionTextBox.TabIndex = 4;
             // 
             // label8
             // 
@@ -215,10 +216,10 @@ namespace Sistema_Academico.UI.Registros
             this.EmailTextBox.BackColor = System.Drawing.SystemColors.Window;
             this.EmailTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
             this.EmailTextBox.Location = new System.Drawing.Point(74, 122);
-            this.EmailTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EmailTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.EmailTextBox.Name = "EmailTextBox";
             this.EmailTextBox.Size = new System.Drawing.Size(315, 23);
-            this.EmailTextBox.TabIndex = 44;
+            this.EmailTextBox.TabIndex = 5;
             // 
             // label9
             // 
@@ -235,11 +236,11 @@ namespace Sistema_Academico.UI.Registros
             this.ClaveTextBox.BackColor = System.Drawing.SystemColors.Window;
             this.ClaveTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
             this.ClaveTextBox.Location = new System.Drawing.Point(74, 151);
-            this.ClaveTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ClaveTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.ClaveTextBox.Name = "ClaveTextBox";
             this.ClaveTextBox.PasswordChar = '*';
             this.ClaveTextBox.Size = new System.Drawing.Size(120, 23);
-            this.ClaveTextBox.TabIndex = 46;
+            this.ClaveTextBox.TabIndex = 6;
             // 
             // label10
             // 
@@ -272,7 +273,7 @@ namespace Sistema_Academico.UI.Registros
             this.Buscarbutton.Location = new System.Drawing.Point(296, 179);
             this.Buscarbutton.Name = "Buscarbutton";
             this.Buscarbutton.Size = new System.Drawing.Size(93, 42);
-            this.Buscarbutton.TabIndex = 54;
+            this.Buscarbutton.TabIndex = 10;
             this.Buscarbutton.Text = "Buscar";
             this.Buscarbutton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Buscarbutton.UseVisualStyleBackColor = true;

@@ -238,6 +238,7 @@ namespace Sistema_Academico.UI.Consultas
             this.UsarFiltroFechascheckBox.TabIndex = 102;
             this.UsarFiltroFechascheckBox.Text = "Usar Filtro de Fechas";
             this.UsarFiltroFechascheckBox.UseVisualStyleBackColor = true;
+            this.UsarFiltroFechascheckBox.CheckedChanged += new System.EventHandler(this.UsarFiltroFechascheckBox_CheckedChanged);
             // 
             // IdTextBox
             // 

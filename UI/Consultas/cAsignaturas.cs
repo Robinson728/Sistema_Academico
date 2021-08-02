@@ -57,6 +57,10 @@ namespace Sistema_Academico.UI.Consultas
                     lista = AsignaturasBLL.GetList(r => r.Grupo == Conversiones.ToInt(GrupoTextBox.Text));
             }
 
+            if (UsarFiltroFechascheckBox.Checked == true)
+            {
+                lista = lista.Where(a => a.FechaCreacion.Date >= DesdeDateTimePicker.Value.Date && a.FechaCreacion.Date <= HastaDateTimePicker.Value.Date).ToList();
+            }
 
             ConsultaAsignaturaDataGridView.DataSource = null;
             ConsultaAsignaturaDataGridView.DataSource = lista;
@@ -82,6 +86,20 @@ namespace Sistema_Academico.UI.Consultas
             asignaturas.RecibirAsignatura(Conversiones.ToInt(id));
             asignaturas.Show();
             Close();
+        }
+
+        private void UsarFiltroFechascheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (UsarFiltroFechascheckBox.Checked == true)
+            {
+                DesdeDateTimePicker.Enabled = true;
+                HastaDateTimePicker.Enabled = true;
+            }
+            if (UsarFiltroFechascheckBox.Checked == false)
+            {
+                DesdeDateTimePicker.Enabled = false;
+                HastaDateTimePicker.Enabled = false;
+            }
         }
     }
 }

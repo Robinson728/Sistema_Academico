@@ -55,7 +55,7 @@ namespace Sistema_Academico.UI.Registros
             this.EliminarButton.Location = new System.Drawing.Point(198, 130);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(93, 42);
-            this.EliminarButton.TabIndex = 24;
+            this.EliminarButton.TabIndex = 7;
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.EliminarButton.UseVisualStyleBackColor = true;
@@ -67,7 +67,7 @@ namespace Sistema_Academico.UI.Registros
             this.GuardarButton.Location = new System.Drawing.Point(101, 130);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(93, 42);
-            this.GuardarButton.TabIndex = 23;
+            this.GuardarButton.TabIndex = 5;
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.GuardarButton.UseVisualStyleBackColor = true;
@@ -79,7 +79,7 @@ namespace Sistema_Academico.UI.Registros
             this.NuevoButton.Location = new System.Drawing.Point(4, 130);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(93, 42);
-            this.NuevoButton.TabIndex = 22;
+            this.NuevoButton.TabIndex = 6;
             this.NuevoButton.Text = "Nuevo";
             this.NuevoButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.NuevoButton.UseVisualStyleBackColor = true;
@@ -94,7 +94,7 @@ namespace Sistema_Academico.UI.Registros
             this.PeriodoSemestreGroupBox.Location = new System.Drawing.Point(5, 63);
             this.PeriodoSemestreGroupBox.Name = "PeriodoSemestreGroupBox";
             this.PeriodoSemestreGroupBox.Size = new System.Drawing.Size(381, 61);
-            this.PeriodoSemestreGroupBox.TabIndex = 21;
+            this.PeriodoSemestreGroupBox.TabIndex = 2;
             this.PeriodoSemestreGroupBox.TabStop = false;
             this.PeriodoSemestreGroupBox.Text = "Periodo Del Semestre";
             // 
@@ -123,7 +123,7 @@ namespace Sistema_Academico.UI.Registros
             this.FinalDateTimePicker.Location = new System.Drawing.Point(235, 23);
             this.FinalDateTimePicker.Name = "FinalDateTimePicker";
             this.FinalDateTimePicker.Size = new System.Drawing.Size(134, 23);
-            this.FinalDateTimePicker.TabIndex = 8;
+            this.FinalDateTimePicker.TabIndex = 4;
             // 
             // InicioLabel
             // 
@@ -145,6 +145,7 @@ namespace Sistema_Academico.UI.Registros
             // 
             // IdNumericUpDown
             // 
+            this.IdNumericUpDown.Enabled = false;
             this.IdNumericUpDown.Location = new System.Drawing.Point(77, 6);
             this.IdNumericUpDown.Name = "IdNumericUpDown";
             this.IdNumericUpDown.Size = new System.Drawing.Size(109, 23);
@@ -155,7 +156,7 @@ namespace Sistema_Academico.UI.Registros
             this.NombreTextBox.Location = new System.Drawing.Point(77, 34);
             this.NombreTextBox.Name = "NombreTextBox";
             this.NombreTextBox.Size = new System.Drawing.Size(309, 23);
-            this.NombreTextBox.TabIndex = 17;
+            this.NombreTextBox.TabIndex = 1;
             // 
             // IdLabel
             // 
@@ -177,7 +178,7 @@ namespace Sistema_Academico.UI.Registros
             this.button1.Location = new System.Drawing.Point(295, 130);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(93, 42);
-            this.button1.TabIndex = 53;
+            this.button1.TabIndex = 8;
             this.button1.Text = "Buscar";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;

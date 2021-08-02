@@ -16,7 +16,12 @@ namespace Sistema_Academico.Migrations
                     Nombre = table.Column<string>(type: "TEXT", nullable: true),
                     Descripcion = table.Column<string>(type: "TEXT", nullable: true),
                     Creditos = table.Column<int>(type: "INTEGER", nullable: false),
-                    Grupo = table.Column<int>(type: "INTEGER", nullable: false)
+                    HorasPracticas = table.Column<double>(type: "REAL", nullable: false),
+                    HorasTeoricas = table.Column<double>(type: "REAL", nullable: false),
+                    Grupo = table.Column<int>(type: "INTEGER", nullable: false),
+                    Prerrequisitos = table.Column<string>(type: "TEXT", nullable: true),
+                    Clave = table.Column<string>(type: "TEXT", nullable: true),
+                    FechaCreacion = table.Column<DateTime>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -53,7 +58,8 @@ namespace Sistema_Academico.Migrations
                     Duracion = table.Column<double>(type: "REAL", nullable: false),
                     SemestresAcademicos = table.Column<int>(type: "INTEGER", nullable: false),
                     TotalAsignaturasElectivas = table.Column<int>(type: "INTEGER", nullable: false),
-                    TituloOtorgado = table.Column<string>(type: "TEXT", nullable: true)
+                    TituloOtorgado = table.Column<string>(type: "TEXT", nullable: true),
+                    FechaCreacion = table.Column<DateTime>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -92,7 +98,8 @@ namespace Sistema_Academico.Migrations
                     Aula = table.Column<string>(type: "TEXT", nullable: true),
                     NumeroGrupo = table.Column<int>(type: "INTEGER", nullable: false),
                     HoraInicio = table.Column<DateTime>(type: "TEXT", nullable: false),
-                    HoraFin = table.Column<DateTime>(type: "TEXT", nullable: false)
+                    HoraFin = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    FechaCreacion = table.Column<DateTime>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {

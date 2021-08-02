@@ -53,7 +53,6 @@ namespace Sistema_Academico.UI
             this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.RegistrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rAsignaturasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.rCalificacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rCarrerasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rEstudiantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rGruposToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -62,7 +61,6 @@ namespace Sistema_Academico.UI
             this.rSemestresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ConsultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cAsignaturasTolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cCalificacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cCarrerasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cEstudiantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cGruposToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -258,7 +256,6 @@ namespace Sistema_Academico.UI
             // 
             this.RegistrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.rAsignaturasToolStripMenuItem,
-            this.rCalificacionesToolStripMenuItem,
             this.rCarrerasToolStripMenuItem,
             this.rEstudiantesToolStripMenuItem,
             this.rGruposToolStripMenuItem,
@@ -274,12 +271,6 @@ namespace Sistema_Academico.UI
             this.rAsignaturasToolStripMenuItem.Name = "rAsignaturasToolStripMenuItem";
             this.rAsignaturasToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.rAsignaturasToolStripMenuItem.Text = "Asignaturas";
-            // 
-            // rCalificacionesToolStripMenuItem
-            // 
-            this.rCalificacionesToolStripMenuItem.Name = "rCalificacionesToolStripMenuItem";
-            this.rCalificacionesToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
-            this.rCalificacionesToolStripMenuItem.Text = "Calificaciones";
             // 
             // rCarrerasToolStripMenuItem
             // 
@@ -321,7 +312,6 @@ namespace Sistema_Academico.UI
             // 
             this.ConsultasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cAsignaturasTolStripMenuItem,
-            this.cCalificacionesToolStripMenuItem,
             this.cCarrerasToolStripMenuItem,
             this.cEstudiantesToolStripMenuItem,
             this.cGruposToolStripMenuItem,
@@ -337,12 +327,6 @@ namespace Sistema_Academico.UI
             this.cAsignaturasTolStripMenuItem.Name = "cAsignaturasTolStripMenuItem";
             this.cAsignaturasTolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.cAsignaturasTolStripMenuItem.Text = "Asignaturas";
-            // 
-            // cCalificacionesToolStripMenuItem
-            // 
-            this.cCalificacionesToolStripMenuItem.Name = "cCalificacionesToolStripMenuItem";
-            this.cCalificacionesToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
-            this.cCalificacionesToolStripMenuItem.Text = "Calificaciones";
             // 
             // cCarrerasToolStripMenuItem
             // 
@@ -466,7 +450,6 @@ namespace Sistema_Academico.UI
         private System.Windows.Forms.ToolStripMenuItem RegistrosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rAsignaturasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rGruposToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem rCalificacionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rProfesoresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ConsultasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cAsignaturasTolStripMenuItem;
@@ -481,7 +464,6 @@ namespace Sistema_Academico.UI
         private System.Windows.Forms.ToolStripMenuItem rEstudiantesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rPensumToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rSemestresToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cCalificacionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cCarrerasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cEstudiantesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cPensumToolStripMenuItem;

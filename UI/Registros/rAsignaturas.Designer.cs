@@ -31,7 +31,7 @@ namespace Sistema_Academico.UI.Registros
         {
             this.components = new System.ComponentModel.Container();
             this.GrupoTextBox = new System.Windows.Forms.TextBox();
-            this.CreditosTextBox = new System.Windows.Forms.TextBox();
+            this.PrerrequisitosTextBox = new System.Windows.Forms.TextBox();
             this.GrupoLabel = new System.Windows.Forms.Label();
             this.CreditosLabel = new System.Windows.Forms.Label();
             this.DescripcionTextBox = new System.Windows.Forms.TextBox();
@@ -45,14 +45,15 @@ namespace Sistema_Academico.UI.Registros
             this.GuardarButton = new System.Windows.Forms.Button();
             this.ErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.BuscarButton = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.CreditosTextBox = new System.Windows.Forms.TextBox();
+            this.HorasTeoricasTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.ClaveTextBox = new System.Windows.Forms.TextBox();
+            this.HorasPracticasTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.FechaCreacionDateTimePicker = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.AsignaturaIdNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).BeginInit();
             this.SuspendLayout();
@@ -62,14 +63,14 @@ namespace Sistema_Academico.UI.Registros
             this.GrupoTextBox.Location = new System.Drawing.Point(359, 119);
             this.GrupoTextBox.Name = "GrupoTextBox";
             this.GrupoTextBox.Size = new System.Drawing.Size(223, 23);
-            this.GrupoTextBox.TabIndex = 45;
+            this.GrupoTextBox.TabIndex = 6;
             // 
-            // CreditosTextBox
+            // PrerrequisitosTextBox
             // 
-            this.CreditosTextBox.Location = new System.Drawing.Point(90, 119);
-            this.CreditosTextBox.Name = "CreditosTextBox";
-            this.CreditosTextBox.Size = new System.Drawing.Size(217, 23);
-            this.CreditosTextBox.TabIndex = 44;
+            this.PrerrequisitosTextBox.Location = new System.Drawing.Point(90, 119);
+            this.PrerrequisitosTextBox.Name = "PrerrequisitosTextBox";
+            this.PrerrequisitosTextBox.Size = new System.Drawing.Size(217, 23);
+            this.PrerrequisitosTextBox.TabIndex = 3;
             // 
             // GrupoLabel
             // 
@@ -95,17 +96,18 @@ namespace Sistema_Academico.UI.Registros
             this.DescripcionTextBox.Multiline = true;
             this.DescripcionTextBox.Name = "DescripcionTextBox";
             this.DescripcionTextBox.Size = new System.Drawing.Size(493, 46);
-            this.DescripcionTextBox.TabIndex = 39;
+            this.DescripcionTextBox.TabIndex = 2;
             // 
             // NombreTextBox
             // 
             this.NombreTextBox.Location = new System.Drawing.Point(89, 38);
             this.NombreTextBox.Name = "NombreTextBox";
             this.NombreTextBox.Size = new System.Drawing.Size(493, 23);
-            this.NombreTextBox.TabIndex = 38;
+            this.NombreTextBox.TabIndex = 1;
             // 
             // AsignaturaIdNumericUpDown
             // 
+            this.AsignaturaIdNumericUpDown.Enabled = false;
             this.AsignaturaIdNumericUpDown.Location = new System.Drawing.Point(89, 9);
             this.AsignaturaIdNumericUpDown.Name = "AsignaturaIdNumericUpDown";
             this.AsignaturaIdNumericUpDown.ReadOnly = true;
@@ -146,7 +148,7 @@ namespace Sistema_Academico.UI.Registros
             this.EliminarButton.Location = new System.Drawing.Point(292, 206);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(93, 42);
-            this.EliminarButton.TabIndex = 51;
+            this.EliminarButton.TabIndex = 11;
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.EliminarButton.UseVisualStyleBackColor = true;
@@ -159,7 +161,7 @@ namespace Sistema_Academico.UI.Registros
             this.NuevoButton.Location = new System.Drawing.Point(94, 206);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(93, 42);
-            this.NuevoButton.TabIndex = 50;
+            this.NuevoButton.TabIndex = 10;
             this.NuevoButton.Text = "Nuevo";
             this.NuevoButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.NuevoButton.UseVisualStyleBackColor = true;
@@ -172,7 +174,7 @@ namespace Sistema_Academico.UI.Registros
             this.GuardarButton.Location = new System.Drawing.Point(193, 206);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(93, 42);
-            this.GuardarButton.TabIndex = 49;
+            this.GuardarButton.TabIndex = 9;
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.GuardarButton.UseVisualStyleBackColor = true;
@@ -189,25 +191,25 @@ namespace Sistema_Academico.UI.Registros
             this.BuscarButton.Location = new System.Drawing.Point(391, 206);
             this.BuscarButton.Name = "BuscarButton";
             this.BuscarButton.Size = new System.Drawing.Size(93, 42);
-            this.BuscarButton.TabIndex = 52;
+            this.BuscarButton.TabIndex = 12;
             this.BuscarButton.Text = "Buscar";
             this.BuscarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BuscarButton.UseVisualStyleBackColor = true;
             this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click_1);
             // 
-            // textBox1
+            // CreditosTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(359, 177);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(223, 23);
-            this.textBox1.TabIndex = 56;
+            this.CreditosTextBox.Location = new System.Drawing.Point(359, 177);
+            this.CreditosTextBox.Name = "CreditosTextBox";
+            this.CreditosTextBox.Size = new System.Drawing.Size(223, 23);
+            this.CreditosTextBox.TabIndex = 8;
             // 
-            // textBox2
+            // HorasTeoricasTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(89, 177);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(217, 23);
-            this.textBox2.TabIndex = 55;
+            this.HorasTeoricasTextBox.Location = new System.Drawing.Point(89, 177);
+            this.HorasTeoricasTextBox.Name = "HorasTeoricasTextBox";
+            this.HorasTeoricasTextBox.Size = new System.Drawing.Size(217, 23);
+            this.HorasTeoricasTextBox.TabIndex = 5;
             // 
             // label1
             // 
@@ -227,19 +229,19 @@ namespace Sistema_Academico.UI.Registros
             this.label2.TabIndex = 53;
             this.label2.Text = "Horas Teóricas";
             // 
-            // textBox3
+            // ClaveTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(359, 148);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(223, 23);
-            this.textBox3.TabIndex = 60;
+            this.ClaveTextBox.Location = new System.Drawing.Point(359, 148);
+            this.ClaveTextBox.Name = "ClaveTextBox";
+            this.ClaveTextBox.Size = new System.Drawing.Size(223, 23);
+            this.ClaveTextBox.TabIndex = 7;
             // 
-            // textBox4
+            // HorasPracticasTextBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(90, 148);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(217, 23);
-            this.textBox4.TabIndex = 59;
+            this.HorasPracticasTextBox.Location = new System.Drawing.Point(90, 148);
+            this.HorasPracticasTextBox.Name = "HorasPracticasTextBox";
+            this.HorasPracticasTextBox.Size = new System.Drawing.Size(217, 23);
+            this.HorasPracticasTextBox.TabIndex = 4;
             // 
             // label3
             // 
@@ -259,17 +261,28 @@ namespace Sistema_Academico.UI.Registros
             this.label4.TabIndex = 57;
             this.label4.Text = "Horas Prácticas";
             // 
+            // FechaCreacionDateTimePicker
+            // 
+            this.FechaCreacionDateTimePicker.CustomFormat = "dd/MM/yyyy";
+            this.FechaCreacionDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.FechaCreacionDateTimePicker.Location = new System.Drawing.Point(391, 9);
+            this.FechaCreacionDateTimePicker.Name = "FechaCreacionDateTimePicker";
+            this.FechaCreacionDateTimePicker.Size = new System.Drawing.Size(95, 23);
+            this.FechaCreacionDateTimePicker.TabIndex = 63;
+            this.FechaCreacionDateTimePicker.Visible = false;
+            // 
             // rAsignaturas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 254);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.FechaCreacionDateTimePicker);
+            this.Controls.Add(this.ClaveTextBox);
+            this.Controls.Add(this.HorasPracticasTextBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.CreditosTextBox);
+            this.Controls.Add(this.HorasTeoricasTextBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BuscarButton);
@@ -277,7 +290,7 @@ namespace Sistema_Academico.UI.Registros
             this.Controls.Add(this.NuevoButton);
             this.Controls.Add(this.GuardarButton);
             this.Controls.Add(this.GrupoTextBox);
-            this.Controls.Add(this.CreditosTextBox);
+            this.Controls.Add(this.PrerrequisitosTextBox);
             this.Controls.Add(this.GrupoLabel);
             this.Controls.Add(this.CreditosLabel);
             this.Controls.Add(this.DescripcionTextBox);
@@ -297,7 +310,7 @@ namespace Sistema_Academico.UI.Registros
 
         #endregion
         private System.Windows.Forms.TextBox GrupoTextBox;
-        private System.Windows.Forms.TextBox CreditosTextBox;
+        private System.Windows.Forms.TextBox PrerrequisitosTextBox;
         private System.Windows.Forms.Label GrupoLabel;
         private System.Windows.Forms.Label CreditosLabel;
         private System.Windows.Forms.TextBox DescripcionTextBox;
@@ -311,13 +324,14 @@ namespace Sistema_Academico.UI.Registros
         private System.Windows.Forms.Button GuardarButton;
         private System.Windows.Forms.ErrorProvider ErrorProvider;
         private System.Windows.Forms.Button BuscarButton;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox ClaveTextBox;
+        private System.Windows.Forms.TextBox HorasPracticasTextBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox CreditosTextBox;
+        private System.Windows.Forms.TextBox HorasTeoricasTextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker FechaCreacionDateTimePicker;
     }
 }

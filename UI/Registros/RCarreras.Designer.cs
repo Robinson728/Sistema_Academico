@@ -57,12 +57,14 @@ namespace Sistema_Academico.UI.Registros
             this.NuevoButton = new System.Windows.Forms.Button();
             this.ErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.BuscarButton = new System.Windows.Forms.Button();
+            this.FechaCreacionDateTimePicker = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.IdnumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // IdnumericUpDown
             // 
+            this.IdnumericUpDown.Enabled = false;
             this.IdnumericUpDown.Location = new System.Drawing.Point(138, 5);
             this.IdnumericUpDown.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.IdnumericUpDown.Name = "IdnumericUpDown";
@@ -93,7 +95,7 @@ namespace Sistema_Academico.UI.Registros
             this.CreditosTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CreditosTextBox.Name = "CreditosTextBox";
             this.CreditosTextBox.Size = new System.Drawing.Size(234, 23);
-            this.CreditosTextBox.TabIndex = 3;
+            this.CreditosTextBox.TabIndex = 1;
             // 
             // label2
             // 
@@ -110,7 +112,7 @@ namespace Sistema_Academico.UI.Registros
             this.TotalAsignaturasTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TotalAsignaturasTextBox.Name = "TotalAsignaturasTextBox";
             this.TotalAsignaturasTextBox.Size = new System.Drawing.Size(234, 23);
-            this.TotalAsignaturasTextBox.TabIndex = 5;
+            this.TotalAsignaturasTextBox.TabIndex = 2;
             // 
             // label3
             // 
@@ -127,7 +129,7 @@ namespace Sistema_Academico.UI.Registros
             this.HorasPracticasTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.HorasPracticasTextBox.Name = "HorasPracticasTextBox";
             this.HorasPracticasTextBox.Size = new System.Drawing.Size(234, 23);
-            this.HorasPracticasTextBox.TabIndex = 7;
+            this.HorasPracticasTextBox.TabIndex = 3;
             // 
             // label4
             // 
@@ -199,7 +201,7 @@ namespace Sistema_Academico.UI.Registros
             this.HorasPensumTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.HorasPensumTextBox.Name = "HorasPensumTextBox";
             this.HorasPensumTextBox.Size = new System.Drawing.Size(234, 23);
-            this.HorasPensumTextBox.TabIndex = 15;
+            this.HorasPensumTextBox.TabIndex = 7;
             // 
             // TituloTextBox
             // 
@@ -207,7 +209,7 @@ namespace Sistema_Academico.UI.Registros
             this.TituloTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TituloTextBox.Name = "TituloTextBox";
             this.TituloTextBox.Size = new System.Drawing.Size(633, 23);
-            this.TituloTextBox.TabIndex = 16;
+            this.TituloTextBox.TabIndex = 10;
             // 
             // SemestresAcademicosTextBox
             // 
@@ -215,7 +217,7 @@ namespace Sistema_Academico.UI.Registros
             this.SemestresAcademicosTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SemestresAcademicosTextBox.Name = "SemestresAcademicosTextBox";
             this.SemestresAcademicosTextBox.Size = new System.Drawing.Size(234, 23);
-            this.SemestresAcademicosTextBox.TabIndex = 17;
+            this.SemestresAcademicosTextBox.TabIndex = 6;
             // 
             // HorasTeoricasTextBox
             // 
@@ -223,7 +225,7 @@ namespace Sistema_Academico.UI.Registros
             this.HorasTeoricasTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.HorasTeoricasTextBox.Name = "HorasTeoricasTextBox";
             this.HorasTeoricasTextBox.Size = new System.Drawing.Size(234, 23);
-            this.HorasTeoricasTextBox.TabIndex = 18;
+            this.HorasTeoricasTextBox.TabIndex = 4;
             // 
             // NombreTextBox
             // 
@@ -231,7 +233,7 @@ namespace Sistema_Academico.UI.Registros
             this.NombreTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.NombreTextBox.Name = "NombreTextBox";
             this.NombreTextBox.Size = new System.Drawing.Size(234, 23);
-            this.NombreTextBox.TabIndex = 19;
+            this.NombreTextBox.TabIndex = 5;
             // 
             // DuracionTextBox
             // 
@@ -239,7 +241,7 @@ namespace Sistema_Academico.UI.Registros
             this.DuracionTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DuracionTextBox.Name = "DuracionTextBox";
             this.DuracionTextBox.Size = new System.Drawing.Size(234, 23);
-            this.DuracionTextBox.TabIndex = 20;
+            this.DuracionTextBox.TabIndex = 8;
             // 
             // AsignaturasElectivasTextBox
             // 
@@ -247,7 +249,7 @@ namespace Sistema_Academico.UI.Registros
             this.AsignaturasElectivasTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AsignaturasElectivasTextBox.Name = "AsignaturasElectivasTextBox";
             this.AsignaturasElectivasTextBox.Size = new System.Drawing.Size(234, 23);
-            this.AsignaturasElectivasTextBox.TabIndex = 21;
+            this.AsignaturasElectivasTextBox.TabIndex = 9;
             // 
             // EliminarButton
             // 
@@ -257,7 +259,7 @@ namespace Sistema_Academico.UI.Registros
             this.EliminarButton.Margin = new System.Windows.Forms.Padding(2);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(88, 42);
-            this.EliminarButton.TabIndex = 60;
+            this.EliminarButton.TabIndex = 13;
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.EliminarButton.UseVisualStyleBackColor = true;
@@ -271,7 +273,7 @@ namespace Sistema_Academico.UI.Registros
             this.GuardarButton.Margin = new System.Windows.Forms.Padding(2);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(88, 42);
-            this.GuardarButton.TabIndex = 59;
+            this.GuardarButton.TabIndex = 11;
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.GuardarButton.UseVisualStyleBackColor = true;
@@ -284,7 +286,7 @@ namespace Sistema_Academico.UI.Registros
             this.NuevoButton.Margin = new System.Windows.Forms.Padding(2);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(88, 42);
-            this.NuevoButton.TabIndex = 58;
+            this.NuevoButton.TabIndex = 12;
             this.NuevoButton.Text = "Nuevo";
             this.NuevoButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.NuevoButton.UseVisualStyleBackColor = true;
@@ -301,11 +303,21 @@ namespace Sistema_Academico.UI.Registros
             this.BuscarButton.Location = new System.Drawing.Point(480, 178);
             this.BuscarButton.Name = "BuscarButton";
             this.BuscarButton.Size = new System.Drawing.Size(93, 42);
-            this.BuscarButton.TabIndex = 61;
+            this.BuscarButton.TabIndex = 14;
             this.BuscarButton.Text = "Buscar";
             this.BuscarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BuscarButton.UseVisualStyleBackColor = true;
             this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click_1);
+            // 
+            // FechaCreacionDateTimePicker
+            // 
+            this.FechaCreacionDateTimePicker.CustomFormat = "dd/MM/yyyy";
+            this.FechaCreacionDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.FechaCreacionDateTimePicker.Location = new System.Drawing.Point(669, 186);
+            this.FechaCreacionDateTimePicker.Name = "FechaCreacionDateTimePicker";
+            this.FechaCreacionDateTimePicker.Size = new System.Drawing.Size(95, 23);
+            this.FechaCreacionDateTimePicker.TabIndex = 62;
+            this.FechaCreacionDateTimePicker.Visible = false;
             // 
             // RCarreras
             // 
@@ -313,6 +325,7 @@ namespace Sistema_Academico.UI.Registros
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(776, 224);
+            this.Controls.Add(this.FechaCreacionDateTimePicker);
             this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.EliminarButton);
             this.Controls.Add(this.GuardarButton);
@@ -378,5 +391,6 @@ namespace Sistema_Academico.UI.Registros
         private System.Windows.Forms.Button NuevoButton;
         private System.Windows.Forms.ErrorProvider ErrorProvider;
         private System.Windows.Forms.Button BuscarButton;
+        private System.Windows.Forms.DateTimePicker FechaCreacionDateTimePicker;
     }
 }

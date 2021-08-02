@@ -46,14 +46,14 @@ namespace Sistema_Academico.UI
             this.ClaveTextBox.Name = "ClaveTextBox";
             this.ClaveTextBox.PasswordChar = '*';
             this.ClaveTextBox.Size = new System.Drawing.Size(256, 23);
-            this.ClaveTextBox.TabIndex = 14;
+            this.ClaveTextBox.TabIndex = 2;
             // 
             // UsuarioTextBox
             // 
             this.UsuarioTextBox.Location = new System.Drawing.Point(80, 126);
             this.UsuarioTextBox.Name = "UsuarioTextBox";
             this.UsuarioTextBox.Size = new System.Drawing.Size(256, 23);
-            this.UsuarioTextBox.TabIndex = 13;
+            this.UsuarioTextBox.TabIndex = 1;
             // 
             // label2
             // 
@@ -81,7 +81,7 @@ namespace Sistema_Academico.UI
             this.IngresarButton.Location = new System.Drawing.Point(76, 184);
             this.IngresarButton.Name = "IngresarButton";
             this.IngresarButton.Size = new System.Drawing.Size(93, 42);
-            this.IngresarButton.TabIndex = 52;
+            this.IngresarButton.TabIndex = 3;
             this.IngresarButton.Text = "Ingresar";
             this.IngresarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.IngresarButton.UseVisualStyleBackColor = true;
@@ -94,7 +94,7 @@ namespace Sistema_Academico.UI
             this.CancelarButton.Location = new System.Drawing.Point(175, 184);
             this.CancelarButton.Name = "CancelarButton";
             this.CancelarButton.Size = new System.Drawing.Size(93, 42);
-            this.CancelarButton.TabIndex = 51;
+            this.CancelarButton.TabIndex = 4;
             this.CancelarButton.Text = "Cancelar";
             this.CancelarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.CancelarButton.UseVisualStyleBackColor = true;

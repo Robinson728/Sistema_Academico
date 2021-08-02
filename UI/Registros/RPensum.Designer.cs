@@ -134,7 +134,7 @@ namespace Sistema_Academico.UI.Registros
             this.CreditosTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.CreditosTextBox.Name = "CreditosTextBox";
             this.CreditosTextBox.Size = new System.Drawing.Size(251, 23);
-            this.CreditosTextBox.TabIndex = 9;
+            this.CreditosTextBox.TabIndex = 2;
             // 
             // label5
             // 
@@ -194,7 +194,8 @@ namespace Sistema_Academico.UI.Registros
             this.AsignaturaComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.AsignaturaComboBox.Name = "AsignaturaComboBox";
             this.AsignaturaComboBox.Size = new System.Drawing.Size(198, 23);
-            this.AsignaturaComboBox.TabIndex = 17;
+            this.AsignaturaComboBox.TabIndex = 8;
+            this.AsignaturaComboBox.TextChanged += new System.EventHandler(this.AsignaturaComboBox_TextChanged);
             // 
             // HorasPracticasTextBox
             // 
@@ -203,7 +204,7 @@ namespace Sistema_Academico.UI.Registros
             this.HorasPracticasTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.HorasPracticasTextBox.Name = "HorasPracticasTextBox";
             this.HorasPracticasTextBox.Size = new System.Drawing.Size(242, 23);
-            this.HorasPracticasTextBox.TabIndex = 18;
+            this.HorasPracticasTextBox.TabIndex = 4;
             // 
             // HorasTeoricasTextBox
             // 
@@ -212,15 +213,16 @@ namespace Sistema_Academico.UI.Registros
             this.HorasTeoricasTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.HorasTeoricasTextBox.Name = "HorasTeoricasTextBox";
             this.HorasTeoricasTextBox.Size = new System.Drawing.Size(242, 23);
-            this.HorasTeoricasTextBox.TabIndex = 20;
+            this.HorasTeoricasTextBox.TabIndex = 5;
             // 
             // PreRequisitosTextBox
             // 
+            this.PreRequisitosTextBox.Enabled = false;
             this.PreRequisitosTextBox.Location = new System.Drawing.Point(76, 47);
             this.PreRequisitosTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.PreRequisitosTextBox.Name = "PreRequisitosTextBox";
             this.PreRequisitosTextBox.Size = new System.Drawing.Size(198, 23);
-            this.PreRequisitosTextBox.TabIndex = 22;
+            this.PreRequisitosTextBox.TabIndex = 9;
             // 
             // PensumDataGridView
             // 
@@ -287,6 +289,7 @@ namespace Sistema_Academico.UI.Registros
             // 
             // IdNumericUpDown
             // 
+            this.IdNumericUpDown.Enabled = false;
             this.IdNumericUpDown.Location = new System.Drawing.Point(71, 6);
             this.IdNumericUpDown.Name = "IdNumericUpDown";
             this.IdNumericUpDown.Size = new System.Drawing.Size(251, 23);
@@ -300,7 +303,7 @@ namespace Sistema_Academico.UI.Registros
             this.EliminarButton.Margin = new System.Windows.Forms.Padding(2);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(93, 42);
-            this.EliminarButton.TabIndex = 75;
+            this.EliminarButton.TabIndex = 18;
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.EliminarButton.UseVisualStyleBackColor = true;
@@ -314,7 +317,7 @@ namespace Sistema_Academico.UI.Registros
             this.GuardarButton.Margin = new System.Windows.Forms.Padding(2);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(93, 42);
-            this.GuardarButton.TabIndex = 74;
+            this.GuardarButton.TabIndex = 15;
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.GuardarButton.UseVisualStyleBackColor = true;
@@ -328,7 +331,7 @@ namespace Sistema_Academico.UI.Registros
             this.NuevoButton.Margin = new System.Windows.Forms.Padding(2);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(93, 42);
-            this.NuevoButton.TabIndex = 73;
+            this.NuevoButton.TabIndex = 16;
             this.NuevoButton.Text = "Nuevo";
             this.NuevoButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.NuevoButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -337,11 +340,12 @@ namespace Sistema_Academico.UI.Registros
             // 
             // ClaveTextBox
             // 
+            this.ClaveTextBox.Enabled = false;
             this.ClaveTextBox.Location = new System.Drawing.Point(76, 76);
             this.ClaveTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.ClaveTextBox.Name = "ClaveTextBox";
             this.ClaveTextBox.Size = new System.Drawing.Size(198, 23);
-            this.ClaveTextBox.TabIndex = 78;
+            this.ClaveTextBox.TabIndex = 10;
             // 
             // BuscarButton
             // 
@@ -350,7 +354,7 @@ namespace Sistema_Academico.UI.Registros
             this.BuscarButton.Location = new System.Drawing.Point(435, 464);
             this.BuscarButton.Name = "BuscarButton";
             this.BuscarButton.Size = new System.Drawing.Size(93, 42);
-            this.BuscarButton.TabIndex = 79;
+            this.BuscarButton.TabIndex = 19;
             this.BuscarButton.Text = "Buscar";
             this.BuscarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BuscarButton.UseVisualStyleBackColor = true;
@@ -377,7 +381,7 @@ namespace Sistema_Academico.UI.Registros
             this.DetalleGroupBox.Location = new System.Drawing.Point(3, 122);
             this.DetalleGroupBox.Name = "DetalleGroupBox";
             this.DetalleGroupBox.Size = new System.Drawing.Size(666, 339);
-            this.DetalleGroupBox.TabIndex = 80;
+            this.DetalleGroupBox.TabIndex = 7;
             this.DetalleGroupBox.TabStop = false;
             this.DetalleGroupBox.Text = "Detalle";
             // 
@@ -389,7 +393,7 @@ namespace Sistema_Academico.UI.Registros
             this.AgregarButton.Margin = new System.Windows.Forms.Padding(2);
             this.AgregarButton.Name = "AgregarButton";
             this.AgregarButton.Size = new System.Drawing.Size(93, 42);
-            this.AgregarButton.TabIndex = 84;
+            this.AgregarButton.TabIndex = 14;
             this.AgregarButton.Text = "Agregar";
             this.AgregarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.AgregarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -404,7 +408,7 @@ namespace Sistema_Academico.UI.Registros
             this.RemoverButton.Margin = new System.Windows.Forms.Padding(2);
             this.RemoverButton.Name = "RemoverButton";
             this.RemoverButton.Size = new System.Drawing.Size(97, 42);
-            this.RemoverButton.TabIndex = 85;
+            this.RemoverButton.TabIndex = 17;
             this.RemoverButton.Text = "Remover";
             this.RemoverButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.RemoverButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -423,27 +427,30 @@ namespace Sistema_Academico.UI.Registros
             // 
             // DetalleTeoricasTextBox
             // 
+            this.DetalleTeoricasTextBox.Enabled = false;
             this.DetalleTeoricasTextBox.Location = new System.Drawing.Point(365, 47);
             this.DetalleTeoricasTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.DetalleTeoricasTextBox.Name = "DetalleTeoricasTextBox";
             this.DetalleTeoricasTextBox.Size = new System.Drawing.Size(198, 23);
-            this.DetalleTeoricasTextBox.TabIndex = 85;
+            this.DetalleTeoricasTextBox.TabIndex = 12;
             // 
             // DetalleCreditosTextBox
             // 
+            this.DetalleCreditosTextBox.Enabled = false;
             this.DetalleCreditosTextBox.Location = new System.Drawing.Point(365, 76);
             this.DetalleCreditosTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.DetalleCreditosTextBox.Name = "DetalleCreditosTextBox";
             this.DetalleCreditosTextBox.Size = new System.Drawing.Size(198, 23);
-            this.DetalleCreditosTextBox.TabIndex = 81;
+            this.DetalleCreditosTextBox.TabIndex = 13;
             // 
             // DetallePracticasTextBox
             // 
+            this.DetallePracticasTextBox.Enabled = false;
             this.DetallePracticasTextBox.Location = new System.Drawing.Point(365, 18);
             this.DetallePracticasTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.DetallePracticasTextBox.Name = "DetallePracticasTextBox";
             this.DetallePracticasTextBox.Size = new System.Drawing.Size(198, 23);
-            this.DetallePracticasTextBox.TabIndex = 84;
+            this.DetallePracticasTextBox.TabIndex = 11;
             // 
             // label12
             // 
@@ -481,7 +488,7 @@ namespace Sistema_Academico.UI.Registros
             this.HorasPensumTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.HorasPensumTextBox.Name = "HorasPensumTextBox";
             this.HorasPensumTextBox.Size = new System.Drawing.Size(242, 23);
-            this.HorasPensumTextBox.TabIndex = 83;
+            this.HorasPensumTextBox.TabIndex = 6;
             // 
             // label16
             // 
@@ -510,7 +517,7 @@ namespace Sistema_Academico.UI.Registros
             this.SemestreComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.SemestreComboBox.Name = "SemestreComboBox";
             this.SemestreComboBox.Size = new System.Drawing.Size(251, 23);
-            this.SemestreComboBox.TabIndex = 84;
+            this.SemestreComboBox.TabIndex = 3;
             // 
             // RPensum
             // 
